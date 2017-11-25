@@ -1,0 +1,14 @@
+/home/dox/Algorithm/mtcnn-shell/mtcnn_shell/build/CMakeFiles/install.dir
+/home/dox/Algorithm/mtcnn-shell/mtcnn_shell/build/CMakeFiles/list_install_components.dir
+/home/dox/Algorithm/mtcnn-shell/mtcnn_shell/build/CMakeFiles/rebuild_cache.dir
+/home/dox/Algorithm/mtcnn-shell/mtcnn_shell/build/CMakeFiles/MTCNN_SHELL.dir
+/home/dox/Algorithm/mtcnn-shell/mtcnn_shell/build/CMakeFiles/install/strip.dir
+/home/dox/Algorithm/mtcnn-shell/mtcnn_shell/build/CMakeFiles/install/local.dir
+/home/dox/Algorithm/mtcnn-shell/mtcnn_shell/build/CMakeFiles/edit_cache.dir
+/home/dox/Algorithm/mtcnn-shell/mtcnn_shell/build/lib/CMakeFiles/install.dir
+/home/dox/Algorithm/mtcnn-shell/mtcnn_shell/build/lib/CMakeFiles/list_install_components.dir
+/home/dox/Algorithm/mtcnn-shell/mtcnn_shell/build/lib/CMakeFiles/rebuild_cache.dir
+/home/dox/Algorithm/mtcnn-shell/mtcnn_shell/build/lib/CMakeFiles/MTCNN_FACE_DECT.dir
+/home/dox/Algorithm/mtcnn-shell/mtcnn_shell/build/lib/CMakeFiles/install/local.dir
+/home/dox/Algorithm/mtcnn-shell/mtcnn_shell/build/lib/CMakeFiles/install/strip.dir
+/home/dox/Algorithm/mtcnn-shell/mtcnn_shell/build/lib/CMakeFiles/edit_cache.dir

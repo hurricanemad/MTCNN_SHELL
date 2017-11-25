@@ -1,0 +1,3 @@
+[Project]
+Name=mtcnn_shell
+Manager=KDevCMakeManager

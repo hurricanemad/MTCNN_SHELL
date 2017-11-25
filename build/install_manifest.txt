@@ -1,0 +1,12 @@
+/home/dox/Algorithm/mtcnn-shell/mtcnn_shell/build/./install/MTCNN_SHELL
+/home/dox/Algorithm/mtcnn-shell/mtcnn_shell/build/./install/image/test2.jpg
+/home/dox/Algorithm/mtcnn-shell/mtcnn_shell/build/./install/image/test1.jpg
+/home/dox/Algorithm/mtcnn-shell/mtcnn_shell/build/./install/model/det4.prototxt
+/home/dox/Algorithm/mtcnn-shell/mtcnn_shell/build/./install/model/det3.caffemodel
+/home/dox/Algorithm/mtcnn-shell/mtcnn_shell/build/./install/model/det1.caffemodel
+/home/dox/Algorithm/mtcnn-shell/mtcnn_shell/build/./install/model/det1.prototxt
+/home/dox/Algorithm/mtcnn-shell/mtcnn_shell/build/./install/model/det2.prototxt
+/home/dox/Algorithm/mtcnn-shell/mtcnn_shell/build/./install/model/det2.caffemodel
+/home/dox/Algorithm/mtcnn-shell/mtcnn_shell/build/./install/model/det3.prototxt
+/home/dox/Algorithm/mtcnn-shell/mtcnn_shell/build/./install/model/det4.caffemodel
+/home/dox/Algorithm/mtcnn-shell/mtcnn_shell/build/./install/lib/libMTCNN_FACE_DECT.so

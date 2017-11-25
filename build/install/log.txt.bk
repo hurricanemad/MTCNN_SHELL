@@ -1,0 +1,1281 @@
+m_vfScales is:0.6
+m_vfScales is:0.4254
+m_vfScales is:0.301609
+m_vfScales is:0.213841
+m_vfScales is:0.151613
+m_vfScales is:0.107494
+m_vfScales is:0.0762129
+m_vfScales is:0.054035
+m_vfScales is:0.0383108
+ProcessMat's width is:450
+ProcessMat's height is:344
+nAlterWidth is:270
+nAlterHeight is:206
+nAlterWidth is:270
+nAlterHeight is:206
+m_matNormalizeMat channels is:3
+NormalizeMat's width is:270
+NormalizeMat's height is:206
+NormalizeMat's channels is:3
+PNet is predicting!
+PNet input geom is:[12 x 12]
+NetPredict2 process 1!
+NetPredict2 process 2!
+NetPredict2 process 3!
+WrapInputLayer nWidth is:270
+WrapInputLayer nHeight is:206
+NetPredict2 process 4!
+Preprocess nChannelNum is:3
+SampleImage's size is:[270 x 206]
+szInputGeom's size is:[270 x 206]
+NetPredict2 process 5!
+NetPredict2 process 6!
+blfOutputLayer's size is:2
+blfOutputLayer's width is:130
+blfOutputLayer's height is:98
+vblfPOutputLayer is:2
+blfProb1OutputLayer's width is:130
+blfProb1OutputLayer's height is:98
+1
+2
+130
+98
+1
+4
+130
+98
+Prob1Mat n is:0
+Prob1Mat n is:1
+LocatePoints start!
+vptPoints' size is:182
+vmatProb1Mat[1]'s width is:130
+vmatProb1Mat[1]'s height is:98
+Conv4_2 out!
+Point out!
+GenerateBoundingBox end!
+Nms 1!
+Nms 2!
+Nms 3!
+Bounding Box's size is:182
+vvsScore size is:182
+5.6628e-05
+vvsScore size is:181
+2.1077e-05
+vvsScore size is:179
+3.8675e-05
+vvsScore size is:177
+3.8509e-05
+vvsScore size is:175
+2.7144e-05
+vvsScore size is:173
+2.666e-05
+vvsScore size is:172
+2.6317e-05
+vvsScore size is:170
+2.6063e-05
+vvsScore size is:169
+2.5837e-05
+vvsScore size is:167
+2.5417e-05
+vvsScore size is:166
+2.5058e-05
+vvsScore size is:164
+2.4816e-05
+vvsScore size is:163
+2.4526e-05
+vvsScore size is:161
+2.4343e-05
+vvsScore size is:160
+2.4004e-05
+vvsScore size is:158
+2.3687e-05
+vvsScore size is:157
+2.3697e-05
+vvsScore size is:155
+2.3112e-05
+vvsScore size is:154
+4.7693e-05
+vvsScore size is:152
+2.2717e-05
+vvsScore size is:151
+2.2493e-05
+vvsScore size is:149
+2.2222e-05
+vvsScore size is:148
+2.183e-05
+vvsScore size is:146
+2.1597e-05
+vvsScore size is:145
+2.136e-05
+vvsScore size is:143
+2.0972e-05
+vvsScore size is:142
+2.0851e-05
+vvsScore size is:140
+2.0619e-05
+vvsScore size is:139
+2.0425e-05
+vvsScore size is:137
+2.0149e-05
+vvsScore size is:136
+1.9772e-05
+vvsScore size is:134
+1.963e-05
+vvsScore size is:133
+1.9792e-05
+vvsScore size is:131
+1.9188e-05
+vvsScore size is:130
+1.8912e-05
+vvsScore size is:128
+1.8657e-05
+vvsScore size is:127
+1.8355e-05
+vvsScore size is:125
+1.8197e-05
+vvsScore size is:124
+1.7915e-05
+vvsScore size is:122
+1.7706e-05
+vvsScore size is:120
+1.7292e-05
+vvsScore size is:118
+1.7143e-05
+vvsScore size is:117
+1.6843e-05
+vvsScore size is:115
+1.6392e-05
+vvsScore size is:114
+1.6084e-05
+vvsScore size is:112
+1.5587e-05
+vvsScore size is:111
+1.5361e-05
+vvsScore size is:109
+1.5143e-05
+vvsScore size is:108
+1.4636e-05
+vvsScore size is:106
+1.4171e-05
+vvsScore size is:105
+1.4022e-05
+vvsScore size is:103
+1.3467e-05
+vvsScore size is:102
+1.3319e-05
+vvsScore size is:100
+1.3023e-05
+vvsScore size is:99
+1.2873e-05
+vvsScore size is:97
+1.2581e-05
+vvsScore size is:96
+1.2384e-05
+vvsScore size is:94
+1.2018e-05
+vvsScore size is:93
+1.213e-05
+vvsScore size is:91
+1.1603e-05
+vvsScore size is:90
+1.2018e-05
+vvsScore size is:88
+1.1251e-05
+vvsScore size is:87
+1.1477e-05
+vvsScore size is:85
+1.0991e-05
+vvsScore size is:84
+1.1482e-05
+vvsScore size is:82
+1.0322e-05
+vvsScore size is:81
+1.0534e-05
+vvsScore size is:79
+1.0023e-05
+vvsScore size is:78
+9.383e-06
+vvsScore size is:76
+9.927e-06
+vvsScore size is:75
+9.261e-06
+vvsScore size is:73
+9.215e-06
+vvsScore size is:72
+8.394e-06
+vvsScore size is:70
+8.819e-06
+vvsScore size is:69
+8.073e-06
+vvsScore size is:67
+8.145e-06
+vvsScore size is:66
+7.635e-06
+vvsScore size is:64
+7.444e-06
+vvsScore size is:63
+6.941e-06
+vvsScore size is:61
+6.913e-06
+vvsScore size is:60
+6.576e-06
+vvsScore size is:58
+6.435e-06
+vvsScore size is:57
+6.276e-06
+vvsScore size is:55
+6.036e-06
+vvsScore size is:54
+5.648e-06
+vvsScore size is:52
+5.641e-06
+vvsScore size is:51
+5.059e-06
+vvsScore size is:49
+5.133e-06
+vvsScore size is:48
+4.924e-06
+vvsScore size is:46
+4.366e-06
+vvsScore size is:45
+4.223e-06
+vvsScore size is:43
+4.153e-06
+vvsScore size is:42
+3.959e-06
+vvsScore size is:40
+3.868e-06
+vvsScore size is:39
+3.22e-06
+vvsScore size is:37
+3.526e-06
+vvsScore size is:36
+3.29e-06
+vvsScore size is:34
+3.111e-06
+vvsScore size is:33
+3.091e-06
+vvsScore size is:31
+2.876e-06
+vvsScore size is:30
+2.626e-06
+vvsScore size is:28
+2.388e-06
+vvsScore size is:27
+2.246e-06
+vvsScore size is:25
+2.071e-06
+vvsScore size is:24
+1.917e-06
+vvsScore size is:22
+1.769e-06
+vvsScore size is:21
+1.595e-06
+vvsScore size is:19
+1.449e-06
+vvsScore size is:18
+1.272e-06
+vvsScore size is:16
+1.263e-06
+vvsScore size is:15
+1.097e-06
+vvsScore size is:13
+1.062e-06
+vvsScore size is:12
+8.97e-07
+vvsScore size is:10
+7.71e-07
+vvsScore size is:9
+6.94e-07
+vvsScore size is:7
+6.04e-07
+vvsScore size is:6
+4.51e-07
+vvsScore size is:4
+4.46e-07
+vvsScore size is:3
+3.32e-07
+vvsScore size is:1
+2.72e-07
+Nms 6!
+viPick's size is:120
+ProcessMat's width is:450
+ProcessMat's height is:344
+nAlterWidth is:191
+nAlterHeight is:146
+nAlterWidth is:191
+nAlterHeight is:146
+m_matNormalizeMat channels is:3
+NormalizeMat's width is:191
+NormalizeMat's height is:146
+NormalizeMat's channels is:3
+PNet is predicting!
+PNet input geom is:[270 x 206]
+NetPredict2 process 1!
+NetPredict2 process 2!
+NetPredict2 process 3!
+WrapInputLayer nWidth is:191
+WrapInputLayer nHeight is:146
+NetPredict2 process 4!
+Preprocess nChannelNum is:3
+SampleImage's size is:[191 x 146]
+szInputGeom's size is:[191 x 146]
+NetPredict2 process 5!
+NetPredict2 process 6!
+blfOutputLayer's size is:2
+blfOutputLayer's width is:91
+blfOutputLayer's height is:68
+vblfPOutputLayer is:2
+blfProb1OutputLayer's width is:91
+blfProb1OutputLayer's height is:68
+1
+2
+91
+68
+1
+4
+91
+68
+Prob1Mat n is:0
+Prob1Mat n is:1
+LocatePoints start!
+vptPoints' size is:98
+vmatProb1Mat[1]'s width is:91
+vmatProb1Mat[1]'s height is:68
+Conv4_2 out!
+Point out!
+GenerateBoundingBox end!
+Nms 1!
+Nms 2!
+Nms 3!
+Bounding Box's size is:98
+vvsScore size is:98
+1.6234e-05
+vvsScore size is:97
+1.1806e-05
+vvsScore size is:95
+1.3865e-05
+vvsScore size is:93
+1.1032e-05
+vvsScore size is:91
+1.286e-05
+vvsScore size is:89
+1.0532e-05
+vvsScore size is:88
+1.2202e-05
+vvsScore size is:86
+1.0193e-05
+vvsScore size is:85
+1.1713e-05
+vvsScore size is:83
+9.924e-06
+vvsScore size is:82
+1.0946e-05
+vvsScore size is:80
+1.0274e-05
+vvsScore size is:79
+1.0075e-05
+vvsScore size is:77
+9.797e-06
+vvsScore size is:76
+9.469e-06
+vvsScore size is:74
+9.271e-06
+vvsScore size is:73
+9.257e-06
+vvsScore size is:71
+8.937e-06
+vvsScore size is:70
+8.154e-06
+vvsScore size is:68
+8.283e-06
+vvsScore size is:67
+8.031e-06
+vvsScore size is:65
+7.547e-06
+vvsScore size is:64
+7.389e-06
+vvsScore size is:62
+6.813e-06
+vvsScore size is:61
+7.019e-06
+vvsScore size is:60
+5.77e-06
+vvsScore size is:59
+6.328e-06
+vvsScore size is:57
+6.176e-06
+vvsScore size is:56
+5.998e-06
+vvsScore size is:54
+5.751e-06
+vvsScore size is:53
+5.541e-06
+vvsScore size is:51
+5.338e-06
+vvsScore size is:50
+5.244e-06
+vvsScore size is:48
+4.978e-06
+vvsScore size is:47
+4.661e-06
+vvsScore size is:45
+4.374e-06
+vvsScore size is:44
+4.306e-06
+vvsScore size is:42
+3.945e-06
+vvsScore size is:41
+3.694e-06
+vvsScore size is:39
+3.441e-06
+vvsScore size is:38
+3.614e-06
+vvsScore size is:36
+3.342e-06
+vvsScore size is:35
+3.131e-06
+vvsScore size is:33
+3.044e-06
+vvsScore size is:32
+2.724e-06
+vvsScore size is:30
+2.59e-06
+vvsScore size is:29
+2.394e-06
+vvsScore size is:27
+2.238e-06
+vvsScore size is:26
+2.121e-06
+vvsScore size is:24
+1.961e-06
+vvsScore size is:23
+1.716e-06
+vvsScore size is:21
+1.592e-06
+vvsScore size is:20
+1.456e-06
+vvsScore size is:18
+1.309e-06
+vvsScore size is:17
+1.177e-06
+vvsScore size is:15
+1.098e-06
+vvsScore size is:14
+9.96e-07
+vvsScore size is:12
+9.21e-07
+vvsScore size is:11
+7.66e-07
+vvsScore size is:9
+7.27e-07
+vvsScore size is:8
+5.95e-07
+vvsScore size is:6
+5.22e-07
+vvsScore size is:5
+3.78e-07
+vvsScore size is:3
+3.01e-07
+vvsScore size is:2
+6.21e-07
+vvsScore size is:1
+1.8e-07
+Nms 6!
+viPick's size is:66
+ProcessMat's width is:450
+ProcessMat's height is:344
+nAlterWidth is:136
+nAlterHeight is:104
+nAlterWidth is:136
+nAlterHeight is:104
+m_matNormalizeMat channels is:3
+NormalizeMat's width is:136
+NormalizeMat's height is:104
+NormalizeMat's channels is:3
+PNet is predicting!
+PNet input geom is:[191 x 146]
+NetPredict2 process 1!
+NetPredict2 process 2!
+NetPredict2 process 3!
+WrapInputLayer nWidth is:136
+WrapInputLayer nHeight is:104
+NetPredict2 process 4!
+Preprocess nChannelNum is:3
+SampleImage's size is:[136 x 104]
+szInputGeom's size is:[136 x 104]
+NetPredict2 process 5!
+NetPredict2 process 6!
+blfOutputLayer's size is:2
+blfOutputLayer's width is:63
+blfOutputLayer's height is:47
+vblfPOutputLayer is:2
+blfProb1OutputLayer's width is:63
+blfProb1OutputLayer's height is:47
+1
+2
+63
+47
+1
+4
+63
+47
+Prob1Mat n is:0
+Prob1Mat n is:1
+LocatePoints start!
+vptPoints' size is:58
+vmatProb1Mat[1]'s width is:63
+vmatProb1Mat[1]'s height is:47
+Conv4_2 out!
+Point out!
+GenerateBoundingBox end!
+Nms 1!
+Nms 2!
+Nms 3!
+Bounding Box's size is:58
+vvsScore size is:58
+9.442e-06
+vvsScore size is:57
+4.221e-06
+vvsScore size is:55
+6.115e-06
+vvsScore size is:53
+5.458e-06
+vvsScore size is:51
+5.176e-06
+vvsScore size is:49
+4.833e-06
+vvsScore size is:48
+4.909e-06
+vvsScore size is:46
+4.358e-06
+vvsScore size is:45
+4.566e-06
+vvsScore size is:43
+4.111e-06
+vvsScore size is:42
+4.045e-06
+vvsScore size is:40
+3.644e-06
+vvsScore size is:38
+3.483e-06
+vvsScore size is:36
+3.384e-06
+vvsScore size is:35
+3.238e-06
+vvsScore size is:33
+2.972e-06
+vvsScore size is:32
+2.965e-06
+vvsScore size is:30
+2.637e-06
+vvsScore size is:29
+2.471e-06
+vvsScore size is:27
+2.373e-06
+vvsScore size is:26
+2.19e-06
+vvsScore size is:24
+2.045e-06
+vvsScore size is:23
+1.832e-06
+vvsScore size is:21
+1.757e-06
+vvsScore size is:20
+1.652e-06
+vvsScore size is:18
+1.473e-06
+vvsScore size is:17
+1.281e-06
+vvsScore size is:15
+1.157e-06
+vvsScore size is:14
+1.041e-06
+vvsScore size is:12
+9.35e-07
+vvsScore size is:11
+7.97e-07
+vvsScore size is:9
+7.47e-07
+vvsScore size is:8
+9.42e-07
+vvsScore size is:6
+5.43e-07
+vvsScore size is:5
+4.59e-07
+vvsScore size is:3
+4.09e-07
+vvsScore size is:2
+2.82e-07
+vvsScore size is:1
+2.05e-07
+Nms 6!
+viPick's size is:38
+ProcessMat's width is:450
+ProcessMat's height is:344
+nAlterWidth is:96
+nAlterHeight is:74
+nAlterWidth is:96
+nAlterHeight is:74
+m_matNormalizeMat channels is:3
+NormalizeMat's width is:96
+NormalizeMat's height is:74
+NormalizeMat's channels is:3
+PNet is predicting!
+PNet input geom is:[136 x 104]
+NetPredict2 process 1!
+NetPredict2 process 2!
+NetPredict2 process 3!
+WrapInputLayer nWidth is:96
+WrapInputLayer nHeight is:74
+NetPredict2 process 4!
+Preprocess nChannelNum is:3
+SampleImage's size is:[96 x 74]
+szInputGeom's size is:[96 x 74]
+NetPredict2 process 5!
+NetPredict2 process 6!
+blfOutputLayer's size is:2
+blfOutputLayer's width is:43
+blfOutputLayer's height is:32
+vblfPOutputLayer is:2
+blfProb1OutputLayer's width is:43
+blfProb1OutputLayer's height is:32
+1
+2
+43
+32
+1
+4
+43
+32
+Prob1Mat n is:0
+Prob1Mat n is:1
+LocatePoints start!
+vptPoints' size is:30
+vmatProb1Mat[1]'s width is:43
+vmatProb1Mat[1]'s height is:32
+Conv4_2 out!
+Point out!
+GenerateBoundingBox end!
+Nms 1!
+Nms 2!
+Nms 3!
+Bounding Box's size is:30
+vvsScore size is:30
+1.4865e-05
+vvsScore size is:29
+1.2569e-05
+vvsScore size is:27
+2.407e-06
+vvsScore size is:25
+1.959e-06
+vvsScore size is:23
+1.998e-06
+vvsScore size is:21
+1.808e-06
+vvsScore size is:20
+1.667e-06
+vvsScore size is:18
+1.491e-06
+vvsScore size is:17
+1.461e-06
+vvsScore size is:15
+1.27e-06
+vvsScore size is:14
+1.135e-06
+vvsScore size is:12
+8.96e-07
+vvsScore size is:10
+7.71e-07
+vvsScore size is:8
+7.1e-07
+vvsScore size is:7
+5.9e-07
+vvsScore size is:5
+4.57e-07
+vvsScore size is:4
+6.15e-07
+vvsScore size is:2
+3.53e-07
+vvsScore size is:1
+2.2e-07
+Nms 6!
+viPick's size is:19
+ProcessMat's width is:450
+ProcessMat's height is:344
+nAlterWidth is:68
+nAlterHeight is:52
+nAlterWidth is:68
+nAlterHeight is:52
+m_matNormalizeMat channels is:3
+NormalizeMat's width is:68
+NormalizeMat's height is:52
+NormalizeMat's channels is:3
+PNet is predicting!
+PNet input geom is:[96 x 74]
+NetPredict2 process 1!
+NetPredict2 process 2!
+NetPredict2 process 3!
+WrapInputLayer nWidth is:68
+WrapInputLayer nHeight is:52
+NetPredict2 process 4!
+Preprocess nChannelNum is:3
+SampleImage's size is:[68 x 52]
+szInputGeom's size is:[68 x 52]
+NetPredict2 process 5!
+NetPredict2 process 6!
+blfOutputLayer's size is:2
+blfOutputLayer's width is:29
+blfOutputLayer's height is:21
+vblfPOutputLayer is:2
+blfProb1OutputLayer's width is:29
+blfProb1OutputLayer's height is:21
+1
+2
+29
+21
+1
+4
+29
+21
+Prob1Mat n is:0
+Prob1Mat n is:1
+LocatePoints start!
+vptPoints' size is:1
+vmatProb1Mat[1]'s width is:29
+vmatProb1Mat[1]'s height is:21
+Conv4_2 out!
+Point out!
+GenerateBoundingBox end!
+Nms 1!
+Nms 2!
+Nms 3!
+Bounding Box's size is:1
+vvsScore size is:1
+3.6e-07
+Nms 6!
+viPick's size is:1
+ProcessMat's width is:450
+ProcessMat's height is:344
+nAlterWidth is:48
+nAlterHeight is:37
+nAlterWidth is:48
+nAlterHeight is:37
+m_matNormalizeMat channels is:3
+NormalizeMat's width is:48
+NormalizeMat's height is:37
+NormalizeMat's channels is:3
+PNet is predicting!
+PNet input geom is:[68 x 52]
+NetPredict2 process 1!
+NetPredict2 process 2!
+NetPredict2 process 3!
+WrapInputLayer nWidth is:48
+WrapInputLayer nHeight is:37
+NetPredict2 process 4!
+Preprocess nChannelNum is:3
+SampleImage's size is:[48 x 37]
+szInputGeom's size is:[48 x 37]
+NetPredict2 process 5!
+NetPredict2 process 6!
+blfOutputLayer's size is:2
+blfOutputLayer's width is:19
+blfOutputLayer's height is:14
+vblfPOutputLayer is:2
+blfProb1OutputLayer's width is:19
+blfProb1OutputLayer's height is:14
+1
+2
+19
+14
+1
+4
+19
+14
+Prob1Mat n is:0
+Prob1Mat n is:1
+LocatePoints start!
+vptPoints' size is:0
+vmatProb1Mat[1]'s width is:19
+vmatProb1Mat[1]'s height is:14
+Conv4_2 out!
+Point out!
+GenerateBoundingBox end!
+Nms return!
+viPick's size is:0
+ProcessMat's width is:450
+ProcessMat's height is:344
+nAlterWidth is:34
+nAlterHeight is:26
+nAlterWidth is:34
+nAlterHeight is:26
+m_matNormalizeMat channels is:3
+NormalizeMat's width is:34
+NormalizeMat's height is:26
+NormalizeMat's channels is:3
+PNet is predicting!
+PNet input geom is:[48 x 37]
+NetPredict2 process 1!
+NetPredict2 process 2!
+NetPredict2 process 3!
+WrapInputLayer nWidth is:34
+WrapInputLayer nHeight is:26
+NetPredict2 process 4!
+Preprocess nChannelNum is:3
+SampleImage's size is:[34 x 26]
+szInputGeom's size is:[34 x 26]
+NetPredict2 process 5!
+NetPredict2 process 6!
+blfOutputLayer's size is:2
+blfOutputLayer's width is:12
+blfOutputLayer's height is:8
+vblfPOutputLayer is:2
+blfProb1OutputLayer's width is:12
+blfProb1OutputLayer's height is:8
+1
+2
+12
+8
+1
+4
+12
+8
+Prob1Mat n is:0
+Prob1Mat n is:1
+LocatePoints start!
+vptPoints' size is:2
+vmatProb1Mat[1]'s width is:12
+vmatProb1Mat[1]'s height is:8
+Conv4_2 out!
+Point out!
+GenerateBoundingBox end!
+Nms 1!
+Nms 2!
+Nms 3!
+Bounding Box's size is:2
+vvsScore size is:2
+9.89e-07
+vvsScore size is:1
+3.35e-07
+Nms 6!
+viPick's size is:2
+ProcessMat's width is:450
+ProcessMat's height is:344
+nAlterWidth is:24
+nAlterHeight is:19
+nAlterWidth is:24
+nAlterHeight is:19
+m_matNormalizeMat channels is:3
+NormalizeMat's width is:24
+NormalizeMat's height is:19
+NormalizeMat's channels is:3
+PNet is predicting!
+PNet input geom is:[34 x 26]
+NetPredict2 process 1!
+NetPredict2 process 2!
+NetPredict2 process 3!
+WrapInputLayer nWidth is:24
+WrapInputLayer nHeight is:19
+NetPredict2 process 4!
+Preprocess nChannelNum is:3
+SampleImage's size is:[24 x 19]
+szInputGeom's size is:[24 x 19]
+NetPredict2 process 5!
+NetPredict2 process 6!
+blfOutputLayer's size is:2
+blfOutputLayer's width is:7
+blfOutputLayer's height is:5
+vblfPOutputLayer is:2
+blfProb1OutputLayer's width is:7
+blfProb1OutputLayer's height is:5
+1
+2
+7
+5
+1
+4
+7
+5
+Prob1Mat n is:0
+Prob1Mat n is:1
+LocatePoints start!
+vptPoints' size is:0
+vmatProb1Mat[1]'s width is:7
+vmatProb1Mat[1]'s height is:5
+Conv4_2 out!
+Point out!
+GenerateBoundingBox end!
+Nms return!
+viPick's size is:0
+ProcessMat's width is:450
+ProcessMat's height is:344
+nAlterWidth is:17
+nAlterHeight is:13
+nAlterWidth is:17
+nAlterHeight is:13
+m_matNormalizeMat channels is:3
+NormalizeMat's width is:17
+NormalizeMat's height is:13
+NormalizeMat's channels is:3
+PNet is predicting!
+PNet input geom is:[24 x 19]
+NetPredict2 process 1!
+NetPredict2 process 2!
+NetPredict2 process 3!
+WrapInputLayer nWidth is:17
+WrapInputLayer nHeight is:13
+NetPredict2 process 4!
+Preprocess nChannelNum is:3
+SampleImage's size is:[17 x 13]
+szInputGeom's size is:[17 x 13]
+NetPredict2 process 5!
+NetPredict2 process 6!
+blfOutputLayer's size is:2
+blfOutputLayer's width is:4
+blfOutputLayer's height is:2
+vblfPOutputLayer is:2
+blfProb1OutputLayer's width is:4
+blfProb1OutputLayer's height is:2
+1
+2
+4
+2
+1
+4
+4
+2
+Prob1Mat n is:0
+Prob1Mat n is:1
+LocatePoints start!
+vptPoints' size is:0
+vmatProb1Mat[1]'s width is:4
+vmatProb1Mat[1]'s height is:2
+Conv4_2 out!
+Point out!
+GenerateBoundingBox end!
+Nms return!
+viPick's size is:0
+246
+RNet test 1!
+Nms 1!
+Nms 2!
+Nms 3!
+Bounding Box's size is:246
+vvsScore size is:246
+7.8614e-05
+vvsScore size is:245
+6.9659e-05
+vvsScore size is:243
+4.5703e-05
+vvsScore size is:241
+4.4154e-05
+vvsScore size is:239
+5.3908e-05
+vvsScore size is:237
+4.1238e-05
+vvsScore size is:236
+4.0892e-05
+vvsScore size is:234
+4.0514e-05
+vvsScore size is:233
+4.028e-05
+vvsScore size is:231
+3.9631e-05
+vvsScore size is:230
+3.9312e-05
+vvsScore size is:228
+3.8823e-05
+vvsScore size is:227
+3.8539e-05
+vvsScore size is:225
+3.818e-05
+vvsScore size is:224
+3.7784e-05
+vvsScore size is:222
+5.2557e-05
+vvsScore size is:221
+4.9039e-05
+vvsScore size is:219
+3.6792e-05
+vvsScore size is:218
+3.6327e-05
+vvsScore size is:216
+3.59e-05
+vvsScore size is:215
+3.557e-05
+vvsScore size is:213
+3.5294e-05
+vvsScore size is:212
+3.485e-05
+vvsScore size is:209
+3.4338e-05
+vvsScore size is:208
+3.4065e-05
+vvsScore size is:206
+3.3765e-05
+vvsScore size is:204
+3.3428e-05
+vvsScore size is:202
+3.2989e-05
+vvsScore size is:200
+3.2551e-05
+vvsScore size is:198
+3.2055e-05
+vvsScore size is:197
+3.1936e-05
+vvsScore size is:195
+3.1652e-05
+vvsScore size is:194
+4.2114e-05
+vvsScore size is:192
+4.2112e-05
+vvsScore size is:190
+4.2149e-05
+vvsScore size is:188
+3.0969e-05
+vvsScore size is:186
+4.0292e-05
+vvsScore size is:184
+2.9566e-05
+vvsScore size is:183
+2.9156e-05
+vvsScore size is:181
+2.8798e-05
+vvsScore size is:180
+2.8693e-05
+vvsScore size is:178
+2.8252e-05
+vvsScore size is:176
+2.7947e-05
+vvsScore size is:174
+2.7456e-05
+vvsScore size is:172
+2.7128e-05
+vvsScore size is:170
+2.6751e-05
+vvsScore size is:169
+2.6571e-05
+vvsScore size is:167
+2.6233e-05
+vvsScore size is:165
+2.5955e-05
+vvsScore size is:163
+2.5604e-05
+vvsScore size is:162
+2.5582e-05
+vvsScore size is:160
+3.5802e-05
+vvsScore size is:158
+2.5471e-05
+vvsScore size is:156
+4.5205e-05
+vvsScore size is:155
+3.477e-05
+vvsScore size is:153
+2.3686e-05
+vvsScore size is:151
+2.3403e-05
+vvsScore size is:149
+2.3227e-05
+vvsScore size is:148
+2.3028e-05
+vvsScore size is:146
+2.2542e-05
+vvsScore size is:144
+2.2373e-05
+vvsScore size is:142
+2.2113e-05
+vvsScore size is:141
+2.1797e-05
+vvsScore size is:139
+2.1594e-05
+vvsScore size is:138
+3.2539e-05
+vvsScore size is:136
+3.179e-05
+vvsScore size is:134
+2.0666e-05
+vvsScore size is:132
+2.0513e-05
+vvsScore size is:131
+2.0351e-05
+vvsScore size is:129
+2.0236e-05
+vvsScore size is:127
+1.9828e-05
+vvsScore size is:125
+1.9495e-05
+vvsScore size is:123
+1.9179e-05
+vvsScore size is:121
+1.8795e-05
+vvsScore size is:120
+1.8807e-05
+vvsScore size is:118
+1.8433e-05
+vvsScore size is:117
+1.8276e-05
+vvsScore size is:115
+1.7922e-05
+vvsScore size is:113
+1.7715e-05
+vvsScore size is:111
+1.7477e-05
+vvsScore size is:110
+1.7374e-05
+vvsScore size is:108
+1.7177e-05
+vvsScore size is:107
+1.6882e-05
+vvsScore size is:105
+1.6701e-05
+vvsScore size is:104
+1.6284e-05
+vvsScore size is:102
+1.582e-05
+vvsScore size is:100
+1.5247e-05
+vvsScore size is:98
+1.4886e-05
+vvsScore size is:96
+1.4559e-05
+vvsScore size is:94
+1.4124e-05
+vvsScore size is:93
+1.3936e-05
+vvsScore size is:91
+1.3488e-05
+vvsScore size is:90
+1.3353e-05
+vvsScore size is:88
+1.2809e-05
+vvsScore size is:86
+1.3124e-05
+vvsScore size is:84
+1.2303e-05
+vvsScore size is:82
+1.2324e-05
+vvsScore size is:80
+1.1952e-05
+vvsScore size is:79
+1.2177e-05
+vvsScore size is:78
+1.1366e-05
+vvsScore size is:76
+1.1915e-05
+vvsScore size is:74
+1.0773e-05
+vvsScore size is:73
+1.1626e-05
+vvsScore size is:71
+1.0719e-05
+vvsScore size is:70
+1.0692e-05
+vvsScore size is:68
+1.0438e-05
+vvsScore size is:67
+1.0283e-05
+vvsScore size is:65
+9.818e-06
+vvsScore size is:63
+9.504e-06
+vvsScore size is:61
+9.325e-06
+vvsScore size is:60
+1.9109e-05
+vvsScore size is:58
+6.695e-06
+vvsScore size is:57
+7.841e-06
+vvsScore size is:55
+1.8759e-05
+vvsScore size is:54
+8.092e-06
+vvsScore size is:52
+7.68e-06
+vvsScore size is:51
+2.5536e-05
+vvsScore size is:49
+5.051e-06
+vvsScore size is:48
+7.317e-06
+vvsScore size is:46
+6.501e-06
+vvsScore size is:44
+6.742e-06
+vvsScore size is:42
+5.66e-06
+vvsScore size is:40
+5.764e-06
+vvsScore size is:38
+5.677e-06
+vvsScore size is:37
+5.534e-06
+vvsScore size is:35
+5.431e-06
+vvsScore size is:33
+5.046e-06
+vvsScore size is:31
+4.518e-06
+vvsScore size is:29
+5.202e-06
+vvsScore size is:27
+3.944e-06
+vvsScore size is:25
+3.64e-06
+vvsScore size is:23
+3.436e-06
+vvsScore size is:21
+3.318e-06
+vvsScore size is:20
+3.283e-06
+vvsScore size is:19
+2.952e-06
+vvsScore size is:18
+2.673e-06
+vvsScore size is:16
+2.709e-06
+vvsScore size is:15
+2.6e-06
+vvsScore size is:14
+1.2639e-05
+vvsScore size is:13
+2.422e-06
+vvsScore size is:11
+1.2935e-05
+vvsScore size is:10
+1.994e-06
+vvsScore size is:9
+1.87e-06
+vvsScore size is:8
+1.882e-06
+vvsScore size is:6
+1.658e-06
+vvsScore size is:5
+1.563e-06
+vvsScore size is:4
+1.474e-06
+vvsScore size is:3
+1.309e-06
+vvsScore size is:2
+1.192e-06
+vvsScore size is:1
+1.098e-06
+Nms 6!
+RNet test 2!
+RNet test 3!
+vrectTotalBoundingBox's size is:150
+RNet is predicting!
+vmatNormalizeTempMat's size is:150
+NetPredict's size is:[24 x 24]
+nChannelNum's size is:3
+blfRProb1OutputLayer's num is:150
+blfRConv5_2OutputLayer's num is:150
+150
+2
+1
+1
+150
+4
+1
+1
