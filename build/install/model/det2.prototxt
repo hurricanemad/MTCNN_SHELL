@@ -6,6 +6,8 @@ input_dim: 24
 input_dim: 24
 
 
+##########################
+######################
 layer {
   name: "conv1"
   type: "Convolution"
@@ -95,7 +97,9 @@ layer {
     stride: 2
   }
 }
+####################################
 
+##################################
 layer {
   name: "conv3"
   type: "Convolution"
@@ -129,7 +133,9 @@ layer {
   top: "conv3"
   propagate_down: true
 }
+###############################
 
+###############################
 
 layer {
   name: "conv4"

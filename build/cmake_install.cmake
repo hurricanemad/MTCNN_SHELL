@@ -1,4 +1,4 @@
-# Install script for directory: /home/dox/Algorithm/mtcnn-shell/mtcnn_shell
+# Install script for directory: /home/dox/Algorithm/MTCNN_SHELL
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -32,19 +32,24 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
   set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+# Is this installation the result of a crosscompile?
+if(NOT DEFINED CMAKE_CROSSCOMPILING)
+  set(CMAKE_CROSSCOMPILING "FALSE")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/install/MTCNN_SHELL" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/install/MTCNN_SHELL")
     file(RPATH_CHECK
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/install/MTCNN_SHELL"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/install" TYPE EXECUTABLE FILES "/home/dox/Algorithm/mtcnn-shell/mtcnn_shell/build/MTCNN_SHELL")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/install" TYPE EXECUTABLE FILES "/home/dox/Algorithm/MTCNN_SHELL/build/MTCNN_SHELL")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/install/MTCNN_SHELL" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/install/MTCNN_SHELL")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/install/MTCNN_SHELL"
-         OLD_RPATH "/usr/local/cuda/lib64:lib:/home/dox/Algorithm/mtcnn-shell/mtcnn_shell/build/lib:/home/dox/Algorithm/caffe/cbuild/lib:/usr/lib/x86_64-linux-gnu/hdf5/serial/lib:/home/dox/protobuf/lib:/usr/local/lib:"
+         OLD_RPATH "/usr/local/cuda/lib64:lib:/home/dox/Algorithm/MTCNN_SHELL/build/lib:/home/dox/Algorithm/caffe/cbuild/lib:/usr/local/lib:/usr/lib/x86_64-linux-gnu/hdf5/serial:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/install/MTCNN_SHELL")
@@ -52,17 +57,17 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   endif()
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/install" TYPE DIRECTORY FILES "/home/dox/Algorithm/mtcnn-shell/mtcnn_shell/image")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/install" TYPE DIRECTORY FILES "/home/dox/Algorithm/MTCNN_SHELL/image")
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/install" TYPE DIRECTORY FILES "/home/dox/Algorithm/mtcnn-shell/mtcnn_shell/model")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/install" TYPE DIRECTORY FILES "/home/dox/Algorithm/MTCNN_SHELL/model")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/dox/Algorithm/mtcnn-shell/mtcnn_shell/build/lib/cmake_install.cmake")
+  include("/home/dox/Algorithm/MTCNN_SHELL/build/lib/cmake_install.cmake")
 
 endif()
 
@@ -74,5 +79,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/dox/Algorithm/mtcnn-shell/mtcnn_shell/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/dox/Algorithm/MTCNN_SHELL/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

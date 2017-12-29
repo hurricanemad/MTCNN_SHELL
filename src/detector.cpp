@@ -18,6 +18,7 @@ MTCNN_DETECTOR::MTCNN_DETECTOR(const string& strPNetModelPath,
     m_strPNetModelPath = strPNetModelPath;
     m_strRNetModelPath = strRNetModelPath;
     m_strONetModelPath = strONetModelPath;
+    m_strLNetModelPath = strLNetModelPath;
     m_fFactor = fFactor;
     m_nminSize = nminSize;
     m_vfThreshold = vfThreshold;
@@ -76,29 +77,30 @@ MTCNN_DETECTOR::MTCNN_DETECTOR(const string& strPNetModelPath,
 
 void MTCNN_DETECTOR::FaceDetect(){
     GenerateScales();
-    
-    
+
     vector<Rect>vrectTotalBoundingBox;
     vector<float>vfTotalScores;
     vector<Vec4f>vv4fTotalConv4_2;
     int nAlterHeight, nAlterWidth;
     Mat matFloatProcessMat, matTempProcessMat;
     cvtColor(m_matProcessMat, matTempProcessMat, CV_BGR2RGB);
-    matTempProcessMat.convertTo(matTempProcessMat, CV_32FC3);
-    matFloatProcessMat = matTempProcessMat.t();
-    /*Mat matTestMat;
+    Mat matDebugImage = m_matProcessMat.clone();
+    matTempProcessMat.convertTo(matFloatProcessMat, CV_32FC3);
+    matFloatProcessMat = matFloatProcessMat.t();
+    //flip(matFloatProcessMat, matFloatProcessMat, 1);
+    Mat matTestMat;
     matFloatProcessMat.convertTo(matTestMat, CV_8UC3);
         
     namedWindow("matFloatProcessMat");
-    imshow("matFloatProcessMat", matFloatProcessMat);
-    waitKey(-1);*/
+    imshow("matFloatProcessMat", matTestMat);
+    waitKey(-1);
     
     cout << matFloatProcessMat.type() << endl;
     cout << CV_32FC3 << endl;    
     
     for(int i=0; i < m_vfScales.size(); i++){
-        nAlterHeight = static_cast<int>(m_nImageHeight * m_vfScales[i] + 0.5f);
-        nAlterWidth = static_cast<int>(m_nImageWidth * m_vfScales[i] + 0.5f);
+        nAlterHeight = ceil<int>(m_nImageHeight * m_vfScales[i] );
+        nAlterWidth = ceil(m_nImageWidth * m_vfScales[i]);
     
         cout << "ProcessMat's width is:" << m_matProcessMat.cols << endl;
         cout << "ProcessMat's height is:" << m_matProcessMat.rows << endl;
@@ -139,6 +141,7 @@ void MTCNN_DETECTOR::FaceDetect(){
         blfProb1OutputLayer = vblfPOutputLayer[1];
         blfPConv4_2OutputLayer = vblfPOutputLayer[0];
         
+
         vector<Rect>vrectBoundingBox;
         vector<float>vfScores;
         vector<Vec4f>vv4fConv4_2;
@@ -156,11 +159,12 @@ void MTCNN_DETECTOR::FaceDetect(){
                 
         return ;*/
         vector<int>viPick;
-        Nms(vrectBoundingBox, vfScores, viPick, 0.5f, "Union");
+        //Nms(vrectBoundingBox, vfScores, viPick, 0.5f, "Union");
+        Nms(matDebugImage, vrectBoundingBox, vfScores, vv4fConv4_2, vrectBoundingBox, vfScores, vv4fConv4_2, 0.5f, "Union");
         cout << "viPick's size is:" <<viPick.size() << endl;
         
         if(vrectBoundingBox.size()){
-            PickResult(vrectBoundingBox, vfScores, vv4fConv4_2, viPick);
+            //PickResult(vrectBoundingBox, vfScores, vv4fConv4_2, viPick);
             JoinResult(vrectTotalBoundingBox, vfTotalScores, vv4fTotalConv4_2, vrectBoundingBox, vfScores, vv4fConv4_2);
         }
     }
@@ -171,15 +175,18 @@ void MTCNN_DETECTOR::FaceDetect(){
         }
         vector<int>viTotalPick;
         cout << "RNet test 1!" <<endl;
-        Nms(vrectTotalBoundingBox, vfTotalScores, viTotalPick, 0.7f, "Union");
-        PickResult(vrectTotalBoundingBox, vfTotalScores, vv4fTotalConv4_2, viTotalPick);
+        //Nms(vrectTotalBoundingBox, vfTotalScores, viTotalPick, 0.7f, "Union");
+        Nms(matDebugImage, vrectTotalBoundingBox, vfTotalScores, vv4fTotalConv4_2, vrectTotalBoundingBox, vfTotalScores, vv4fTotalConv4_2, 0.7f, "Union");
+        
+        //PickResult(vrectTotalBoundingBox, vfTotalScores, vv4fTotalConv4_2, viTotalPick);
+        cout << "The viTotalPick is:" << viTotalPick.size() << endl;
         
         Rect rectTempBoundingBox;
         Point ptTLPoint, ptBRPoint;
         vector<Rect>vrectSrcRect(vrectTotalBoundingBox.size());
         vector<Rect>vrectDstRect(vrectTotalBoundingBox.size());
         vector<Vec2f>vv2fTempSize(vrectTotalBoundingBox.size());
-        cout << "RNet test 2!" <<endl;
+        cout << "RNet test 2!" << endl;
         for(int n = 0; n < vrectTotalBoundingBox.size(); n++){
             rectTempBoundingBox = vrectTotalBoundingBox[n];
             cout << "rectTempBoundingBox:" << rectTempBoundingBox << endl;
@@ -188,7 +195,20 @@ void MTCNN_DETECTOR::FaceDetect(){
             ptBRPoint.x = rectTempBoundingBox.br().x + vv4fTotalConv4_2[n][2] * rectTempBoundingBox.width;
             ptBRPoint.y = rectTempBoundingBox.br().y + vv4fTotalConv4_2[n][3] * rectTempBoundingBox.height;
             RectifyRectangle(rectTempBoundingBox, vrectSrcRect[n], vrectDstRect[n], vv2fTempSize[n]);
+            vrectTotalBoundingBox[n] = vrectDstRect[n];
+            /*Mat matRDisplayMat;
+            matFloatProcessMat(rectTempBoundingBox).convertTo(matRDisplayMat, CV_8UC3);
+            namedWindow("matOTmpMat");
+            imshow("matOTmpMat", matRDisplayMat);
+            waitKey(-1);*/
         }
+        /*vrectFaceBoundingBox.resize(vrectTotalBoundingBox.size());
+        for(int m = 0; m < vrectTotalBoundingBox.size(); m++){
+            vrectFaceBoundingBox[m] = vrectTotalBoundingBox[m];
+        }
+                
+        return ;*/
+        
         
         if(vrectTotalBoundingBox.size()){
             cout << "RNet test 3!" <<endl;
@@ -196,6 +216,8 @@ void MTCNN_DETECTOR::FaceDetect(){
             vector<Mat>vmatTempMat(vrectTotalBoundingBox.size());
             Mat matTmpMat;
             vector<Mat> vmatNormalizeTempMat(vrectTotalBoundingBox.size());
+  
+           
             for(int n = 0; n < vmatTempMat.size(); n++){
                 vmatTempMat[n] = Mat::zeros(24, 24, 3);
                 matTmpMat = Mat::zeros(vv2fTempSize[n][1], vv2fTempSize[n][0], CV_32FC3);
@@ -203,10 +225,21 @@ void MTCNN_DETECTOR::FaceDetect(){
                 cout << "vrectSrcRect[n]" << vrectSrcRect[n] << endl;
                 cout << "vrectDstRect[n]" << vrectDstRect[n] << endl;
                 cout << "m_matNormalizeMat.size:" << m_matNormalizeMat.size() << endl;
-                matTmpMat(vrectSrcRect[n]) = matTempProcessMat(vrectDstRect[n]);
-                matTmpMat = matTmpMat.t();
+                //matTmpMat(vrectSrcRect[n]) = matFloatProcessMat(vrectDstRect[n]);
+                matFloatProcessMat(vrectDstRect[n]).copyTo(matTmpMat(vrectSrcRect[n]));
+                
+                /*Mat mattestDisplayMat;
+                matFloatProcessMat(vrectDstRect[n]).convertTo(mattestDisplayMat, CV_8UC3);
+                namedWindow("matFloatProcessMat(vrectDstRect[n])");
+                imshow("matFloatProcessMat(vrectDstRect[n])", mattestDisplayMat);
+                waitKey(-1);*/
+                //matTmpMat = matTmpMat.t();
                 resize(matTmpMat, vmatTempMat[n], Size(24, 24));
                 ImageNormalization(vmatTempMat[n], vmatNormalizeTempMat[n]);
+                
+                /*namedWindow("vmatTempMat[n]");
+                imshow("vmatTempMat[n]", vmatTempMat[n]);
+                waitKey(-1);*/
             }
             
             Blob<float>* blfRProb1OutputLayer;
@@ -235,36 +268,79 @@ void MTCNN_DETECTOR::FaceDetect(){
             GenerateBoundingBox(blfRProb1OutputLayer, blfRConv5_2OutputLayer, vrectTotalBoundingBox, vfScore, vv4fTotalConv5_2);
             if(vrectTotalBoundingBox.size()){
                 vector<int>viRPick;
-                Nms(vrectTotalBoundingBox, vfScore, viRPick, 0.7f, "Union");
-                PickResult(vrectTotalBoundingBox, vfScore, vv4fTotalConv5_2, viRPick);
+                //Nms(vrectTotalBoundingBox, vfScore, viRPick, 0.7f, "Union");
+                //Nms(matDebugImage, vrectTotalBoundingBox, vfScore, viRPick, 0.7f, "Union");
+                /*for(int l = 0; l < vrectTotalBoundingBox.size(); l++){
+                    Mat matTempDisplayMat;
+                    matFloatProcessMat(vrectTotalBoundingBox[l]).convertTo(matTempDisplayMat, CV_8UC3);
+                    namedWindow("matTempDisplayMat");
+                    imshow("matTempDisplayMat", matTempDisplayMat);
+                    waitKey(-1);
+                }*/
                 cout << "RNet vrectTotalBoundingBox's size is:" << vrectTotalBoundingBox.size() << endl;
-                
+                vrectFaceBoundingBox.resize(vrectTotalBoundingBox.size());
+                for(int m = 0; m < vrectTotalBoundingBox.size(); m++){
+                    vrectFaceBoundingBox[m] = vrectTotalBoundingBox[m];
+                }
+                        
+                return ;     
+                Nms(matDebugImage, vrectTotalBoundingBox, vfScore, vv4fTotalConv5_2, vrectTotalBoundingBox, vfScore, vv4fTotalConv5_2, 0.7f, "Union");
+                //PickResult(vrectTotalBoundingBox, vfScore, vv4fTotalConv5_2, viRPick);
+                cout << "RNet vrectTotalBoundingBox's size is:" << vrectTotalBoundingBox.size() << endl;
+                vrectFaceBoundingBox.resize(vrectTotalBoundingBox.size());
+                for(int m = 0; m < vrectTotalBoundingBox.size(); m++){
+                    vrectFaceBoundingBox[m] = vrectTotalBoundingBox[m];
+                }
+                        
+                return ;                
 
+                cout << "vrectTotalBoundingBox" << vrectTotalBoundingBox.size() << endl;
+                cout << "vfScore" << vfScore.size() << endl;
+                cout << "vv4fTotalConv5_2" << vv4fTotalConv5_2.size() << endl;
+                
                 Rect rectTempRBoundingBox;
                 Point ptRTLPoint, ptRBRPoint;
                 vector<Rect>vrectRSrcRect(vrectTotalBoundingBox.size());
                 vector<Rect>vrectRDstRect(vrectTotalBoundingBox.size());
                 vector<Vec2f>vv2fRTempSize(vrectTotalBoundingBox.size());
-                for(int n=0; vrectTotalBoundingBox.size(); n++){
+                for(int n=0; n < vrectTotalBoundingBox.size(); n++){
                     rectTempRBoundingBox = vrectTotalBoundingBox[n];
-                    ptRTLPoint.x = rectTempBoundingBox.x + vv4fTotalConv5_2[n][0] * rectTempBoundingBox.width;
-                    ptRTLPoint.y = rectTempBoundingBox.y + vv4fTotalConv5_2[n][1] * rectTempBoundingBox.height;
-                    ptRBRPoint.x = rectTempBoundingBox.br().x + vv4fTotalConv5_2[n][2] * rectTempBoundingBox.width;
-                    ptRBRPoint.y = rectTempBoundingBox.br().y + vv4fTotalConv5_2[n][3] * rectTempBoundingBox.height;
+                    /*Mat matRDisplayMat;
+                    matFloatProcessMat(rectTempRBoundingBox).convertTo(matRDisplayMat, CV_8UC3);
+                    namedWindow("matOTmpMat");
+                    imshow("matOTmpMat", matRDisplayMat);
+                    waitKey(-1);*/
+                    cout << "rectTempRBoundingBox" << rectTempRBoundingBox << endl;
+                    cout << vv4fTotalConv5_2[n] << endl;
+                    ptRTLPoint.x = rectTempRBoundingBox.x + vv4fTotalConv5_2[n][0] * rectTempRBoundingBox.width;
+                    ptRTLPoint.y = rectTempRBoundingBox.y + vv4fTotalConv5_2[n][1] * rectTempRBoundingBox.height;
+                    ptRBRPoint.x = rectTempRBoundingBox.br().x + vv4fTotalConv5_2[n][2] * rectTempRBoundingBox.width;
+                    ptRBRPoint.y = rectTempRBoundingBox.br().y + vv4fTotalConv5_2[n][3] * rectTempRBoundingBox.height;
                     ReRectangle(ptRTLPoint, ptRBRPoint, vrectTotalBoundingBox[n]);
                     RectifyRectangle(vrectTotalBoundingBox[n], vrectRSrcRect[n], vrectRDstRect[n], vv2fRTempSize[n]);
+                    vrectTotalBoundingBox[n] = vrectRSrcRect[n];
+                    /*if(n == 27)
+                        exit(-1);*/
+                    //exit(-1);
                 }
+                //exit(-1);
                 if(vrectTotalBoundingBox.size()){
                     vector<Mat>vmatOTempMat(vrectTotalBoundingBox.size());
                     Mat matOTmpMat;
                     vector<Mat> vmatONormalizeTempMat(vrectTotalBoundingBox.size());
                     for(int n = 0; n < vmatOTempMat.size(); n++){
-                        vmatOTempMat[n] = Mat::zeros(48, 48, 3);
-                        matOTmpMat = Mat::zeros(vv2fRTempSize[n][1], vv2fRTempSize[n][0], 3);
-                        matOTmpMat(vrectRSrcRect[n]) = m_matNormalizeMat(vrectRDstRect[n]);
+                        vmatOTempMat[n] = Mat::zeros(vv2fRTempSize[n][1], vv2fRTempSize[n][0], CV_32FC3);
+                        //matOTmpMat = Mat::zeros(vv2fRTempSize[n][1], vv2fRTempSize[n][0], 3);
+                        matFloatProcessMat(vrectRDstRect[n]).copyTo(vmatOTempMat[n](vrectRSrcRect[n]));
+                        
+                        /*Mat matRDisplayMat;
+                        matFloatProcessMat(vrectRDstRect[n]).convertTo(matRDisplayMat, CV_8UC3);
+                        namedWindow("matOTmpMat");
+                        imshow("matOTmpMat", matRDisplayMat);
+                        waitKey(-1);*/
                         cout << "vrectRSrcRect[n]" << vrectRSrcRect[n] << endl;
                         cout << "vrectRDstRect[n]" << vrectRDstRect[n] << endl;
-                        resize(matOTmpMat, vmatOTempMat[n], Size(48, 48));
+                        resize(vmatOTempMat[n], vmatOTempMat[n], Size(48, 48));
                         ImageNormalization(vmatOTempMat[n], vmatONormalizeTempMat[n]);
                     }
                     
@@ -288,23 +364,38 @@ void MTCNN_DETECTOR::FaceDetect(){
                     
                     GenerateBoundingBox(blfOProb1OutputLayer, blfOConv6_2OutputLayer, blfOPointsOutputLayer, vrectTotalBoundingBox, vfOScore, vv4fTotalOConv6_2, vvpt2fOPoints);
                     
+                    cout << "vrectTotalBoundingBox" << vrectTotalBoundingBox.size() <<endl;
+                    cout << "vfOScore" << vfOScore.size() <<endl;
+                    cout << "vv4fTotalOConv6_2" << vv4fTotalOConv6_2.size() <<endl;
+                    
                     if(vrectTotalBoundingBox.size()){
                         Rect rectTempOBoundingBox;
                         Point ptOTLPoint, ptOBRPoint;
                         vector<Rect>vrectOSrcRect(vrectTotalBoundingBox.size());
                         vector<Rect>vrectODstRect(vrectTotalBoundingBox.size());
                         vector<Vec2f>vv2fOTempSize(vrectTotalBoundingBox.size());
-                        for(int n=0; vrectTotalBoundingBox.size(); n++){
+                        for(int n=0; n < vrectTotalBoundingBox.size(); n++){
                             rectTempOBoundingBox = vrectTotalBoundingBox[n];
+                            cout << "vv4fTotalOConv6_2[n]" << vv4fTotalOConv6_2[n] << endl;
                             ptOTLPoint.x = rectTempOBoundingBox.x + vv4fTotalOConv6_2[n][0] * rectTempOBoundingBox.width;
                             ptOTLPoint.y = rectTempOBoundingBox.y + vv4fTotalOConv6_2[n][1] * rectTempOBoundingBox.height;
                             ptOBRPoint.x = rectTempOBoundingBox.br().x + vv4fTotalOConv6_2[n][2] * rectTempOBoundingBox.width;
                             ptOBRPoint.y = rectTempOBoundingBox.br().y + vv4fTotalOConv6_2[n][3] * rectTempOBoundingBox.height;
                             vrectTotalBoundingBox[n] = Rect(ptOTLPoint.x, ptOTLPoint.y, ptOBRPoint.x - ptOTLPoint.x, ptOBRPoint.y - ptOTLPoint.y);
                         }
-                        vector<int>viOPick;
-                        Nms(vrectTotalBoundingBox, vfOScore, viOPick, 0.7f, "Min");
-                        PickResult(vrectTotalBoundingBox, vfOScore, vv4fTotalOConv6_2, vvpt2fOPoints, viOPick);
+                        //vector<int>viOPick;
+                        cout << "ONms" << endl;
+                        Nms(matDebugImage, vrectTotalBoundingBox, vfOScore, vv4fTotalOConv6_2, vvpt2fOPoints, vrectTotalBoundingBox, vfOScore, vv4fTotalOConv6_2, vvpt2fOPoints, 0.7f, "Union");
+                        
+                        vrectFaceBoundingBox.resize(vrectTotalBoundingBox.size());
+                        for(int m = 0; m < vrectTotalBoundingBox.size(); m++){
+                            vrectFaceBoundingBox[m] = vrectTotalBoundingBox[m];
+                            cout << vfOScore[m] <<endl;
+                        }
+                                
+                        return ;
+                        //Nms(vrectTotalBoundingBox, vfOScore, viOPick, 0.7f, "Min");
+                        //PickResult(vrectTotalBoundingBox, vfOScore, vv4fTotalOConv6_2, vvpt2fOPoints, viOPick);
                         
                         if(vrectTotalBoundingBox.size()){
                             //vector<Mat>vmatLTempMat(vrectTotalBoundingBox.size());
@@ -675,9 +766,9 @@ void MTCNN_DETECTOR::ImageNormalization(const Mat& matSrcMat, Mat& matDstMat){
     for(r = 0; r < nImageHeight; r++){
         nTempR = r * nImageWidth;
         for(c = 0; c < nImageWidth; c++){
-            pfmatDstMat[nTempR + c][0] = (pmatTempMat[nTempR + c][0] - 127.5f)*(1.0f/127.5f);
-            pfmatDstMat[nTempR + c][1] = (pmatTempMat[nTempR + c][1] - 127.5f)*(1.0f/127.5f);
-            pfmatDstMat[nTempR + c][2] = (pmatTempMat[nTempR + c][2] - 127.5f)*(1.0f/127.5f);
+            pfmatDstMat[nTempR + c][0] = (pmatTempMat[nTempR + c][0] - 127.5f)*(1.0f/128.0f);
+            pfmatDstMat[nTempR + c][1] = (pmatTempMat[nTempR + c][1] - 127.5f)*(1.0f/128.0f);
+            pfmatDstMat[nTempR + c][2] = (pmatTempMat[nTempR + c][2] - 127.5f)*(1.0f/128.0f);
             //cout << pfmatDstMat[nTempR + c] << " ";
         }
         //cout << endl;
@@ -790,27 +881,44 @@ void MTCNN_DETECTOR::WrapInputLayer(shared_ptr<Net<float> >& Net_, vector<Mat>& 
 }
 /*RNet WrapInputLayer*/
 void MTCNN_DETECTOR::WrapInputLayer(shared_ptr<Net<float> >& Net_, vector<vector<Mat> >& vvmatInputChannels){
-    int nBlobNum = (Net_->input_blobs()).size();
-    cout << "nBlobNum:" << nBlobNum << endl;
+    //int nBlobNum = (Net_->input_blobs()).size();
+    //cout << "nBlobNum:" << nBlobNum << endl;
     
-    for(int m = 0; m < nBlobNum; m++){
-        Blob<float>* bfInputLayer = Net_->input_blobs()[m];
-     
-        int nWidth = bfInputLayer->width();
-        int nHeight = bfInputLayer->height();
+    if(vvmatInputChannels.size()){
+        vvmatInputChannels.clear();
+    }
     
-        float* pfInputData = bfInputLayer->mutable_cpu_data();
+    //for(int m = 0; m < nBlobNum; m++){
+    Blob<float>* bfInputLayer = Net_->input_blobs()[0];
     
-        int i, j;
-        vector<Mat>vmatInputChannels;
+    int nNum = bfInputLayer->num();
+    int nChannel = bfInputLayer->channels();
+    int nWidth = bfInputLayer->width();
+    int nHeight = bfInputLayer->height();
 
-        for(i=0; i < bfInputLayer->channels(); i++){
+    cout << "nNum" << nNum << endl;
+    cout << "nChannel" << nChannel << endl;
+    cout << "nWidth" << nWidth << endl;
+    cout << "nHeight" << nHeight << endl;
+    //exit(-1);
+    
+    float* pfInputData = bfInputLayer->mutable_cpu_data();
+
+    int i, j;
+    vector<Mat>vmatInputChannels;
+
+    for(j = 0; j < nNum; j++){
+        vmatInputChannels.clear();
+        for(i=0; i < nChannel; i++){
             Mat matChannel(nHeight, nWidth, CV_32FC1, pfInputData);
             vmatInputChannels.push_back(matChannel);
             pfInputData += nWidth * nHeight;
         }
         vvmatInputChannels.push_back(vmatInputChannels);
     }
+
+
+    //}
     
 }
 
@@ -867,7 +975,14 @@ void MTCNN_DETECTOR::Preprocess(const vector<cv::Mat>& vmatSrcImage,
 
     for(n=0; n < vmatSample.size(); n++){
         split(vmatSample[n], vvmatInputChannels[n]);
+        
+        /*vmatSample[n].convertTo(vmatSample[n], CV_8UC1);
+        namedWindow("vvmatInputChannels[n]");
+        imshow("vvmatInputChannels[n]", vmatSample[n]);
+        waitKey(-1);*/
     }
+    
+    
 }
 
 
@@ -907,8 +1022,9 @@ void MTCNN_DETECTOR::Preprocess(const vector<cv::Mat>& vmatSrcImage,
     
     
 }
-
+/*ONet generate bounding box*/
 void MTCNN_DETECTOR::GenerateBoundingBox(Blob<float>* blfProbOutputLayer, Blob<float>* blfConvOutputLayer, Blob<float>* blfPointsOutputLayer, vector<Rect>& vrectBoundingBox, vector<float>&vfScores, vector<Vec4f>&vv4fConv, vector<vector<Point2f> >&vvpt2fPoints){
+    cout << "GenerateBoundingBox 1" << endl;
     float* pfProbBegin = blfProbOutputLayer->mutable_cpu_data();
     float* pfConvBegin = blfConvOutputLayer->mutable_cpu_data();
     float* pfPointsBegin = blfPointsOutputLayer->mutable_cpu_data();
@@ -928,8 +1044,7 @@ void MTCNN_DETECTOR::GenerateBoundingBox(Blob<float>* blfProbOutputLayer, Blob<f
     int nPointsOutputLayerWidth = blfPointsOutputLayer->width();
     int nPointsOutputLayerHeight = blfPointsOutputLayer->height();
     
-    CHECK(nProbOutputLayerNum == 1 && nConvOutputLayerNum == 1 && nPointsOutputLayerNum ==1 &&
-          nProbOutputLayerChannels == 2 && nConvOutputLayerChannels == 4 && nPointsOutputLayerChannels == 10);
+    CHECK(nProbOutputLayerChannels == 2 && nConvOutputLayerChannels == 4 && nPointsOutputLayerChannels == 10);
     
     cout << nProbOutputLayerNum << endl;
     cout << nProbOutputLayerChannels << endl;
@@ -944,67 +1059,72 @@ void MTCNN_DETECTOR::GenerateBoundingBox(Blob<float>* blfProbOutputLayer, Blob<f
     cout << nPointsOutputLayerWidth << endl;
     cout << nPointsOutputLayerHeight << endl;
     
-    vector<Mat>vmatProbMat(nProbOutputLayerChannels),
-               vmatConvMat(nConvOutputLayerChannels),
-               vmatPointsMat(nPointsOutputLayerChannels);
+    //exit(-1);
+    vector<vector<Mat> > vvmatProbMat(nProbOutputLayerNum),
+                        vvmatConvMat(nConvOutputLayerNum),
+                        vvmatPointsMat(nPointsOutputLayerNum);
     
-    int n;
-    for(n = 0; n < nProbOutputLayerChannels; n++){
-        vmatProbMat[n] = Mat(nProbOutputLayerHeight, nProbOutputLayerWidth, CV_32FC1, 
-                             pfProbBegin + n*nProbOutputLayerHeight*nProbOutputLayerWidth);
+    vector<Mat> vmatTempProbMat(nProbOutputLayerChannels),
+                vmatTempConvMat(nConvOutputLayerChannels),
+                vmatTempPointsMat(nPointsOutputLayerChannels);
+                        
+    int n, m;
+    for(m = 0; m < nProbOutputLayerNum; m++){
+        for(n = 0; n < nProbOutputLayerChannels; n++){
+            vmatTempProbMat[n] = Mat(nProbOutputLayerHeight, nProbOutputLayerWidth, CV_32FC1, 
+                                     pfProbBegin + (m*nProbOutputLayerChannels)+ n*nProbOutputLayerHeight*nProbOutputLayerWidth);
+        }
+        vvmatProbMat[m] = vmatTempProbMat;
     }
-    
-    for(n = 0; n < nConvOutputLayerChannels; n++){
-        vmatConvMat[n] = Mat(nConvOutputLayerHeight, nConvOutputLayerWidth, CV_32FC1,
-                             pfConvBegin + n*nConvOutputLayerHeight*nConvOutputLayerWidth);
+
+    for(m=0; m < nConvOutputLayerNum; m++){
+        for(n = 0; n < nConvOutputLayerChannels; n++){
+            vmatTempConvMat[n] = Mat(nConvOutputLayerHeight, nConvOutputLayerWidth, CV_32FC1,
+                                 pfConvBegin + (m*nProbOutputLayerChannels)+ n*nConvOutputLayerHeight*nConvOutputLayerWidth);
+        }
+        vvmatConvMat[m] = vmatTempConvMat;
     }
-    
-    for(n = 0; n < nPointsOutputLayerChannels; n++){
-        vmatPointsMat[n] = Mat(nPointsOutputLayerHeight, nPointsOutputLayerWidth, CV_32FC1,
-                             pfPointsBegin + n*nPointsOutputLayerHeight*nPointsOutputLayerWidth);
+
+    for(m = 0; m < nPointsOutputLayerNum; m++){
+        for(n = 0; n < nPointsOutputLayerChannels; n++){
+            vmatTempPointsMat[n] = Mat(nPointsOutputLayerHeight, nPointsOutputLayerWidth, CV_32FC1,
+                                       pfPointsBegin + n*nPointsOutputLayerHeight*nPointsOutputLayerWidth);
+        }
+        vvmatPointsMat[m] = vmatTempPointsMat;
     }
-    
+
+    cout << "GenerateBoundingBox 2" << endl;
     //vector<float>vfScores;
     //vector<Vec4f>vv4fConv;
     
     int r;
-    float* pfProbMat = (float *)(vmatProbMat[1].data);
+    //float* pfProbMat = (float *)(vmatProbMat[1].data);
     //int nProbMatWidth = vmatProbMat[1].width;
-    for(r = 0; r < vmatProbMat[1].rows; r++){
-        vfScores.push_back(*(pfProbMat + r * nProbOutputLayerWidth));
+    for(r = 0; r < nProbOutputLayerNum; r++){
+        vfScores.push_back(*(vvmatProbMat[r][1].ptr<float>(0, 0)));
     }
     
-    vector<float *>pvv4fConv(nConvOutputLayerChannels);
-    for(n = 0; n < nConvOutputLayerChannels; n++){
-        pvv4fConv[n] = (float *)(vmatConvMat[n].data);
+    //vector<float *>pvv4fConv(nConvOutputLayerChannels);
+    for(r = 0; r < nConvOutputLayerNum; r++){
+        vv4fConv.push_back(*(vvmatConvMat[r][1].ptr<Vec4f>(0, 0)));
     }
     
-    Vec4f v4fTempConv;
-
-    for(r = 0; r < vmatConvMat[1].rows; r++){
-        for(n = 0; n < nConvOutputLayerChannels; n++){
-            v4fTempConv[n] = pvv4fConv[n][r * nConvOutputLayerWidth];
-        }
-        vv4fConv.push_back(v4fTempConv);
-    }
-    
-    vector<float *>pvvpt2fPoints(nPointsOutputLayerChannels);
-    for(n =0; n < nPointsOutputLayerChannels; n++){
+    /*for(r =0; r < nPointsOutputLayerNum; r++){
         pvvpt2fPoints[n] = (float *)(vmatPointsMat[n].data);
-    }
+    }*/
     
     //Point2f pt2fPoints;
     vector<Point2f>vpt2fPoints(5);
     
-    for(r = 0; r < vmatPointsMat[1].rows; r++){    
+    for(r = 0; r < nPointsOutputLayerNum; r++){    
         for(n = 0; n < nPointsOutputLayerChannels/2; n++){
-            vpt2fPoints[n] = Point2f(pvvpt2fPoints[n][r * nPointsOutputLayerWidth], pvvpt2fPoints[n + 5][r * nPointsOutputLayerWidth]);
+            vpt2fPoints[n] = Point2f(*(vvmatPointsMat[r][n].ptr<float>(0, 0)), *(vvmatPointsMat[r][n + 5].ptr<float>(0, 0)));
         }
         vvpt2fPoints.push_back(vpt2fPoints);
     }
     
     Rect rectTempRect;
-    int m;
+    //int m;
     for(n = 0; n < vrectBoundingBox.size(); n++){
         rectTempRect = vrectBoundingBox[n];
         for(m = 0; m < vvpt2fPoints[n].size(); m++){
@@ -1024,6 +1144,7 @@ void MTCNN_DETECTOR::GenerateBoundingBox(Blob<float>* blfProbOutputLayer, Blob<f
     vfScores.clear();
     vv4fConv.clear();
     vvpt2fPoints.clear();
+    vrectBoundingBox.clear();
     
     for(n = 0; n < vfTempScores.size(); n++){
         if(vfTempScores[n] > m_vfThreshold[2]){
@@ -1033,6 +1154,7 @@ void MTCNN_DETECTOR::GenerateBoundingBox(Blob<float>* blfProbOutputLayer, Blob<f
             vrectBoundingBox.push_back(vrectTempBoundingBox[n]);
         }
     }
+    cout << "GenerateBoundingBox 3" << endl;
 }
 
 /*PNet generate bounding box*/
@@ -1327,6 +1449,10 @@ bool CompareScore(const sortScore& fsScore1, const sortScore& fsScore2){
     return fsScore1.fScore > fsScore2.fScore;
 }
 
+bool CompareScoreRect(const sortScoreRect& fsScoreRect1, const sortScoreRect& fsScoreRect2){
+    return fsScoreRect1.fScore > fsScoreRect2.fScore;
+}
+
 void MTCNN_DETECTOR::Nms(const vector<Rect>& vrectBoundingBox, const vector<float>& vfScores, vector<int>& viPick, float fThreshold, string strType){
     if(!vrectBoundingBox.size()){
         viPick.clear();
@@ -1433,6 +1559,369 @@ void MTCNN_DETECTOR::Nms(const vector<Rect>& vrectBoundingBox, const vector<floa
         m++;
     }
     cout << "Nms 6!" << endl;
+}
+
+
+/*void MTCNN_DETECTOR::Nms(Mat& matSrcImage,const vector<Rect>& vrectBoundingBox, const vector<float>& vfScores, vector<Rect>& vrectPickBoundingBox, vector<float>& vfPickScores, float fThreshold, string strType){
+    if(!vrectBoundingBox.size()){
+        cout << "Nms return!" << endl;
+        return;
+    }
+    cout << "Nms 1!" << endl;
+    vector<sortScoreRect>vssrScoreRect;
+
+    //InitializeScore(vfScores, vssScore);
+    InitializeScoreRect(vfScores, vrectBoundingBox, vssrScoreRect);
+    vector<sortScoreRect>vssrTempScoreRect = vssrScoreRect;
+    sort(vssrScoreRect.begin(), vssrScoreRect.end(), CompareScoreRect);
+    
+    if(vrectPickBoundingBox.size()){
+        vrectPickBoundingBox.clear();
+    }
+    if(vfPickScores.size()){
+        vfPickScores.clear();
+    }
+    
+    sortScoreRect ssrTempScoreRect;
+    Rect rectIntersection;
+    while(vssrTempScoreRect.size()){
+        vrectPickBoundingBox.push_back(vssrTempScoreRect[0].rectBoundingBox);
+        vfPickScores.push_back(vssrTempScoreRect[0].fScore);
+        ssrTempScoreRect = vssrTempScoreRect[0];
+        vssrTempScoreRect.erase(vssrTempScoreRect.begin());
+        
+        float fRatio;
+        for(int n=vssrTempScoreRect.size()-1; n >= 0; n--){
+            FigureIntersectionRect(ssrTempScoreRect, vssrTempScoreRect[n], rectIntersection);
+            if(strType == "Min"){
+                fRatio = static_cast<float>(rectIntersection.area()) / min(ssrTempScoreRect.rectBoundingBox.area(), vssrTempScoreRect[n].rectBoundingBox.area());
+            }else{
+                fRatio = static_cast<float>(rectIntersection.area()) / (ssrTempScoreRect.rectBoundingBox.area() + vssrTempScoreRect[n].rectBoundingBox.area() - rectIntersection.area());
+            }
+            if(fRatio > fThreshold){
+                vssrTempScoreRect.erase(vssrTempScoreRect.begin() + n);
+            }
+            cout << "fRatio" << fRatio << endl;
+            cout << "ssrTempScoreRect" << ssrTempScoreRect.rectBoundingBox << endl;
+            cout << "vssrTempScoreRect[n]" << vssrTempScoreRect[n].rectBoundingBox << endl;
+            //waitKey(-1);
+        }
+    }
+}*/
+
+void MTCNN_DETECTOR::Nms(Mat& matDebugImage, const vector<Rect>& vrectBoundingBox, const vector<float>& vfOScore, const vector<Vec4f>& vv4fConv, const vector<vector<Point2f> >& vvpt2fPoints, 
+                         vector<Rect>& vrectPickBoundingBox, vector<float>& vfPickScores, vector<Vec4f>& vv4fPickConv, vector<vector<Point2f> >& vvpt2fPickPoints, float fThreshold, string strType){
+    
+    if(!vrectBoundingBox.size()){
+        cout << "Nms return!" << endl;
+        return;
+    }
+    cout << "Nms 1!" << endl;
+    vector<sortScoreRect>vssrScoreRect;
+
+    //InitializeScore(vfScores, vssScore);
+    InitializeScoreRect(vfOScore, vrectBoundingBox, vv4fConv, vvpt2fPoints, vssrScoreRect);
+    sort(vssrScoreRect.begin(), vssrScoreRect.end(), CompareScoreRect);
+    vector<sortScoreRect>vssrTempScoreRect = vssrScoreRect;
+    
+    if(vrectPickBoundingBox.size()){
+        vrectPickBoundingBox.clear();
+    }
+    if(vfPickScores.size()){
+        vfPickScores.clear();
+    }
+    if(vv4fPickConv.size()){
+        vv4fPickConv.clear();
+    }
+    if(vvpt2fPickPoints.size()){
+        vvpt2fPickPoints.clear();
+    }
+    
+    sortScoreRect ssrTempScoreRect;
+    Rect rectIntersection;
+    while(vssrTempScoreRect.size()){
+        vrectPickBoundingBox.push_back(vssrTempScoreRect[0].rectBoundingBox);
+        vfPickScores.push_back(vssrTempScoreRect[0].fScore);
+        vv4fPickConv.push_back(vssrTempScoreRect[0].v4fConv);
+        vvpt2fPickPoints.push_back(vssrTempScoreRect[0].vpt2FacePoints);
+        ssrTempScoreRect = vssrTempScoreRect[0];
+        vssrTempScoreRect.erase(vssrTempScoreRect.begin());
+        cout << "vssrTempScoreRect[0].fScore" << vssrTempScoreRect[0].fScore << endl;
+        
+        float fRatio;
+        for(int n=vssrTempScoreRect.size()-1; n >= 0; n--){
+            FigureIntersectionRect(ssrTempScoreRect, vssrTempScoreRect[n], rectIntersection);
+            if(strType == "Min"){
+                fRatio = static_cast<float>(rectIntersection.area()) / min(ssrTempScoreRect.rectBoundingBox.area(), vssrTempScoreRect[n].rectBoundingBox.area());
+            }else{
+                fRatio = static_cast<float>(rectIntersection.area()) / (ssrTempScoreRect.rectBoundingBox.area() + vssrTempScoreRect[n].rectBoundingBox.area() - rectIntersection.area());
+            }
+            if(fRatio > fThreshold){
+                vssrTempScoreRect.erase(vssrTempScoreRect.begin() + n);
+            }
+            /*cout << "fRatio" << fRatio << endl;
+            cout << "ssrTempScoreRect" << ssrTempScoreRect.rectBoundingBox << endl;
+            cout << "vssrTempScoreRect[n]" << vssrTempScoreRect[n].rectBoundingBox << endl;*/
+            //waitKey(-1);
+        }
+    }
+}
+
+void MTCNN_DETECTOR::Nms(Mat& matSrcImage,const vector<Rect>& vrectBoundingBox, const vector<float>& vfScores, const vector<Vec4f>& vv4fConv4_2, 
+                         vector<Rect>& vrectPickBoundingBox, vector<float>& vfPickScores, vector<Vec4f>& vv4fPickConv4_2, float fThreshold, string strType){
+    if(!vrectBoundingBox.size()){
+        cout << "Nms return!" << endl;
+        return;
+    }
+    cout << "Nms 1!" << endl;
+    vector<sortScoreRect>vssrScoreRect;
+
+    //InitializeScore(vfScores, vssScore);
+    InitializeScoreRect(vfScores, vrectBoundingBox, vv4fConv4_2, vssrScoreRect);
+    sort(vssrScoreRect.begin(), vssrScoreRect.end(), CompareScoreRect);
+    vector<sortScoreRect>vssrTempScoreRect = vssrScoreRect;    
+    
+    if(vrectPickBoundingBox.size()){
+        vrectPickBoundingBox.clear();
+    }
+    if(vfPickScores.size()){
+        vfPickScores.clear();
+    }
+    if(vv4fPickConv4_2.size()){
+        vv4fPickConv4_2.clear();
+    }
+    
+    sortScoreRect ssrTempScoreRect;
+    Rect rectIntersection;
+    while(vssrTempScoreRect.size()){
+        vrectPickBoundingBox.push_back(vssrTempScoreRect[0].rectBoundingBox);
+        vfPickScores.push_back(vssrTempScoreRect[0].fScore);
+        vv4fPickConv4_2.push_back(vssrTempScoreRect[0].v4fConv);
+        ssrTempScoreRect = vssrTempScoreRect[0];
+        /*if(ssrTempScoreRect.rectBoundingBox.width>0 && ssrTempScoreRect.rectBoundingBox.height>0){
+            namedWindow("ssrTempScoreRect");
+            imshow("ssrTempScoreRect", matSrcImage(ssrTempScoreRect.rectBoundingBox));
+            waitKey(-1);
+        }*/
+
+        
+        vssrTempScoreRect.erase(vssrTempScoreRect.begin());
+        cout << "vssrTempScoreRect[0].fScore" << vssrTempScoreRect[0].fScore << endl;
+        
+        float fRatio;
+        for(int n=vssrTempScoreRect.size()-1; n >= 0; n--){
+            FigureIntersectionRect(ssrTempScoreRect, vssrTempScoreRect[n], rectIntersection);
+            if(strType == "Min"){
+                fRatio = static_cast<float>(rectIntersection.area()) / min(ssrTempScoreRect.rectBoundingBox.area(), vssrTempScoreRect[n].rectBoundingBox.area());
+            }else{
+                fRatio = static_cast<float>(rectIntersection.area()) / (ssrTempScoreRect.rectBoundingBox.area() + vssrTempScoreRect[n].rectBoundingBox.area() - rectIntersection.area());
+            }
+            if(fRatio > fThreshold){
+                vssrTempScoreRect.erase(vssrTempScoreRect.begin() + n);
+            }
+            /*cout << "fRatio" << fRatio << endl;
+            cout << "ssrTempScoreRect" << ssrTempScoreRect.rectBoundingBox << endl;
+            cout << "vssrTempScoreRect[n]" << vssrTempScoreRect[n].rectBoundingBox << endl;*/
+            //waitKey(-1);
+        }
+    }
+}
+
+void MTCNN_DETECTOR::FigureIntersectionRect(const sortScoreRect& ssrTempScoreRect1, const sortScoreRect& ssrTempScoreRect2, Rect& rectIntersection){
+    Rect rectRect1 = ssrTempScoreRect1.rectBoundingBox;
+    Rect rectRect2 = ssrTempScoreRect2.rectBoundingBox;
+    
+    Point pt1, pt2;
+    pt1.x = max(rectRect1.x, rectRect2.x);
+    pt1.y = max(rectRect1.y, rectRect2.y);
+    pt2.x = min(rectRect1.x + rectRect1.width, rectRect2.x + rectRect2.width);
+    pt2.y = min(rectRect1.y + rectRect1.height, rectRect2.y + rectRect2.height);
+    
+    rectIntersection.width = pt2.x - pt1.x;
+    rectIntersection.height = pt2.y - pt1.y;
+    rectIntersection.x = pt1.x;
+    rectIntersection.y = pt1.y;
+    
+    rectIntersection.width = rectIntersection.width>=0? rectIntersection.width: 0;
+    rectIntersection.height = rectIntersection.height>=0? rectIntersection.height: 0;
+}
+
+void MTCNN_DETECTOR::NmsWithDebug(Mat& matSrcImage,const vector<Rect>& vrectBoundingBox, const vector<float>& vfScores, vector<int>& viPick, float fThreshold, string strType){
+    if(!vrectBoundingBox.size()){
+        viPick.clear();
+        cout << "Nms return!" << endl;
+        return;
+    }
+    cout << "Nms 1!" << endl;
+    vector<sortScore>vssScore;
+    vector<sortScore>vssTrimScore;
+    vector<sortScore>vssTempTrimScore;
+    InitializeScore(vfScores, vssScore);
+    sort(vssScore.begin(), vssScore.end(), CompareScore);
+    cout << "Nms 2!" << endl;    
+    int nScoreNo;
+    Rect rectTemp;
+    vector<Rect>vrectTempBoundingBox = vrectBoundingBox;
+    vector<Rect>vrectTrimBoundingBox;
+    int n, m;
+    Rect rectTempBoundingBox;
+    int nTempArea;
+    Point ptTlPoint, ptBrPoint;
+    float fRatio;
+    cout << "Nms 3!" << endl;
+    cout << "Bounding Box's size is:" << vrectBoundingBox.size() << endl;
+
+    m = 0;
+    vssTrimScore = vssScore;
+    while(vssTrimScore.size()){
+        cout << "vvsScore size is:" << vssTrimScore.size() <<endl;
+        double dCurrentTime = static_cast<double>(getTickCount());
+        if(vrectTrimBoundingBox.size()){
+            vrectTrimBoundingBox.clear();
+        }
+        if(vssTempTrimScore.size()){
+            vssTempTrimScore.clear();
+        }
+        nScoreNo = vssScore[m].nNo;
+        cout << "vssScore[0].fScore" << vssScore[0].fScore << endl;
+        viPick.push_back(nScoreNo);
+        rectTemp = vrectBoundingBox[nScoreNo];
+        nTempArea = rectTemp.area();
+        //cout << "Nms 4!" << endl;
+        namedWindow("rectMat");
+        imshow("rectMat", matSrcImage(rectTemp));
+        waitKey(-1);
+
+        for(n=vrectTempBoundingBox.size() - 1; n >= 0; n--){
+            //double dCurrentTime = static_cast<double>(getTickCount());
+            //cout << "vrectTempBoundingBox size is:" << vrectTempBoundingBox.size() <<endl;
+            ptTlPoint = vrectTempBoundingBox[n].tl();
+            ptBrPoint = vrectTempBoundingBox[n].br();
+            namedWindow("vrectTempBoundingBox[n]");
+            imshow("vrectTempBoundingBox[n]", matSrcImage(vrectTempBoundingBox[n]));
+            waitKey(-1);
+            
+            
+            if(n != nScoreNo){
+                rectTempBoundingBox.x = max(rectTemp.x, ptTlPoint.x);
+                rectTempBoundingBox.y = max(rectTemp.y, ptTlPoint.y);
+                rectTempBoundingBox.width = min(rectTemp.x + rectTemp.width, ptBrPoint.x) -
+                                            rectTempBoundingBox.x;
+                rectTempBoundingBox.height = min(rectTemp.y + rectTemp.height, ptBrPoint.y) -
+                                             rectTempBoundingBox.y;
+                //cout << "rectTempBoundingBox" << rectTempBoundingBox.x << " " << rectTempBoundingBox.y << " " << rectTempBoundingBox.width << " " << rectTempBoundingBox.height << endl;
+                                             
+                rectTempBoundingBox.width = rectTempBoundingBox.width>0?rectTempBoundingBox.width:0;
+                rectTempBoundingBox.height = rectTempBoundingBox.height>0?rectTempBoundingBox.height:0;
+                
+                //cout << "rectTempBoundingBox" << rectTempBoundingBox.x << " " << rectTempBoundingBox.y << " " << rectTempBoundingBox.width << " " << rectTempBoundingBox.height << endl;
+                //cout << "Nms 4!" << endl;
+                //vrectTrimBoundingBox.push_back(rectTempBoundingBox);
+                if(strType == "Min"){
+                    fRatio = static_cast<float>(rectTempBoundingBox.area()) / min(rectTempBoundingBox.area(), vrectTempBoundingBox[n].area());
+                }else{
+                    cout << "Bounding Box area is:" << rectTempBoundingBox.area() << endl;
+                    cout << "Bounding Box n area is:" << vrectTempBoundingBox[n].area() << endl;
+                    cout << "Bounding Box n area is:" << nTempArea << endl;
+                    fRatio = static_cast<float>(rectTempBoundingBox.area()) / (nTempArea + vrectTempBoundingBox[n].area() - rectTempBoundingBox.area());
+                }
+                //cout << "Nms 5!" << endl;
+                cout << "fRatio" << fRatio << endl;
+                if(fRatio <= fThreshold){
+                    //for(int m=0; m < vssScore.size(); m++){
+                        //if(n == vssScore[m].nNo){
+                            //vssScore.erase(vssScore.begin() + m);
+                        //}
+                    //}
+                    //vrectTempBoundingBox.erase(vrectTempBoundingBox.begin() + n);
+                    vrectTrimBoundingBox.push_back(vrectTempBoundingBox[n]);
+                    for(int m=0; m < vssTrimScore.size(); m++){
+                        if(n == vssTrimScore[m].nNo){
+                            vssTempTrimScore.push_back(vssTrimScore[m]);
+                        }
+                    }
+                    
+                }
+
+                
+            }
+            //else{
+                //vssScore.erase(vssScore.begin());
+                //vrectTempBoundingBox.erase(vrectTempBoundingBox.begin() + n);
+            //}
+            //cout << "n" << n << endl;
+            //double dProcessTime = (static_cast<double>(getTickCount())-dCurrentTime) / getTickFrequency();
+            //cout << dProcessTime <<endl;
+        }
+        vrectTempBoundingBox = vrectTrimBoundingBox;
+        vssTrimScore = vssTempTrimScore;
+        double dProcessTime = (static_cast<double>(getTickCount())-dCurrentTime) / getTickFrequency();
+        cout << dProcessTime <<endl;
+        m++;
+    }
+    cout << "Nms 6!" << endl;
+}
+
+/*void MTCNN_DETECTOR::InitializeScoreRect(const vector<float>& vfScores, const vector<Rect>& vrectBoundingBox, vector<sortScoreRect>& vssScoreRect){
+    if(!vfScores.size()|| !vrectBoundingBox.size()){
+        cerr << "InitializeScoreRect input score or BoundingBox is empty!" << endl;
+        exit(-1);
+    }
+    
+    if(vssScoreRect.size()){
+        vssScoreRect.clear();
+    }
+    int n;
+    sortScoreRect ssrTempScoreRect;
+    for(n = 0; n < vfScores.size(); n++){
+        ssrTempScoreRect.fScore = vfScores[n];
+        ssrTempScoreRect.rectBoundingBox = vrectBoundingBox[n];
+        ssrTempScoreRect.nNo = n;
+        vssScoreRect.push_back(ssrTempScoreRect);
+    }
+    
+}*/
+
+void MTCNN_DETECTOR::InitializeScoreRect(const vector<float>& vfScores, const vector<Rect>& vrectBoundingBox, const vector<Vec4f>& vv4fConv, vector<sortScoreRect>& vssScoreRect){
+    if(!vfScores.size()|| !vrectBoundingBox.size()){
+        cerr << "InitializeScoreRect input score or BoundingBox is empty!" << endl;
+        exit(-1);
+    }
+    
+    if(vssScoreRect.size()){
+        vssScoreRect.clear();
+    }
+    int n;
+    sortScoreRect ssrTempScoreRect;
+    for(n = 0; n < vfScores.size(); n++){
+        ssrTempScoreRect.fScore = vfScores[n];
+        ssrTempScoreRect.rectBoundingBox = vrectBoundingBox[n];
+        ssrTempScoreRect.v4fConv = vv4fConv[n];
+        ssrTempScoreRect.nNo = n;
+        vssScoreRect.push_back(ssrTempScoreRect);
+    }
+    
+}
+
+void MTCNN_DETECTOR::InitializeScoreRect(const vector<float>&vfScores, const vector<Rect>& vrectBoundingBox, const vector<Vec4f>& vv4fConv, const vector<vector<Point2f> >&vvpt2fPoints, vector<sortScoreRect>&vssrScoreRect){
+    if(!vfScores.size()|| !vrectBoundingBox.size()){
+        cerr << "InitializeScoreRect input score or BoundingBox is empty!" << endl;
+        exit(-1);
+    }
+    
+    if(vssrScoreRect.size()){
+        vssrScoreRect.clear();
+    }
+    int n;
+    sortScoreRect ssrTempScoreRect;
+    for(n = 0; n < vfScores.size(); n++){
+        ssrTempScoreRect.fScore = vfScores[n];
+        ssrTempScoreRect.rectBoundingBox = vrectBoundingBox[n];
+        ssrTempScoreRect.v4fConv = vv4fConv[n];
+        ssrTempScoreRect.vpt2FacePoints = vvpt2fPoints[n];
+        ssrTempScoreRect.nNo = n;
+        vssrScoreRect.push_back(ssrTempScoreRect);
+    } 
 }
 
 void MTCNN_DETECTOR::InitializeScore(const vector<float>& vfScores, vector<sortScore>& vssScore){

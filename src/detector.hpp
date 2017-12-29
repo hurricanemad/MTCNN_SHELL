@@ -24,6 +24,14 @@ struct sortScore{
     int nNo;
 };
 
+struct sortScoreRect{
+    float fScore;
+    Rect rectBoundingBox;
+    Vec4f v4fConv;
+    vector<Point2f> vpt2FacePoints;
+    int nNo;
+};
+
 
 class MTCNN_DETECTOR{
 public:
@@ -81,13 +89,25 @@ private:
     void GenerateBoundingBox(Blob<float>* , Blob<float>* , vector<Rect>& , vector<float>&, vector<Vec4f>&, float );
     void GenerateBoundingBox(Blob<float>* , Blob<float>* , vector<Rect>& , vector<float>&, vector<Vec4f>&);
     void GenerateBoundingBox(Blob<float>* , Blob<float>* , Blob<float>* , vector<Rect>& , vector<float>&, vector<Vec4f>&, vector<vector<Point2f> >&);
+    void FigureIntersectionRect(const sortScoreRect& , const sortScoreRect& , Rect& );
     void GenerateOutputPoints(vector<Blob<float>*>&,vector<Point2f>&);
     void RectifyPoints(Point2f& );
     
     void LocatePoints(const Mat& , vector<Point>& );
     void CopyMat(const Mat& , Mat& , Mat& );
     void Nms(const vector<Rect>& , const vector<float>& , vector<int>&, float , string );
+    void NmsWithDebug( Mat& ,const vector<Rect>& , const vector<float>& , vector<int>&, float , string );
+    void Nms(Mat& ,const vector<Rect>& , const vector<float>& , vector<int>& , float , string );
+    //void Nms(Mat& ,const vector<Rect>& , const vector<float>& , vector<Rect>& , vector<float>& , float , string );
+    void Nms(Mat& ,const vector<Rect>& , const vector<float>& , const vector<Vec4f>& , 
+             vector<Rect>& , vector<float>& , vector<Vec4f>& , float , string );
+    void Nms(Mat& , const vector<Rect>& , const vector<float>& , const vector<Vec4f>& , const vector<vector<Point2f> >& , 
+             vector<Rect>& , vector<float>& , vector<Vec4f>& , vector<vector<Point2f> >& , float , string );
+    
     void InitializeScore(const vector<float>& , vector<sortScore>& );
+    //void InitializeScoreRect(const vector<float>& , const vector<Rect>& , vector<sortScoreRect>& );
+    void InitializeScoreRect(const vector<float>& , const vector<Rect>& , const vector<Vec4f>& , vector<sortScoreRect>& );
+    void InitializeScoreRect(const vector<float>&, const vector<Rect>& , const vector<Vec4f>& , const vector<vector<Point2f> >&, vector<sortScoreRect>&);
     void PickResult(vector<Rect>&, vector<float>&, vector<Vec4f>&, const vector<int>&);
     void PickResult(vector<Rect>&, vector<float>&, vector<Vec4f>&, vector<vector<Point2f> >&, const vector<int>&);
     void JoinResult(vector<Rect>&, vector<float>&, vector<Vec4f>&, 
@@ -110,6 +130,7 @@ private:
     string m_strPNetModelPath;
     string m_strRNetModelPath;
     string m_strONetModelPath;
+    string m_strLNetModelPath;
     
     float m_fFactor;
     int m_nminSize;

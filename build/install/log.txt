@@ -53,10 +53,20 @@ vmatProb1Mat[1].data
 
 
 
+0.704513 
+0.859853 0.870835 
+0.712996 0.903988 
 
 
 
+0.694442 
 
+0.625651 
+0.699327 0.738681 0.956081 0.844758 
+0.786691 0.757691 0.754078 
+0.905875 
+0.640605 0.928065 0.73689 
+0.67466 0.78688 
 
 
 
@@ -66,30 +76,32 @@ vmatProb1Mat[1].data
 
 
 
+0.648189 
 
 
 
 
 
-0.64963 
-0.640485 
 
-0.688323 0.803931 
-0.905527 0.851027 
-0.605933 0.811289 
+0.782006 
 
+0.752534 0.827903 0.830457 0.911734 0.842258 
+0.704491 
 
 
+0.77081 
+0.916986 
 
 
 
 
+0.849857 
 
 
-0.689142 
-0.667906 
-0.740925 
+0.803141 0.74207 0.606657 
+0.634611 
 
+0.876892 
 
 
 
@@ -99,40 +111,28 @@ vmatProb1Mat[1].data
 
 
 
-0.793745 
 
+0.669182 
+0.766594 
+0.640215 
 
 
 
 
 
-0.867562 
-0.758189 0.783624 0.822383 
-0.666114 0.889699 0.825397 
-0.629404 0.672389 0.676962 0.629991 
 
 
-0.812541 0.766416 
-0.635295 0.718855 
 
 
 
 
-0.787693 0.637258 0.848889 0.965562 0.669594 
-0.718161 
 
 
-0.702447 0.762803 0.774047 0.787859 
-0.764885 0.742722 0.767621 0.975424 0.957286 0.918057 0.653512 
-0.755855 0.711738 0.843794 0.863698 0.721494 0.714899 0.678389 
-0.766122 0.92712 
-0.64191 
 
 
 
 
 
-0.695117 
 
 
 
@@ -141,17 +141,17 @@ vmatProb1Mat[1].data
 
 
 
+0.605368 0.862503 
 
-
-
-
-
+0.677174 0.812098 0.876965 0.886432 0.659595 
+0.82642 0.974837 0.85882 
+0.70361 0.934587 
 
 
 m_vfThreshold[0]0.6
 matMask test pass!
 LocatePoints start!
-vptPoints' size is:55
+vptPoints' size is:51
 vmatProb1Mat[1]'s width is:130
 vmatProb1Mat[1]'s height is:98
 Conv4_2 out!
@@ -159,170 +159,41 @@ Point out!
 0.6
 GenerateBoundingBox end!
 Nms 1!
-Nms 2!
-Nms 3!
-Bounding Box's size is:55
-vvsScore size is:55
-vssScore[0].fScore0.975424
-7.932e-06
-vvsScore size is:54
-vssScore[0].fScore0.975424
-3.59e-06
-vvsScore size is:51
-vssScore[0].fScore0.975424
-3.26e-06
-vvsScore size is:47
-vssScore[0].fScore0.975424
-2.929e-06
-vvsScore size is:44
-vssScore[0].fScore0.975424
-1.5834e-05
-vvsScore size is:42
-vssScore[0].fScore0.975424
-2.716e-06
-vvsScore size is:39
-vssScore[0].fScore0.975424
-1.516e-05
-vvsScore size is:35
-vssScore[0].fScore0.975424
-2.369e-06
-vvsScore size is:31
-vssScore[0].fScore0.975424
-2.29e-06
-vvsScore size is:31
-vssScore[0].fScore0.975424
-2.308e-06
-vvsScore size is:29
-vssScore[0].fScore0.975424
-2.276e-06
-vvsScore size is:27
-vssScore[0].fScore0.975424
-1.951e-06
-vvsScore size is:26
-vssScore[0].fScore0.975424
-2.03e-06
-vvsScore size is:25
-vssScore[0].fScore0.975424
-1.795e-06
-vvsScore size is:24
-vssScore[0].fScore0.975424
-1.764e-06
-vvsScore size is:22
-vssScore[0].fScore0.975424
-1.655e-06
-vvsScore size is:19
-vssScore[0].fScore0.975424
-1.688e-06
-vvsScore size is:17
-vssScore[0].fScore0.975424
-1.523e-06
-vvsScore size is:15
-vssScore[0].fScore0.975424
-1.632e-06
-vvsScore size is:13
-vssScore[0].fScore0.975424
-1.294e-06
-vvsScore size is:13
-vssScore[0].fScore0.975424
-1.239e-06
-vvsScore size is:11
-vssScore[0].fScore0.975424
-1.162e-06
-vvsScore size is:9
-vssScore[0].fScore0.975424
-1.216e-06
-vvsScore size is:9
-vssScore[0].fScore0.975424
-1.133e-06
-vvsScore size is:8
-vssScore[0].fScore0.975424
-1.172e-06
-vvsScore size is:7
-vssScore[0].fScore0.975424
-1.118e-06
-vvsScore size is:7
-vssScore[0].fScore0.975424
-1.065e-06
-vvsScore size is:7
-vssScore[0].fScore0.975424
-9.84e-07
-vvsScore size is:6
-vssScore[0].fScore0.975424
-9.83e-07
-vvsScore size is:6
-vssScore[0].fScore0.975424
-9.46e-07
-vvsScore size is:5
-vssScore[0].fScore0.975424
-1.041e-06
-vvsScore size is:3
-vssScore[0].fScore0.975424
-9.32e-07
-vvsScore size is:3
-vssScore[0].fScore0.975424
-1.035e-06
-vvsScore size is:3
-vssScore[0].fScore0.975424
-8.73e-07
-vvsScore size is:3
-vssScore[0].fScore0.975424
-8.41e-07
-vvsScore size is:3
-vssScore[0].fScore0.975424
-8.91e-07
-vvsScore size is:3
-vssScore[0].fScore0.975424
-8.28e-07
-vvsScore size is:3
-vssScore[0].fScore0.975424
-8.22e-07
-vvsScore size is:2
-vssScore[0].fScore0.975424
-8.11e-07
-vvsScore size is:2
-vssScore[0].fScore0.975424
-8.18e-07
-vvsScore size is:1
-vssScore[0].fScore0.975424
-7.52e-07
-vvsScore size is:1
-vssScore[0].fScore0.975424
-7.23e-07
-vvsScore size is:1
-vssScore[0].fScore0.975424
-6.89e-07
-vvsScore size is:1
-vssScore[0].fScore0.975424
-6.93e-07
-vvsScore size is:1
-vssScore[0].fScore0.975424
-8.09e-07
-vvsScore size is:1
-vssScore[0].fScore0.975424
-6.78e-07
-vvsScore size is:1
-vssScore[0].fScore0.975424
-6.67e-07
-vvsScore size is:1
-vssScore[0].fScore0.975424
-6.61e-07
-vvsScore size is:1
-vssScore[0].fScore0.975424
-1.017e-06
-vvsScore size is:1
-vssScore[0].fScore0.975424
-6.71e-07
-Nms 6!
-viPick's size is:50
+vssrTempScoreRect[0].fScore0.956081
+vssrTempScoreRect[0].fScore0.928065
+vssrTempScoreRect[0].fScore0.916986
+vssrTempScoreRect[0].fScore0.911734
+vssrTempScoreRect[0].fScore0.905875
+vssrTempScoreRect[0].fScore0.903988
+vssrTempScoreRect[0].fScore0.876965
+vssrTempScoreRect[0].fScore0.876892
+vssrTempScoreRect[0].fScore0.862503
+vssrTempScoreRect[0].fScore0.859853
+vssrTempScoreRect[0].fScore0.849857
+vssrTempScoreRect[0].fScore0.827903
+vssrTempScoreRect[0].fScore0.803141
+vssrTempScoreRect[0].fScore0.78688
+vssrTempScoreRect[0].fScore0.782006
+vssrTempScoreRect[0].fScore0.766594
+vssrTempScoreRect[0].fScore0.757691
+vssrTempScoreRect[0].fScore0.754078
+vssrTempScoreRect[0].fScore0.70361
+vssrTempScoreRect[0].fScore0.699327
+vssrTempScoreRect[0].fScore0.694442
+vssrTempScoreRect[0].fScore0.677174
+vssrTempScoreRect[0].fScore0.648189
+vssrTempScoreRect[0].fScore0.634611
+vssrTempScoreRect[0].fScore0.606657
+viPick's size is:0
 ProcessMat's width is:450
 ProcessMat's height is:344
 ProcessMat's channels is:3
-nAlterWidth is:191
+nAlterWidth is:192
 nAlterHeight is:146
-nAlterWidth is:191
+nAlterWidth is:192
 nAlterHeight is:146
 m_matNormalizeMat channels is:3
-NormalizeMat's width is:191
+NormalizeMat's width is:192
 NormalizeMat's height is:146
 NormalizeMat's channels is:3
 PNet is predicting!
@@ -330,12 +201,12 @@ PNet input geom is:[270 x 206]
 NetPredict2 process 1!
 NetPredict2 process 2!
 NetPredict2 process 3!
-WrapInputLayer nWidth is:191
+WrapInputLayer nWidth is:192
 WrapInputLayer nHeight is:146
 NetPredict2 process 4!
 Preprocess nChannelNum is:3
-SampleImage's size is:[191 x 146]
-szInputGeom's size is:[191 x 146]
+SampleImage's size is:[192 x 146]
+szInputGeom's size is:[192 x 146]
 NetPredict2 process 5!
 NetPredict2 process 6!
 blfOutputLayer's size is:2
@@ -355,6 +226,52 @@ blfProb1OutputLayer's height is:68
 Prob1Mat n is:0
 Prob1Mat n is:1
 vmatProb1Mat[1].data
+0.716837 
+
+
+0.686895 
+0.691182 
+0.629227 
+0.835713 0.780034 
+0.641919 0.833854 0.714985 0.697353 
+0.69974 
+
+0.750835 
+0.635324 0.741382 
+0.730438 0.775292 
+0.602717 
+
+
+0.608532 0.605693 0.968476 0.81783 0.737418 0.805331 0.800894 
+0.603257 0.941767 0.89776 0.762676 
+0.691274 0.708056 
+
+
+0.70929 
+
+0.769348 
+0.694008 0.995107 0.834461 0.689186 
+0.890424 0.739972 
+0.655628 0.906548 
+0.818211 
+0.873232 0.674772 
+
+
+0.641817 
+
+0.69966 
+0.655336 0.945662 0.872598 0.754862 
+
+
+
+
+
+
+
+
+0.61518 
+0.672293 
+0.66551 
 
 
 
@@ -368,65 +285,19 @@ vmatProb1Mat[1].data
 
 
 
-
-
-0.602217 
-0.940462 
-0.916903 
-
-0.774426 0.622655 
+0.78882 
+0.648317 0.807493 0.908445 
+0.67651 
 
 
 
-
-
-0.626552 0.824302 
-0.649116 
-0.835646 0.605607 
-
-0.610184 
-
-
-
-
-
-
-
-
-
-0.627902 
-0.647296 0.913656 0.693705 
-0.821125 0.664213 
-
-0.616261 
-0.712528 
-
-
-0.697727 0.70034 
-0.705856 0.98293 0.779959 
-0.625184 0.791681 
-0.758998 0.929417 0.743874 
-0.812423 0.694077 0.625915 0.71927 
-0.745487 0.874136 0.611584 
-0.794542 0.941558 
-
-
-
-
-
-
-
-
-
-
-
-
-
+0.741273 0.911782 0.64 
+0.928331 0.694999 
 
 m_vfThreshold[0]0.6
 matMask test pass!
 LocatePoints start!
-vptPoints' size is:38
+vptPoints' size is:62
 vmatProb1Mat[1]'s width is:91
 vmatProb1Mat[1]'s height is:68
 Conv4_2 out!
@@ -434,123 +305,62 @@ Point out!
 0.4254
 GenerateBoundingBox end!
 Nms 1!
-Nms 2!
-Nms 3!
-Bounding Box's size is:38
-vvsScore size is:38
-vssScore[0].fScore0.98293
-1.6827e-05
-vvsScore size is:37
-vssScore[0].fScore0.98293
-2.51e-06
-vvsScore size is:35
-vssScore[0].fScore0.98293
-2.643e-06
-vvsScore size is:33
-vssScore[0].fScore0.98293
-2.069e-06
-vvsScore size is:30
-vssScore[0].fScore0.98293
-1.4736e-05
-vvsScore size is:27
-vssScore[0].fScore0.98293
-1.705e-06
-vvsScore size is:23
-vssScore[0].fScore0.98293
-1.608e-06
-vvsScore size is:20
-vssScore[0].fScore0.98293
-1.456e-06
-vvsScore size is:18
-vssScore[0].fScore0.98293
-1.571e-06
-vvsScore size is:16
-vssScore[0].fScore0.98293
-1.291e-06
-vvsScore size is:13
-vssScore[0].fScore0.98293
-1.563e-05
-vvsScore size is:11
-vssScore[0].fScore0.98293
-1.175e-06
-vvsScore size is:11
-vssScore[0].fScore0.98293
-1.1e-06
-vvsScore size is:10
-vssScore[0].fScore0.98293
-1.146e-06
-vvsScore size is:8
-vssScore[0].fScore0.98293
-1.137e-06
-vvsScore size is:7
-vssScore[0].fScore0.98293
-1.02e-06
-vvsScore size is:6
-vssScore[0].fScore0.98293
-1.138e-06
-vvsScore size is:6
-vssScore[0].fScore0.98293
-9.38e-07
-vvsScore size is:4
-vssScore[0].fScore0.98293
-9.04e-07
-vvsScore size is:4
-vssScore[0].fScore0.98293
-8.61e-07
-vvsScore size is:4
-vssScore[0].fScore0.98293
-9.14e-07
-vvsScore size is:4
-vssScore[0].fScore0.98293
-8.04e-07
-vvsScore size is:4
-vssScore[0].fScore0.98293
-8.1e-07
-vvsScore size is:4
-vssScore[0].fScore0.98293
-8.04e-07
-vvsScore size is:3
-vssScore[0].fScore0.98293
-8.98e-07
-vvsScore size is:2
-vssScore[0].fScore0.98293
-7.72e-07
-vvsScore size is:1
-vssScore[0].fScore0.98293
-7.48e-07
-vvsScore size is:1
-vssScore[0].fScore0.98293
-8.05e-07
-vvsScore size is:1
-vssScore[0].fScore0.98293
-7.12e-07
-vvsScore size is:1
-vssScore[0].fScore0.98293
-1.063e-06
-Nms 6!
-viPick's size is:30
+vssrTempScoreRect[0].fScore0.968476
+vssrTempScoreRect[0].fScore0.945662
+vssrTempScoreRect[0].fScore0.928331
+vssrTempScoreRect[0].fScore0.911782
+vssrTempScoreRect[0].fScore0.906548
+vssrTempScoreRect[0].fScore0.89776
+vssrTempScoreRect[0].fScore0.873232
+vssrTempScoreRect[0].fScore0.872598
+vssrTempScoreRect[0].fScore0.835713
+vssrTempScoreRect[0].fScore0.833854
+vssrTempScoreRect[0].fScore0.805331
+vssrTempScoreRect[0].fScore0.800894
+vssrTempScoreRect[0].fScore0.775292
+vssrTempScoreRect[0].fScore0.750835
+vssrTempScoreRect[0].fScore0.741382
+vssrTempScoreRect[0].fScore0.716837
+vssrTempScoreRect[0].fScore0.714985
+vssrTempScoreRect[0].fScore0.70929
+vssrTempScoreRect[0].fScore0.708056
+vssrTempScoreRect[0].fScore0.69966
+vssrTempScoreRect[0].fScore0.691182
+vssrTempScoreRect[0].fScore0.689186
+vssrTempScoreRect[0].fScore0.67651
+vssrTempScoreRect[0].fScore0.674772
+vssrTempScoreRect[0].fScore0.672293
+vssrTempScoreRect[0].fScore0.66551
+vssrTempScoreRect[0].fScore0.648317
+vssrTempScoreRect[0].fScore0.641817
+vssrTempScoreRect[0].fScore0.64
+vssrTempScoreRect[0].fScore0.61518
+vssrTempScoreRect[0].fScore0.608532
+vssrTempScoreRect[0].fScore0.603257
+vssrTempScoreRect[0].fScore0.603257
+viPick's size is:0
 ProcessMat's width is:450
 ProcessMat's height is:344
 ProcessMat's channels is:3
 nAlterWidth is:136
-nAlterHeight is:104
+nAlterHeight is:103
 nAlterWidth is:136
-nAlterHeight is:104
+nAlterHeight is:103
 m_matNormalizeMat channels is:3
 NormalizeMat's width is:136
-NormalizeMat's height is:104
+NormalizeMat's height is:103
 NormalizeMat's channels is:3
 PNet is predicting!
-PNet input geom is:[191 x 146]
+PNet input geom is:[192 x 146]
 NetPredict2 process 1!
 NetPredict2 process 2!
 NetPredict2 process 3!
 WrapInputLayer nWidth is:136
-WrapInputLayer nHeight is:104
+WrapInputLayer nHeight is:103
 NetPredict2 process 4!
 Preprocess nChannelNum is:3
-SampleImage's size is:[136 x 104]
-szInputGeom's size is:[136 x 104]
+SampleImage's size is:[136 x 103]
+szInputGeom's size is:[136 x 103]
 NetPredict2 process 5!
 NetPredict2 process 6!
 blfOutputLayer's size is:2
@@ -573,41 +383,30 @@ vmatProb1Mat[1].data
 
 
 
+0.771805 0.677055 
+0.738471 
+0.692801 
+0.68084 0.813277 
+0.684497 0.656386 0.699239 
 
+0.67482 0.614975 
+0.935394 0.80409 0.831235 0.666939 0.694635 
+0.834948 0.603225 
+0.905303 0.719561 
+0.81735 0.829488 
 
+0.925707 0.702031 
+0.81155 0.844078 
+0.870715 0.917857 0.758204 0.929644 
+0.84708 0.958327 0.970727 0.912514 
+0.629045 
+0.89677 0.844444 
+0.821195 0.829129 
+0.648959 
 
+0.67949 0.763429 
 
-
-
-0.754162 
-0.636807 0.916594 0.62951 0.620653 
-0.643856 0.969212 
-0.844602 0.945867 0.724873 0.82246 0.942444 
-0.750507 
-
-
-
-0.618972 0.812269 
-0.924282 0.968525 
-0.70585 
-
-
-
-
-
-
-
-
-0.739157 
-0.86001 
-
-
-
-
-0.77693 0.906475 0.639265 
-0.895081 0.972796 0.782231 0.929296 
-0.694216 0.921591 0.627542 0.742241 
-0.673554 0.861378 0.693009 
+0.693406 
 
 
 
@@ -615,12 +414,23 @@ vmatProb1Mat[1].data
 
 
 
+
+
+
+
+
+
+
+0.711013 0.714212 
+0.873836 0.992508 0.978318 0.622089 
+0.906187 
+0.662505 0.840288 
 
 
 m_vfThreshold[0]0.6
 matMask test pass!
 LocatePoints start!
-vptPoints' size is:34
+vptPoints' size is:52
 vmatProb1Mat[1]'s width is:63
 vmatProb1Mat[1]'s height is:47
 Conv4_2 out!
@@ -628,511 +438,327 @@ Point out!
 0.301609
 GenerateBoundingBox end!
 Nms 1!
-Nms 2!
-Nms 3!
-Bounding Box's size is:34
-vvsScore size is:34
-vssScore[0].fScore0.972796
-4.01e-06
-vvsScore size is:33
-vssScore[0].fScore0.972796
-2.196e-06
-vvsScore size is:30
-vssScore[0].fScore0.972796
-1.816e-06
-vvsScore size is:26
-vssScore[0].fScore0.972796
-1.705e-06
-vvsScore size is:22
-vssScore[0].fScore0.972796
-1.553e-06
-vvsScore size is:18
-vssScore[0].fScore0.972796
-1.4e-06
-vvsScore size is:17
-vssScore[0].fScore0.972796
-1.357e-06
-vvsScore size is:17
-vssScore[0].fScore0.972796
-1.288e-06
-vvsScore size is:14
-vssScore[0].fScore0.972796
-1.241e-06
-vvsScore size is:13
-vssScore[0].fScore0.972796
-1.185e-06
-vvsScore size is:12
-vssScore[0].fScore0.972796
-1.128e-06
-vvsScore size is:12
-vssScore[0].fScore0.972796
-1.117e-06
-vvsScore size is:11
-vssScore[0].fScore0.972796
-1.079e-06
-vvsScore size is:10
-vssScore[0].fScore0.972796
-1.038e-06
-vvsScore size is:7
-vssScore[0].fScore0.972796
-9.53e-07
-vvsScore size is:5
-vssScore[0].fScore0.972796
-8.71e-07
-vvsScore size is:4
-vssScore[0].fScore0.972796
-9.68e-07
-vvsScore size is:3
-vssScore[0].fScore0.972796
-8.78e-07
-vvsScore size is:2
-vssScore[0].fScore0.972796
-7.6e-07
-vvsScore size is:1
-vssScore[0].fScore0.972796
-8.23e-07
-vvsScore size is:1
-vssScore[0].fScore0.972796
-7.41e-07
-vvsScore size is:1
-vssScore[0].fScore0.972796
-7.61e-07
-vvsScore size is:1
-vssScore[0].fScore0.972796
-7.26e-07
-vvsScore size is:1
-vssScore[0].fScore0.972796
-7.08e-07
-vvsScore size is:1
-vssScore[0].fScore0.972796
-9.24e-07
-vvsScore size is:1
-vssScore[0].fScore0.972796
-6.94e-07
-vvsScore size is:1
-vssScore[0].fScore0.972796
-7.47e-07
-vvsScore size is:1
-vssScore[0].fScore0.972796
-6.8e-07
-vvsScore size is:1
-vssScore[0].fScore0.972796
-9e-07
-vvsScore size is:1
-vssScore[0].fScore0.972796
-6.79e-07
-Nms 6!
-viPick's size is:30
+vssrTempScoreRect[0].fScore0.978318
+vssrTempScoreRect[0].fScore0.958327
+vssrTempScoreRect[0].fScore0.929644
+vssrTempScoreRect[0].fScore0.925707
+vssrTempScoreRect[0].fScore0.906187
+vssrTempScoreRect[0].fScore0.905303
+vssrTempScoreRect[0].fScore0.89677
+vssrTempScoreRect[0].fScore0.870715
+vssrTempScoreRect[0].fScore0.84708
+vssrTempScoreRect[0].fScore0.831235
+vssrTempScoreRect[0].fScore0.813277
+vssrTempScoreRect[0].fScore0.771805
+vssrTempScoreRect[0].fScore0.763429
+vssrTempScoreRect[0].fScore0.711013
+vssrTempScoreRect[0].fScore0.694635
+vssrTempScoreRect[0].fScore0.693406
+vssrTempScoreRect[0].fScore0.684497
+vssrTempScoreRect[0].fScore0.67949
+vssrTempScoreRect[0].fScore0.662505
+vssrTempScoreRect[0].fScore0.656386
+vssrTempScoreRect[0].fScore0.648959
+vssrTempScoreRect[0].fScore0.629045
+vssrTempScoreRect[0].fScore0.614975
+vssrTempScoreRect[0].fScore0.603225
+vssrTempScoreRect[0].fScore0.603225
+viPick's size is:0
 ProcessMat's width is:450
 ProcessMat's height is:344
 ProcessMat's channels is:3
-nAlterWidth is:96
-nAlterHeight is:74
-nAlterWidth is:96
-nAlterHeight is:74
+nAlterWidth is:97
+nAlterHeight is:73
+nAlterWidth is:97
+nAlterHeight is:73
 m_matNormalizeMat channels is:3
-NormalizeMat's width is:96
-NormalizeMat's height is:74
+NormalizeMat's width is:97
+NormalizeMat's height is:73
 NormalizeMat's channels is:3
 PNet is predicting!
-PNet input geom is:[136 x 104]
+PNet input geom is:[136 x 103]
 NetPredict2 process 1!
 NetPredict2 process 2!
 NetPredict2 process 3!
-WrapInputLayer nWidth is:96
-WrapInputLayer nHeight is:74
+WrapInputLayer nWidth is:97
+WrapInputLayer nHeight is:73
 NetPredict2 process 4!
 Preprocess nChannelNum is:3
-SampleImage's size is:[96 x 74]
-szInputGeom's size is:[96 x 74]
+SampleImage's size is:[97 x 73]
+szInputGeom's size is:[97 x 73]
 NetPredict2 process 5!
 NetPredict2 process 6!
 blfOutputLayer's size is:2
-blfOutputLayer's width is:43
+blfOutputLayer's width is:44
 blfOutputLayer's height is:32
 vblfPOutputLayer is:2
-blfProb1OutputLayer's width is:43
+blfProb1OutputLayer's width is:44
 blfProb1OutputLayer's height is:32
 1
 2
-43
+44
 32
 1
 4
-43
+44
 32
 Prob1Mat n is:0
 Prob1Mat n is:1
 vmatProb1Mat[1].data
 
+0.740829 0.957245 0.724865 0.623473 
+0.979173 0.997835 0.906851 
+0.657887 0.639997 0.910637 
+0.643593 
+0.808844 
+0.662766 0.690059 0.664461 
+0.832796 0.835637 
+0.788756 0.877335 0.85309 0.930443 0.69467 
+0.856873 0.979295 0.884821 0.66147 
+
+0.621984 0.667314 0.908032 0.904902 
+0.672842 0.91475 0.932604 0.9506 0.986386 
+0.826392 0.964169 0.96788 
+0.944151 0.726755 
+
+
+0.770229 
+
+0.607844 0.867782 
 
 
 
 
 
-0.818264 0.638134 
-0.950598 0.976924 0.781345 0.906756 0.999496 0.999954 0.994609 0.697887 
-0.727728 0.874644 0.801603 0.995475 0.999674 0.732476 
-
-
-0.933949 0.829206 
-0.881845 0.986666 0.789079 
-0.781422 
-0.683488 
 
 
 
 
-0.769659 
-0.696828 0.649368 
-
-
-0.833099 0.962694 
-0.801478 0.72511 0.962149 0.994942 0.999281 0.707342 
-0.637624 0.807696 0.855936 0.921104 0.907848 
-
-
-
-
-
+0.970406 0.946381 0.74216 
+0.97617 0.99282 0.955743 
 
 m_vfThreshold[0]0.6
 matMask test pass!
 LocatePoints start!
-vptPoints' size is:39
-vmatProb1Mat[1]'s width is:43
+vptPoints' size is:49
+vmatProb1Mat[1]'s width is:44
 vmatProb1Mat[1]'s height is:32
 Conv4_2 out!
 Point out!
 0.213841
 GenerateBoundingBox end!
 Nms 1!
-Nms 2!
-Nms 3!
-Bounding Box's size is:39
-vvsScore size is:39
-vssScore[0].fScore0.999954
-4.49e-06
-vvsScore size is:38
-vssScore[0].fScore0.999954
-2.467e-06
-vvsScore size is:35
-vssScore[0].fScore0.999954
-2.419e-06
-vvsScore size is:32
-vssScore[0].fScore0.999954
-2.024e-06
-vvsScore size is:30
-vssScore[0].fScore0.999954
-2.058e-06
-vvsScore size is:26
-vssScore[0].fScore0.999954
-1.7e-06
-vvsScore size is:25
-vssScore[0].fScore0.999954
-1.643e-06
-vvsScore size is:22
-vssScore[0].fScore0.999954
-1.553e-06
-vvsScore size is:18
-vssScore[0].fScore0.999954
-1.497e-06
-vvsScore size is:14
-vssScore[0].fScore0.999954
-1.333e-06
-vvsScore size is:12
-vssScore[0].fScore0.999954
-1.182e-06
-vvsScore size is:11
-vssScore[0].fScore0.999954
-1.133e-06
-vvsScore size is:10
-vssScore[0].fScore0.999954
-1.053e-06
-vvsScore size is:9
-vssScore[0].fScore0.999954
-1.004e-06
-vvsScore size is:7
-vssScore[0].fScore0.999954
-1.02e-06
-vvsScore size is:5
-vssScore[0].fScore0.999954
-9.31e-07
-vvsScore size is:5
-vssScore[0].fScore0.999954
-9.47e-07
-vvsScore size is:4
-vssScore[0].fScore0.999954
-8.5e-07
-vvsScore size is:3
-vssScore[0].fScore0.999954
-8.18e-07
-vvsScore size is:3
-vssScore[0].fScore0.999954
-8.06e-07
-vvsScore size is:2
-vssScore[0].fScore0.999954
-8.4e-07
-vvsScore size is:1
-vssScore[0].fScore0.999954
-7.6e-07
-Nms 6!
-viPick's size is:22
+vssrTempScoreRect[0].fScore0.99282
+vssrTempScoreRect[0].fScore0.986386
+vssrTempScoreRect[0].fScore0.979295
+vssrTempScoreRect[0].fScore0.944151
+vssrTempScoreRect[0].fScore0.932604
+vssrTempScoreRect[0].fScore0.91475
+vssrTempScoreRect[0].fScore0.867782
+vssrTempScoreRect[0].fScore0.835637
+vssrTempScoreRect[0].fScore0.808844
+vssrTempScoreRect[0].fScore0.770229
+vssrTempScoreRect[0].fScore0.74216
+vssrTempScoreRect[0].fScore0.740829
+vssrTempScoreRect[0].fScore0.724865
+vssrTempScoreRect[0].fScore0.672842
+vssrTempScoreRect[0].fScore0.667314
+vssrTempScoreRect[0].fScore0.66147
+vssrTempScoreRect[0].fScore0.657887
+vssrTempScoreRect[0].fScore0.643593
+vssrTempScoreRect[0].fScore0.621984
+vssrTempScoreRect[0].fScore0.621984
+viPick's size is:0
 ProcessMat's width is:450
 ProcessMat's height is:344
 ProcessMat's channels is:3
-nAlterWidth is:68
+nAlterWidth is:69
 nAlterHeight is:52
-nAlterWidth is:68
+nAlterWidth is:69
 nAlterHeight is:52
 m_matNormalizeMat channels is:3
-NormalizeMat's width is:68
+NormalizeMat's width is:69
 NormalizeMat's height is:52
 NormalizeMat's channels is:3
 PNet is predicting!
-PNet input geom is:[96 x 74]
+PNet input geom is:[97 x 73]
 NetPredict2 process 1!
 NetPredict2 process 2!
 NetPredict2 process 3!
-WrapInputLayer nWidth is:68
+WrapInputLayer nWidth is:69
 WrapInputLayer nHeight is:52
 NetPredict2 process 4!
 Preprocess nChannelNum is:3
-SampleImage's size is:[68 x 52]
-szInputGeom's size is:[68 x 52]
+SampleImage's size is:[69 x 52]
+szInputGeom's size is:[69 x 52]
 NetPredict2 process 5!
 NetPredict2 process 6!
 blfOutputLayer's size is:2
-blfOutputLayer's width is:29
+blfOutputLayer's width is:30
 blfOutputLayer's height is:21
 vblfPOutputLayer is:2
-blfProb1OutputLayer's width is:29
+blfProb1OutputLayer's width is:30
 blfProb1OutputLayer's height is:21
 1
 2
-29
+30
 21
 1
 4
-29
+30
 21
 Prob1Mat n is:0
 Prob1Mat n is:1
 vmatProb1Mat[1].data
+0.909442 0.924906 0.698273 
+0.624726 0.778303 0.961315 0.655894 
+0.794734 0.763318 
+0.931915 0.960801 
+0.758381 0.901301 0.804424 
+0.691806 0.988523 0.92687 0.611602 
+0.771787 0.983492 0.977472 
+0.948271 0.959074 0.903942 
+0.788306 0.953391 0.994168 0.897002 
+0.655895 0.924015 
+
+
+0.965299 
+0.617838 0.896784 
+0.799779 
 
 
 
-0.836522 
-0.640218 0.983126 0.999849 0.996362 
-0.947063 0.995314 0.982209 
 
-0.904179 0.966472 
-0.962675 0.971076 
-0.887245 
-0.617604 
-
-0.841148 0.628977 
-
-
-0.960283 0.880245 
-0.678461 0.98901 0.985545 0.982668 0.684894 
-0.632824 0.836306 
-
-
-
+0.677135 
+0.616284 0.656369 0.966666 0.648666 
 m_vfThreshold[0]0.6
 matMask test pass!
 LocatePoints start!
-vptPoints' size is:25
-vmatProb1Mat[1]'s width is:29
+vptPoints' size is:39
+vmatProb1Mat[1]'s width is:30
 vmatProb1Mat[1]'s height is:21
 Conv4_2 out!
 Point out!
 0.151613
 GenerateBoundingBox end!
 Nms 1!
-Nms 2!
-Nms 3!
-Bounding Box's size is:25
-vvsScore size is:25
-vssScore[0].fScore0.999849
-2.996e-06
-vvsScore size is:24
-vssScore[0].fScore0.999849
-1.51e-06
-vvsScore size is:21
-vssScore[0].fScore0.999849
-1.454e-06
-vvsScore size is:18
-vssScore[0].fScore0.999849
-1.23e-06
-vvsScore size is:16
-vssScore[0].fScore0.999849
-1.219e-06
-vvsScore size is:15
-vssScore[0].fScore0.999849
-1.154e-06
-vvsScore size is:13
-vssScore[0].fScore0.999849
-1.104e-06
-vvsScore size is:11
-vssScore[0].fScore0.999849
-9.83e-07
-vvsScore size is:8
-vssScore[0].fScore0.999849
-9.79e-07
-vvsScore size is:6
-vssScore[0].fScore0.999849
-8.36e-07
-vvsScore size is:4
-vssScore[0].fScore0.999849
-8.72e-07
-vvsScore size is:2
-vssScore[0].fScore0.999849
-7.51e-07
-vvsScore size is:2
-vssScore[0].fScore0.999849
-9.45e-07
-vvsScore size is:1
-vssScore[0].fScore0.999849
-7.04e-07
-vvsScore size is:1
-vssScore[0].fScore0.999849
-7.11e-07
-vvsScore size is:1
-vssScore[0].fScore0.999849
-7.31e-07
-vvsScore size is:1
-vssScore[0].fScore0.999849
-7.47e-07
-vvsScore size is:1
-vssScore[0].fScore0.999849
-6.48e-07
-Nms 6!
-viPick's size is:18
+vssrTempScoreRect[0].fScore0.988523
+vssrTempScoreRect[0].fScore0.983492
+vssrTempScoreRect[0].fScore0.966666
+vssrTempScoreRect[0].fScore0.965299
+vssrTempScoreRect[0].fScore0.961315
+vssrTempScoreRect[0].fScore0.960801
+vssrTempScoreRect[0].fScore0.931915
+vssrTempScoreRect[0].fScore0.788306
+vssrTempScoreRect[0].fScore0.655895
+vssrTempScoreRect[0].fScore0.616284
+vssrTempScoreRect[0].fScore0.616284
+viPick's size is:0
 ProcessMat's width is:450
 ProcessMat's height is:344
 ProcessMat's channels is:3
-nAlterWidth is:48
-nAlterHeight is:37
-nAlterWidth is:48
-nAlterHeight is:37
+nAlterWidth is:49
+nAlterHeight is:36
+nAlterWidth is:49
+nAlterHeight is:36
 m_matNormalizeMat channels is:3
-NormalizeMat's width is:48
-NormalizeMat's height is:37
+NormalizeMat's width is:49
+NormalizeMat's height is:36
 NormalizeMat's channels is:3
 PNet is predicting!
-PNet input geom is:[68 x 52]
+PNet input geom is:[69 x 52]
 NetPredict2 process 1!
 NetPredict2 process 2!
 NetPredict2 process 3!
-WrapInputLayer nWidth is:48
-WrapInputLayer nHeight is:37
+WrapInputLayer nWidth is:49
+WrapInputLayer nHeight is:36
 NetPredict2 process 4!
 Preprocess nChannelNum is:3
-SampleImage's size is:[48 x 37]
-szInputGeom's size is:[48 x 37]
+SampleImage's size is:[49 x 36]
+szInputGeom's size is:[49 x 36]
 NetPredict2 process 5!
 NetPredict2 process 6!
 blfOutputLayer's size is:2
-blfOutputLayer's width is:19
-blfOutputLayer's height is:14
+blfOutputLayer's width is:20
+blfOutputLayer's height is:13
 vblfPOutputLayer is:2
-blfProb1OutputLayer's width is:19
-blfProb1OutputLayer's height is:14
+blfProb1OutputLayer's width is:20
+blfProb1OutputLayer's height is:13
 1
 2
-19
-14
+20
+13
 1
 4
-19
-14
+20
+13
 Prob1Mat n is:0
 Prob1Mat n is:1
 vmatProb1Mat[1].data
-
-0.629849 
-0.812813 0.8726 
-0.91049 0.892117 
+0.791655 0.845905 
 
 
-
-0.716232 
+0.977624 0.976574 
+0.957006 0.996391 0.670555 
+0.749237 
 
 
 
-0.777991 
+
+
 
 
 m_vfThreshold[0]0.6
 matMask test pass!
 LocatePoints start!
-vptPoints' size is:7
-vmatProb1Mat[1]'s width is:19
-vmatProb1Mat[1]'s height is:14
+vptPoints' size is:8
+vmatProb1Mat[1]'s width is:20
+vmatProb1Mat[1]'s height is:13
 Conv4_2 out!
 Point out!
 0.107494
 GenerateBoundingBox end!
 Nms 1!
-Nms 2!
-Nms 3!
-Bounding Box's size is:7
-vvsScore size is:7
-vssScore[0].fScore0.91049
-1.762e-06
-vvsScore size is:6
-vssScore[0].fScore0.91049
-8.74e-07
-vvsScore size is:3
-vssScore[0].fScore0.91049
-7.66e-07
-vvsScore size is:1
-vssScore[0].fScore0.91049
-6.33e-07
-vvsScore size is:1
-vssScore[0].fScore0.91049
-8.52e-07
-Nms 6!
-viPick's size is:5
+vssrTempScoreRect[0].fScore0.977624
+vssrTempScoreRect[0].fScore0.791655
+viPick's size is:0
 ProcessMat's width is:450
 ProcessMat's height is:344
 ProcessMat's channels is:3
-nAlterWidth is:34
+nAlterWidth is:35
 nAlterHeight is:26
-nAlterWidth is:34
+nAlterWidth is:35
 nAlterHeight is:26
 m_matNormalizeMat channels is:3
-NormalizeMat's width is:34
+NormalizeMat's width is:35
 NormalizeMat's height is:26
 NormalizeMat's channels is:3
 PNet is predicting!
-PNet input geom is:[48 x 37]
+PNet input geom is:[49 x 36]
 NetPredict2 process 1!
 NetPredict2 process 2!
 NetPredict2 process 3!
-WrapInputLayer nWidth is:34
+WrapInputLayer nWidth is:35
 WrapInputLayer nHeight is:26
 NetPredict2 process 4!
 Preprocess nChannelNum is:3
-SampleImage's size is:[34 x 26]
-szInputGeom's size is:[34 x 26]
+SampleImage's size is:[35 x 26]
+szInputGeom's size is:[35 x 26]
 NetPredict2 process 5!
 NetPredict2 process 6!
 blfOutputLayer's size is:2
-blfOutputLayer's width is:12
+blfOutputLayer's width is:13
 blfOutputLayer's height is:8
 vblfPOutputLayer is:2
-blfProb1OutputLayer's width is:12
+blfProb1OutputLayer's width is:13
 blfProb1OutputLayer's height is:8
 1
 2
-12
+13
 8
 1
 4
-12
+13
 8
 Prob1Mat n is:0
 Prob1Mat n is:1
@@ -1140,7 +766,7 @@ vmatProb1Mat[1].data
 
 
 
-0.811715 
+
 
 
 
@@ -1148,109 +774,94 @@ vmatProb1Mat[1].data
 m_vfThreshold[0]0.6
 matMask test pass!
 LocatePoints start!
-vptPoints' size is:1
-vmatProb1Mat[1]'s width is:12
+vptPoints' size is:0
+vmatProb1Mat[1]'s width is:13
 vmatProb1Mat[1]'s height is:8
 Conv4_2 out!
 Point out!
 0.0762129
 GenerateBoundingBox end!
-Nms 1!
-Nms 2!
-Nms 3!
-Bounding Box's size is:1
-vvsScore size is:1
-vssScore[0].fScore0.811715
-9.98e-07
-Nms 6!
-viPick's size is:1
+Nms return!
+viPick's size is:0
 ProcessMat's width is:450
 ProcessMat's height is:344
 ProcessMat's channels is:3
-nAlterWidth is:24
-nAlterHeight is:19
-nAlterWidth is:24
-nAlterHeight is:19
+nAlterWidth is:25
+nAlterHeight is:18
+nAlterWidth is:25
+nAlterHeight is:18
 m_matNormalizeMat channels is:3
-NormalizeMat's width is:24
-NormalizeMat's height is:19
+NormalizeMat's width is:25
+NormalizeMat's height is:18
 NormalizeMat's channels is:3
 PNet is predicting!
-PNet input geom is:[34 x 26]
+PNet input geom is:[35 x 26]
 NetPredict2 process 1!
 NetPredict2 process 2!
 NetPredict2 process 3!
-WrapInputLayer nWidth is:24
-WrapInputLayer nHeight is:19
+WrapInputLayer nWidth is:25
+WrapInputLayer nHeight is:18
 NetPredict2 process 4!
 Preprocess nChannelNum is:3
-SampleImage's size is:[24 x 19]
-szInputGeom's size is:[24 x 19]
+SampleImage's size is:[25 x 18]
+szInputGeom's size is:[25 x 18]
 NetPredict2 process 5!
 NetPredict2 process 6!
 blfOutputLayer's size is:2
-blfOutputLayer's width is:7
-blfOutputLayer's height is:5
+blfOutputLayer's width is:8
+blfOutputLayer's height is:4
 vblfPOutputLayer is:2
-blfProb1OutputLayer's width is:7
-blfProb1OutputLayer's height is:5
+blfProb1OutputLayer's width is:8
+blfProb1OutputLayer's height is:4
 1
 2
-7
-5
+8
+4
 1
 4
-7
-5
+8
+4
 Prob1Mat n is:0
 Prob1Mat n is:1
 vmatProb1Mat[1].data
 
-0.702155 
 
 
 
 m_vfThreshold[0]0.6
 matMask test pass!
 LocatePoints start!
-vptPoints' size is:1
-vmatProb1Mat[1]'s width is:7
-vmatProb1Mat[1]'s height is:5
+vptPoints' size is:0
+vmatProb1Mat[1]'s width is:8
+vmatProb1Mat[1]'s height is:4
 Conv4_2 out!
 Point out!
 0.054035
 GenerateBoundingBox end!
-Nms 1!
-Nms 2!
-Nms 3!
-Bounding Box's size is:1
-vvsScore size is:1
-vssScore[0].fScore0.702155
-1.518e-06
-Nms 6!
-viPick's size is:1
+Nms return!
+viPick's size is:0
 ProcessMat's width is:450
 ProcessMat's height is:344
 ProcessMat's channels is:3
-nAlterWidth is:17
+nAlterWidth is:18
 nAlterHeight is:13
-nAlterWidth is:17
+nAlterWidth is:18
 nAlterHeight is:13
 m_matNormalizeMat channels is:3
-NormalizeMat's width is:17
+NormalizeMat's width is:18
 NormalizeMat's height is:13
 NormalizeMat's channels is:3
 PNet is predicting!
-PNet input geom is:[24 x 19]
+PNet input geom is:[25 x 18]
 NetPredict2 process 1!
 NetPredict2 process 2!
 NetPredict2 process 3!
-WrapInputLayer nWidth is:17
+WrapInputLayer nWidth is:18
 WrapInputLayer nHeight is:13
 NetPredict2 process 4!
 Preprocess nChannelNum is:3
-SampleImage's size is:[17 x 13]
-szInputGeom's size is:[17 x 13]
+SampleImage's size is:[18 x 13]
+szInputGeom's size is:[18 x 13]
 NetPredict2 process 5!
 NetPredict2 process 6!
 blfOutputLayer's size is:2
@@ -1284,1354 +895,1192 @@ Point out!
 GenerateBoundingBox end!
 Nms return!
 viPick's size is:0
-157
-vrectTotalBoundingBox:[18 x 19 from (181, 241)]
-vrectTotalBoundingBox:[18 x 19 from (158, 224)]
-vrectTotalBoundingBox:[18 x 19 from (185, 241)]
-vrectTotalBoundingBox:[19 x 18 from (151, 248)]
-vrectTotalBoundingBox:[18 x 19 from (198, 241)]
-vrectTotalBoundingBox:[18 x 18 from (98, 81)]
-vrectTotalBoundingBox:[18 x 18 from (108, 191)]
-vrectTotalBoundingBox:[19 x 18 from (54, 185)]
-vrectTotalBoundingBox:[18 x 19 from (181, 244)]
-vrectTotalBoundingBox:[19 x 18 from (114, 81)]
-vrectTotalBoundingBox:[18 x 19 from (155, 224)]
-vrectTotalBoundingBox:[19 x 19 from (151, 244)]
-vrectTotalBoundingBox:[19 x 18 from (111, 191)]
-vrectTotalBoundingBox:[19 x 18 from (111, 188)]
-vrectTotalBoundingBox:[19 x 19 from (21, 204)]
-vrectTotalBoundingBox:[18 x 18 from (98, 85)]
-vrectTotalBoundingBox:[19 x 18 from (114, 78)]
-vrectTotalBoundingBox:[17 x 19 from (-1, 161)]
-vrectTotalBoundingBox:[18 x 18 from (201, 238)]
-vrectTotalBoundingBox:[18 x 19 from (148, 224)]
-vrectTotalBoundingBox:[18 x 18 from (108, 188)]
-vrectTotalBoundingBox:[18 x 18 from (198, 238)]
-vrectTotalBoundingBox:[18 x 19 from (178, 241)]
-vrectTotalBoundingBox:[19 x 19 from (24, 204)]
-vrectTotalBoundingBox:[18 x 18 from (148, 248)]
-vrectTotalBoundingBox:[19 x 19 from (141, 241)]
-vrectTotalBoundingBox:[18 x 18 from (191, 238)]
-vrectTotalBoundingBox:[19 x 18 from (54, 188)]
-vrectTotalBoundingBox:[18 x 19 from (145, 244)]
-vrectTotalBoundingBox:[18 x 19 from (145, 241)]
-vrectTotalBoundingBox:[18 x 19 from (408, 124)]
-vrectTotalBoundingBox:[18 x 19 from (185, 244)]
-vrectTotalBoundingBox:[19 x 18 from (24, 208)]
-vrectTotalBoundingBox:[18 x 18 from (148, 228)]
-vrectTotalBoundingBox:[18 x 19 from (198, 244)]
-vrectTotalBoundingBox:[18 x 19 from (148, 244)]
-vrectTotalBoundingBox:[19 x 18 from (171, 238)]
-vrectTotalBoundingBox:[18 x 19 from (268, 271)]
-vrectTotalBoundingBox:[19 x 18 from (404, 118)]
-vrectTotalBoundingBox:[18 x 18 from (98, 78)]
-vrectTotalBoundingBox:[18 x 19 from (218, 244)]
-vrectTotalBoundingBox:[18 x 19 from (108, 194)]
-vrectTotalBoundingBox:[19 x 19 from (104, 194)]
-vrectTotalBoundingBox:[19 x 19 from (161, 224)]
-vrectTotalBoundingBox:[18 x 19 from (408, 121)]
-vrectTotalBoundingBox:[19 x 18 from (104, 191)]
-vrectTotalBoundingBox:[18 x 19 from (201, 241)]
-vrectTotalBoundingBox:[19 x 18 from (61, 68)]
-vrectTotalBoundingBox:[19 x 19 from (151, 251)]
-vrectTotalBoundingBox:[19 x 19 from (61, 71)]
-vrectTotalBoundingBox:[25 x 26 from (148, 223)]
-vrectTotalBoundingBox:[26 x 26 from (152, 246)]
+116
+vrectTotalBoundingBox:[18 x 19 from (165, 311)]
+vrectTotalBoundingBox:[18 x 18 from (248, 38)]
+vrectTotalBoundingBox:[19 x 18 from (131, 48)]
+vrectTotalBoundingBox:[18 x 19 from (298, 131)]
+vrectTotalBoundingBox:[18 x 19 from (335, 114)]
+vrectTotalBoundingBox:[18 x 18 from (95, 45)]
+vrectTotalBoundingBox:[18 x 19 from (275, 14)]
+vrectTotalBoundingBox:[19 x 18 from (161, 308)]
+vrectTotalBoundingBox:[18 x 18 from (325, 168)]
+vrectTotalBoundingBox:[18 x 19 from (191, 301)]
+vrectTotalBoundingBox:[19 x 18 from (271, 11)]
+vrectTotalBoundingBox:[18 x 18 from (315, 148)]
+vrectTotalBoundingBox:[18 x 19 from (318, 114)]
+vrectTotalBoundingBox:[18 x 18 from (198, 158)]
+vrectTotalBoundingBox:[18 x 19 from (135, 51)]
+vrectTotalBoundingBox:[18 x 18 from (238, 108)]
+vrectTotalBoundingBox:[19 x 18 from (321, 208)]
+vrectTotalBoundingBox:[18 x 18 from (265, 41)]
+vrectTotalBoundingBox:[19 x 18 from (281, 158)]
+vrectTotalBoundingBox:[19 x 18 from (161, 315)]
+vrectTotalBoundingBox:[18 x 18 from (231, 38)]
+vrectTotalBoundingBox:[18 x 18 from (275, 28)]
+vrectTotalBoundingBox:[18 x 18 from (155, 308)]
+vrectTotalBoundingBox:[19 x 18 from (341, 85)]
+vrectTotalBoundingBox:[19 x 19 from (291, 161)]
+vrectTotalBoundingBox:[26 x 26 from (326, 110)]
 vrectTotalBoundingBox:[26 x 26 from (105, 72)]
-vrectTotalBoundingBox:[25 x 26 from (181, 232)]
-vrectTotalBoundingBox:[26 x 26 from (105, 77)]
-vrectTotalBoundingBox:[25 x 26 from (101, 185)]
-vrectTotalBoundingBox:[26 x 25 from (133, 242)]
-vrectTotalBoundingBox:[25 x 26 from (369, 124)]
-vrectTotalBoundingBox:[26 x 26 from (401, 115)]
-vrectTotalBoundingBox:[25 x 26 from (101, 190)]
-vrectTotalBoundingBox:[26 x 26 from (133, 237)]
-vrectTotalBoundingBox:[25 x 26 from (148, 246)]
-vrectTotalBoundingBox:[26 x 25 from (162, 228)]
-vrectTotalBoundingBox:[26 x 26 from (152, 223)]
-vrectTotalBoundingBox:[25 x 26 from (-2, 86)]
-vrectTotalBoundingBox:[26 x 26 from (176, 232)]
-vrectTotalBoundingBox:[26 x 25 from (129, 242)]
-vrectTotalBoundingBox:[26 x 26 from (185, 232)]
-vrectTotalBoundingBox:[25 x 26 from (181, 237)]
-vrectTotalBoundingBox:[26 x 26 from (16, 204)]
-vrectTotalBoundingBox:[26 x 26 from (138, 223)]
-vrectTotalBoundingBox:[25 x 26 from (148, 218)]
-vrectTotalBoundingBox:[26 x 26 from (138, 218)]
-vrectTotalBoundingBox:[26 x 26 from (138, 237)]
-vrectTotalBoundingBox:[26 x 26 from (105, 185)]
-vrectTotalBoundingBox:[26 x 26 from (105, 190)]
-vrectTotalBoundingBox:[25 x 26 from (369, 119)]
-vrectTotalBoundingBox:[26 x 26 from (96, 185)]
-vrectTotalBoundingBox:[26 x 25 from (105, 181)]
-vrectTotalBoundingBox:[25 x 26 from (369, 115)]
-vrectTotalBoundingBox:[36 x 37 from (116, 228)]
-vrectTotalBoundingBox:[36 x 37 from (43, 69)]
-vrectTotalBoundingBox:[36 x 36 from (368, 116)]
-vrectTotalBoundingBox:[36 x 36 from (43, 76)]
-vrectTotalBoundingBox:[37 x 36 from (69, 76)]
-vrectTotalBoundingBox:[36 x 37 from (129, 228)]
-vrectTotalBoundingBox:[36 x 36 from (361, 116)]
-vrectTotalBoundingBox:[37 x 36 from (142, 235)]
-vrectTotalBoundingBox:[36 x 37 from (43, 62)]
-vrectTotalBoundingBox:[37 x 36 from (142, 222)]
-vrectTotalBoundingBox:[36 x 37 from (109, 228)]
-vrectTotalBoundingBox:[37 x 36 from (142, 242)]
-vrectTotalBoundingBox:[37 x 37 from (208, 188)]
-vrectTotalBoundingBox:[37 x 36 from (9, 76)]
-vrectTotalBoundingBox:[37 x 36 from (62, 76)]
-vrectTotalBoundingBox:[36 x 36 from (368, 109)]
-vrectTotalBoundingBox:[37 x 37 from (122, 228)]
-vrectTotalBoundingBox:[37 x 36 from (135, 222)]
-vrectTotalBoundingBox:[36 x 36 from (43, 56)]
-vrectTotalBoundingBox:[37 x 37 from (49, 82)]
-vrectTotalBoundingBox:[36 x 36 from (162, 235)]
-vrectTotalBoundingBox:[36 x 36 from (96, 182)]
-vrectTotalBoundingBox:[37 x 36 from (49, 76)]
-vrectTotalBoundingBox:[36 x 37 from (368, 122)]
-vrectTotalBoundingBox:[37 x 36 from (135, 235)]
-vrectTotalBoundingBox:[36 x 36 from (149, 242)]
-vrectTotalBoundingBox:[37 x 36 from (135, 242)]
-vrectTotalBoundingBox:[37 x 37 from (9, 69)]
-vrectTotalBoundingBox:[36 x 36 from (162, 222)]
-vrectTotalBoundingBox:[36 x 37 from (36, 62)]
-vrectTotalBoundingBox:[51 x 52 from (42, 60)]
-vrectTotalBoundingBox:[51 x 51 from (42, 70)]
-vrectTotalBoundingBox:[52 x 52 from (32, 60)]
-vrectTotalBoundingBox:[52 x 52 from (135, 219)]
-vrectTotalBoundingBox:[52 x 51 from (32, 70)]
-vrectTotalBoundingBox:[51 x 52 from (126, 219)]
-vrectTotalBoundingBox:[51 x 52 from (51, 60)]
-vrectTotalBoundingBox:[51 x 51 from (360, 107)]
-vrectTotalBoundingBox:[52 x 52 from (4, 60)]
-vrectTotalBoundingBox:[52 x 51 from (135, 210)]
-vrectTotalBoundingBox:[52 x 52 from (116, 219)]
-vrectTotalBoundingBox:[50 x 52 from (-4, 60)]
-vrectTotalBoundingBox:[52 x 51 from (350, 98)]
-vrectTotalBoundingBox:[51 x 51 from (126, 229)]
-vrectTotalBoundingBox:[52 x 51 from (135, 229)]
-vrectTotalBoundingBox:[51 x 52 from (23, 60)]
-vrectTotalBoundingBox:[52 x 51 from (350, 107)]
-vrectTotalBoundingBox:[52 x 51 from (4, 70)]
-vrectTotalBoundingBox:[52 x 51 from (116, 229)]
-vrectTotalBoundingBox:[51 x 51 from (126, 210)]
-vrectTotalBoundingBox:[51 x 51 from (360, 98)]
-vrectTotalBoundingBox:[52 x 51 from (32, 51)]
-vrectTotalBoundingBox:[73 x 72 from (19, 46)]
-vrectTotalBoundingBox:[73 x 72 from (32, 46)]
-vrectTotalBoundingBox:[73 x 72 from (19, 59)]
-vrectTotalBoundingBox:[73 x 73 from (98, 204)]
-vrectTotalBoundingBox:[72 x 73 from (112, 204)]
-vrectTotalBoundingBox:[73 x 72 from (6, 46)]
-vrectTotalBoundingBox:[72 x 73 from (125, 204)]
-vrectTotalBoundingBox:[73 x 72 from (32, 59)]
-vrectTotalBoundingBox:[73 x 73 from (349, 98)]
-vrectTotalBoundingBox:[73 x 73 from (349, 85)]
-vrectTotalBoundingBox:[72 x 73 from (336, 98)]
-vrectTotalBoundingBox:[72 x 72 from (112, 191)]
-vrectTotalBoundingBox:[73 x 72 from (6, 59)]
-vrectTotalBoundingBox:[72 x 73 from (336, 85)]
-vrectTotalBoundingBox:[72 x 72 from (336, 112)]
-vrectTotalBoundingBox:[72 x 72 from (125, 191)]
-vrectTotalBoundingBox:[72 x 73 from (178, 151)]
-vrectTotalBoundingBox:[73 x 73 from (19, 32)]
-vrectTotalBoundingBox:[102 x 102 from (-9, 46)]
-vrectTotalBoundingBox:[102 x 102 from (9, 46)]
-vrectTotalBoundingBox:[102 x 103 from (9, 27)]
-vrectTotalBoundingBox:[102 x 103 from (-9, 27)]
-vrectTotalBoundingBox:[102 x 102 from (102, 195)]
-vrectTotalBoundingBox:[145 x 144 from (91, 65)]
-vrectTotalBoundingBox:[204 x 204 from (55, 18)]
+vrectTotalBoundingBox:[25 x 26 from (195, 157)]
+vrectTotalBoundingBox:[26 x 26 from (157, 307)]
+vrectTotalBoundingBox:[25 x 26 from (181, 279)]
+vrectTotalBoundingBox:[26 x 26 from (293, 119)]
+vrectTotalBoundingBox:[26 x 26 from (110, 77)]
+vrectTotalBoundingBox:[26 x 26 from (293, 129)]
+vrectTotalBoundingBox:[25 x 26 from (275, 157)]
+vrectTotalBoundingBox:[26 x 26 from (270, 25)]
+vrectTotalBoundingBox:[26 x 26 from (246, 30)]
+vrectTotalBoundingBox:[26 x 26 from (251, 72)]
+vrectTotalBoundingBox:[26 x 26 from (293, 25)]
+vrectTotalBoundingBox:[26 x 25 from (256, 54)]
+vrectTotalBoundingBox:[26 x 26 from (129, 44)]
+vrectTotalBoundingBox:[26 x 25 from (63, 54)]
+vrectTotalBoundingBox:[25 x 25 from (242, -2)]
+vrectTotalBoundingBox:[26 x 26 from (265, 30)]
+vrectTotalBoundingBox:[26 x 26 from (129, 96)]
+vrectTotalBoundingBox:[26 x 26 from (307, 82)]
+vrectTotalBoundingBox:[26 x 26 from (284, 152)]
+vrectTotalBoundingBox:[26 x 26 from (237, 16)]
+vrectTotalBoundingBox:[26 x 26 from (336, 110)]
+vrectTotalBoundingBox:[26 x 26 from (166, 284)]
+vrectTotalBoundingBox:[26 x 26 from (303, 129)]
+vrectTotalBoundingBox:[26 x 26 from (317, 204)]
+vrectTotalBoundingBox:[26 x 26 from (284, 119)]
+vrectTotalBoundingBox:[26 x 26 from (143, 279)]
+vrectTotalBoundingBox:[26 x 26 from (312, 143)]
+vrectTotalBoundingBox:[26 x 26 from (166, 303)]
+vrectTotalBoundingBox:[26 x 26 from (312, 199)]
+vrectTotalBoundingBox:[26 x 26 from (82, 72)]
+vrectTotalBoundingBox:[25 x 26 from (101, 77)]
+vrectTotalBoundingBox:[37 x 36 from (142, 275)]
+vrectTotalBoundingBox:[36 x 36 from (288, 116)]
+vrectTotalBoundingBox:[36 x 37 from (96, 62)]
+vrectTotalBoundingBox:[37 x 36 from (321, 109)]
+vrectTotalBoundingBox:[37 x 36 from (314, 96)]
+vrectTotalBoundingBox:[36 x 37 from (169, 281)]
+vrectTotalBoundingBox:[36 x 36 from (295, 76)]
+vrectTotalBoundingBox:[36 x 36 from (308, 129)]
+vrectTotalBoundingBox:[37 x 36 from (281, 109)]
+vrectTotalBoundingBox:[36 x 36 from (275, 116)]
+vrectTotalBoundingBox:[36 x 37 from (235, 62)]
+vrectTotalBoundingBox:[36 x 36 from (116, 36)]
+vrectTotalBoundingBox:[36 x 37 from (255, 16)]
+vrectTotalBoundingBox:[36 x 37 from (348, 155)]
+vrectTotalBoundingBox:[37 x 37 from (135, 268)]
+vrectTotalBoundingBox:[36 x 37 from (255, 62)]
+vrectTotalBoundingBox:[37 x 36 from (102, 169)]
+vrectTotalBoundingBox:[36 x 36 from (89, 43)]
+vrectTotalBoundingBox:[36 x 37 from (255, 155)]
+vrectTotalBoundingBox:[36 x 36 from (162, 288)]
+vrectTotalBoundingBox:[37 x 36 from (102, 43)]
+vrectTotalBoundingBox:[36 x 37 from (308, 142)]
+vrectTotalBoundingBox:[36 x 37 from (295, 122)]
+vrectTotalBoundingBox:[36 x 36 from (242, 56)]
+vrectTotalBoundingBox:[37 x 37 from (102, 69)]
+vrectTotalBoundingBox:[52 x 51 from (88, 14)]
+vrectTotalBoundingBox:[52 x 52 from (144, 275)]
+vrectTotalBoundingBox:[52 x 51 from (303, 107)]
+vrectTotalBoundingBox:[51 x 51 from (285, 79)]
+vrectTotalBoundingBox:[52 x 51 from (294, 126)]
+vrectTotalBoundingBox:[51 x 51 from (285, 107)]
+vrectTotalBoundingBox:[51 x 51 from (79, 70)]
+vrectTotalBoundingBox:[51 x 51 from (313, 173)]
+vrectTotalBoundingBox:[51 x 52 from (285, 60)]
+vrectTotalBoundingBox:[52 x 51 from (88, 42)]
+vrectTotalBoundingBox:[51 x 51 from (341, 154)]
+vrectTotalBoundingBox:[51 x 51 from (154, 266)]
+vrectTotalBoundingBox:[51 x 52 from (79, 4)]
+vrectTotalBoundingBox:[51 x 52 from (98, 4)]
+vrectTotalBoundingBox:[51 x 51 from (266, 107)]
+vrectTotalBoundingBox:[51 x 51 from (70, 51)]
+vrectTotalBoundingBox:[52 x 51 from (303, 79)]
+vrectTotalBoundingBox:[52 x 51 from (60, 23)]
+vrectTotalBoundingBox:[51 x 52 from (79, 32)]
+vrectTotalBoundingBox:[51 x 51 from (126, 98)]
+vrectTotalBoundingBox:[73 x 73 from (283, 98)]
+vrectTotalBoundingBox:[72 x 72 from (270, 59)]
+vrectTotalBoundingBox:[73 x 73 from (283, 72)]
+vrectTotalBoundingBox:[73 x 72 from (138, 257)]
+vrectTotalBoundingBox:[73 x 73 from (309, 151)]
+vrectTotalBoundingBox:[73 x 73 from (72, 6)]
+vrectTotalBoundingBox:[73 x 73 from (72, 32)]
+vrectTotalBoundingBox:[73 x 72 from (309, 178)]
+vrectTotalBoundingBox:[72 x 73 from (257, 98)]
+vrectTotalBoundingBox:[72 x 73 from (46, 6)]
+vrectTotalBoundingBox:[72 x 72 from (112, 257)]
+vrectTotalBoundingBox:[103 x 102 from (269, 65)]
+vrectTotalBoundingBox:[102 x 102 from (65, -9)]
 RNet test 1!
 Nms 1!
-Nms 2!
-Nms 3!
-Bounding Box's size is:157
-vvsScore size is:157
-vssScore[0].fScore0.999954
-2.0161e-05
-vvsScore size is:156
-vssScore[0].fScore0.999954
-1.7126e-05
-vvsScore size is:153
-vssScore[0].fScore0.999954
-1.653e-05
-vvsScore size is:149
-vssScore[0].fScore0.999954
-1.588e-05
-vvsScore size is:145
-vssScore[0].fScore0.999954
-1.5554e-05
-vvsScore size is:142
-vssScore[0].fScore0.999954
-1.4993e-05
-vvsScore size is:139
-vssScore[0].fScore0.999954
-1.4579e-05
-vvsScore size is:135
-vssScore[0].fScore0.999954
-1.4033e-05
-vvsScore size is:131
-vssScore[0].fScore0.999954
-1.3597e-05
-vvsScore size is:127
-vssScore[0].fScore0.999954
-1.3076e-05
-vvsScore size is:123
-vssScore[0].fScore0.999954
-1.2589e-05
-vvsScore size is:119
-vssScore[0].fScore0.999954
-1.2087e-05
-vvsScore size is:116
-vssScore[0].fScore0.999954
-1.1799e-05
-vvsScore size is:115
-vssScore[0].fScore0.999954
-1.176e-05
-vvsScore size is:114
-vssScore[0].fScore0.999954
-1.1435e-05
-vvsScore size is:112
-vssScore[0].fScore0.999954
-1.1211e-05
-vvsScore size is:110
-vssScore[0].fScore0.999954
-1.1047e-05
-vvsScore size is:109
-vssScore[0].fScore0.999954
-1.0778e-05
-vvsScore size is:106
-vssScore[0].fScore0.999954
-1.0501e-05
-vvsScore size is:103
-vssScore[0].fScore0.999954
-1.019e-05
-vvsScore size is:100
-vssScore[0].fScore0.999954
-9.933e-06
-vvsScore size is:97
-vssScore[0].fScore0.999954
-9.592e-06
-vvsScore size is:94
-vssScore[0].fScore0.999954
-9.24e-06
-vvsScore size is:90
-vssScore[0].fScore0.999954
-8.867e-06
-vvsScore size is:87
-vssScore[0].fScore0.999954
-8.606e-06
-vvsScore size is:86
-vssScore[0].fScore0.999954
-8.475e-06
-vvsScore size is:86
-vssScore[0].fScore0.999954
-8.439e-06
-vvsScore size is:85
-vssScore[0].fScore0.999954
-8.344e-06
-vvsScore size is:85
-vssScore[0].fScore0.999954
-8.185e-06
-vvsScore size is:84
-vssScore[0].fScore0.999954
-7.995e-06
-vvsScore size is:83
-vssScore[0].fScore0.999954
-7.977e-06
-vvsScore size is:82
-vssScore[0].fScore0.999954
-7.922e-06
-vvsScore size is:81
-vssScore[0].fScore0.999954
-7.78e-06
-vvsScore size is:79
-vssScore[0].fScore0.999954
-7.445e-06
-vvsScore size is:77
-vssScore[0].fScore0.999954
-7.219e-06
-vvsScore size is:75
-vssScore[0].fScore0.999954
-6.964e-06
-vvsScore size is:71
-vssScore[0].fScore0.999954
-6.708e-06
-vvsScore size is:70
-vssScore[0].fScore0.999954
-6.571e-06
-vvsScore size is:69
-vssScore[0].fScore0.999954
-6.357e-06
-vvsScore size is:66
-vssScore[0].fScore0.999954
-6.124e-06
-vvsScore size is:62
-vssScore[0].fScore0.999954
-5.832e-06
-vvsScore size is:59
-vssScore[0].fScore0.999954
-5.504e-06
-vvsScore size is:55
-vssScore[0].fScore0.999954
-5.258e-06
-vvsScore size is:53
-vssScore[0].fScore0.999954
-5.103e-06
-vvsScore size is:50
-vssScore[0].fScore0.999954
-4.855e-06
-vvsScore size is:48
-vssScore[0].fScore0.999954
-4.794e-06
-vvsScore size is:46
-vssScore[0].fScore0.999954
-4.551e-06
-vvsScore size is:46
-vssScore[0].fScore0.999954
-4.575e-06
-vvsScore size is:46
-vssScore[0].fScore0.999954
-4.511e-06
-vvsScore size is:45
-vssScore[0].fScore0.999954
-4.379e-06
-vvsScore size is:45
-vssScore[0].fScore0.999954
-4.336e-06
-vvsScore size is:45
-vssScore[0].fScore0.999954
-4.276e-06
-vvsScore size is:44
-vssScore[0].fScore0.999954
-4.186e-06
-vvsScore size is:43
-vssScore[0].fScore0.999954
-4.151e-06
-vvsScore size is:41
-vssScore[0].fScore0.999954
-4.084e-06
-vvsScore size is:40
-vssScore[0].fScore0.999954
-3.888e-06
-vvsScore size is:39
-vssScore[0].fScore0.999954
-3.834e-06
-vvsScore size is:38
-vssScore[0].fScore0.999954
-3.753e-06
-vvsScore size is:38
-vssScore[0].fScore0.999954
-3.767e-06
-vvsScore size is:37
-vssScore[0].fScore0.999954
-3.785e-06
-vvsScore size is:36
-vssScore[0].fScore0.999954
-3.683e-06
-vvsScore size is:35
-vssScore[0].fScore0.999954
-3.541e-06
-vvsScore size is:35
-vssScore[0].fScore0.999954
-3.708e-06
-vvsScore size is:33
-vssScore[0].fScore0.999954
-3.454e-06
-vvsScore size is:31
-vssScore[0].fScore0.999954
-3.457e-06
-vvsScore size is:29
-vssScore[0].fScore0.999954
-3.357e-06
-vvsScore size is:29
-vssScore[0].fScore0.999954
-2.977e-06
-vvsScore size is:27
-vssScore[0].fScore0.999954
-2.809e-06
-vvsScore size is:26
-vssScore[0].fScore0.999954
-2.771e-06
-vvsScore size is:25
-vssScore[0].fScore0.999954
-2.764e-06
-vvsScore size is:24
-vssScore[0].fScore0.999954
-2.623e-06
-vvsScore size is:23
-vssScore[0].fScore0.999954
-2.628e-06
-vvsScore size is:22
-vssScore[0].fScore0.999954
-2.477e-06
-vvsScore size is:21
-vssScore[0].fScore0.999954
-2.417e-06
-vvsScore size is:20
-vssScore[0].fScore0.999954
-2.42e-06
-vvsScore size is:20
-vssScore[0].fScore0.999954
-2.443e-06
-vvsScore size is:20
-vssScore[0].fScore0.999954
-2.175e-06
-vvsScore size is:19
-vssScore[0].fScore0.999954
-2.165e-06
-vvsScore size is:18
-vssScore[0].fScore0.999954
-2.242e-06
-vvsScore size is:18
-vssScore[0].fScore0.999954
-2.129e-06
-vvsScore size is:17
-vssScore[0].fScore0.999954
-2.054e-06
-vvsScore size is:17
-vssScore[0].fScore0.999954
-2.083e-06
-vvsScore size is:17
-vssScore[0].fScore0.999954
-1.892e-06
-vvsScore size is:17
-vssScore[0].fScore0.999954
-1.85e-06
-vvsScore size is:17
-vssScore[0].fScore0.999954
-1.847e-06
-vvsScore size is:17
-vssScore[0].fScore0.999954
-1.994e-06
-vvsScore size is:16
-vssScore[0].fScore0.999954
-2.186e-06
-vvsScore size is:15
-vssScore[0].fScore0.999954
-1.802e-06
-vvsScore size is:14
-vssScore[0].fScore0.999954
-1.775e-06
-vvsScore size is:13
-vssScore[0].fScore0.999954
-1.71e-06
-vvsScore size is:12
-vssScore[0].fScore0.999954
-1.641e-06
-vvsScore size is:12
-vssScore[0].fScore0.999954
-1.601e-06
-vvsScore size is:10
-vssScore[0].fScore0.999954
-1.79e-06
-vvsScore size is:10
-vssScore[0].fScore0.999954
-1.384e-06
-vvsScore size is:7
-vssScore[0].fScore0.999954
-1.335e-06
-vvsScore size is:6
-vssScore[0].fScore0.999954
-1.207e-06
-vvsScore size is:4
-vssScore[0].fScore0.999954
-1.156e-06
-vvsScore size is:4
-vssScore[0].fScore0.999954
-1.123e-06
-vvsScore size is:4
-vssScore[0].fScore0.999954
-1.101e-06
-vvsScore size is:4
-vssScore[0].fScore0.999954
-1.069e-06
-vvsScore size is:4
-vssScore[0].fScore0.999954
-1.074e-06
-vvsScore size is:4
-vssScore[0].fScore0.999954
-1.079e-06
-vvsScore size is:3
-vssScore[0].fScore0.999954
-1.046e-06
-vvsScore size is:3
-vssScore[0].fScore0.999954
-1.009e-06
-vvsScore size is:2
-vssScore[0].fScore0.999954
-9.86e-07
-vvsScore size is:1
-vssScore[0].fScore0.999954
-9.58e-07
-Nms 6!
+vssrTempScoreRect[0].fScore0.996391
+vssrTempScoreRect[0].fScore0.995107
+vssrTempScoreRect[0].fScore0.994168
+vssrTempScoreRect[0].fScore0.99282
+vssrTempScoreRect[0].fScore0.992508
+vssrTempScoreRect[0].fScore0.988523
+vssrTempScoreRect[0].fScore0.986386
+vssrTempScoreRect[0].fScore0.979295
+vssrTempScoreRect[0].fScore0.977472
+vssrTempScoreRect[0].fScore0.974837
+vssrTempScoreRect[0].fScore0.970727
+vssrTempScoreRect[0].fScore0.968476
+vssrTempScoreRect[0].fScore0.966666
+vssrTempScoreRect[0].fScore0.965299
+vssrTempScoreRect[0].fScore0.961315
+vssrTempScoreRect[0].fScore0.960801
+vssrTempScoreRect[0].fScore0.956081
+vssrTempScoreRect[0].fScore0.945662
+vssrTempScoreRect[0].fScore0.944151
+vssrTempScoreRect[0].fScore0.935394
+vssrTempScoreRect[0].fScore0.932604
+vssrTempScoreRect[0].fScore0.929644
+vssrTempScoreRect[0].fScore0.928331
+vssrTempScoreRect[0].fScore0.928065
+vssrTempScoreRect[0].fScore0.925707
+vssrTempScoreRect[0].fScore0.916986
+vssrTempScoreRect[0].fScore0.911734
+vssrTempScoreRect[0].fScore0.908445
+vssrTempScoreRect[0].fScore0.906548
+vssrTempScoreRect[0].fScore0.906187
+vssrTempScoreRect[0].fScore0.905875
+vssrTempScoreRect[0].fScore0.905303
+vssrTempScoreRect[0].fScore0.903988
+vssrTempScoreRect[0].fScore0.89776
+vssrTempScoreRect[0].fScore0.89677
+vssrTempScoreRect[0].fScore0.877335
+vssrTempScoreRect[0].fScore0.876965
+vssrTempScoreRect[0].fScore0.876892
+vssrTempScoreRect[0].fScore0.873232
+vssrTempScoreRect[0].fScore0.872598
+vssrTempScoreRect[0].fScore0.870715
+vssrTempScoreRect[0].fScore0.867782
+vssrTempScoreRect[0].fScore0.862503
+vssrTempScoreRect[0].fScore0.859853
+vssrTempScoreRect[0].fScore0.849857
+vssrTempScoreRect[0].fScore0.84708
+vssrTempScoreRect[0].fScore0.845905
+vssrTempScoreRect[0].fScore0.835713
+vssrTempScoreRect[0].fScore0.835637
+vssrTempScoreRect[0].fScore0.833854
+vssrTempScoreRect[0].fScore0.831235
+vssrTempScoreRect[0].fScore0.827903
+vssrTempScoreRect[0].fScore0.813277
+vssrTempScoreRect[0].fScore0.808844
+vssrTempScoreRect[0].fScore0.805331
+vssrTempScoreRect[0].fScore0.803141
+vssrTempScoreRect[0].fScore0.799779
+vssrTempScoreRect[0].fScore0.788306
+vssrTempScoreRect[0].fScore0.78688
+vssrTempScoreRect[0].fScore0.782006
+vssrTempScoreRect[0].fScore0.780034
+vssrTempScoreRect[0].fScore0.775292
+vssrTempScoreRect[0].fScore0.771805
+vssrTempScoreRect[0].fScore0.770229
+vssrTempScoreRect[0].fScore0.766594
+vssrTempScoreRect[0].fScore0.763429
+vssrTempScoreRect[0].fScore0.757691
+vssrTempScoreRect[0].fScore0.750835
+vssrTempScoreRect[0].fScore0.74216
+vssrTempScoreRect[0].fScore0.74207
+vssrTempScoreRect[0].fScore0.740829
+vssrTempScoreRect[0].fScore0.730438
+vssrTempScoreRect[0].fScore0.724865
+vssrTempScoreRect[0].fScore0.716837
+vssrTempScoreRect[0].fScore0.714985
+vssrTempScoreRect[0].fScore0.711013
+vssrTempScoreRect[0].fScore0.70929
+vssrTempScoreRect[0].fScore0.708056
+vssrTempScoreRect[0].fScore0.70361
+vssrTempScoreRect[0].fScore0.69966
+vssrTempScoreRect[0].fScore0.699327
+vssrTempScoreRect[0].fScore0.694635
+vssrTempScoreRect[0].fScore0.694442
+vssrTempScoreRect[0].fScore0.693406
+vssrTempScoreRect[0].fScore0.691182
+vssrTempScoreRect[0].fScore0.689186
+vssrTempScoreRect[0].fScore0.684497
+vssrTempScoreRect[0].fScore0.67949
+vssrTempScoreRect[0].fScore0.677174
+vssrTempScoreRect[0].fScore0.67651
+vssrTempScoreRect[0].fScore0.674772
+vssrTempScoreRect[0].fScore0.672842
+vssrTempScoreRect[0].fScore0.672293
+vssrTempScoreRect[0].fScore0.662766
+vssrTempScoreRect[0].fScore0.662505
+vssrTempScoreRect[0].fScore0.66147
+vssrTempScoreRect[0].fScore0.657887
+vssrTempScoreRect[0].fScore0.656386
+vssrTempScoreRect[0].fScore0.655628
+vssrTempScoreRect[0].fScore0.648959
+vssrTempScoreRect[0].fScore0.648317
+vssrTempScoreRect[0].fScore0.648189
+vssrTempScoreRect[0].fScore0.643593
+vssrTempScoreRect[0].fScore0.641817
+vssrTempScoreRect[0].fScore0.64
+vssrTempScoreRect[0].fScore0.634611
+vssrTempScoreRect[0].fScore0.629045
+vssrTempScoreRect[0].fScore0.624726
+vssrTempScoreRect[0].fScore0.621984
+vssrTempScoreRect[0].fScore0.616284
+vssrTempScoreRect[0].fScore0.61518
+vssrTempScoreRect[0].fScore0.614975
+vssrTempScoreRect[0].fScore0.608532
+vssrTempScoreRect[0].fScore0.603257
+vssrTempScoreRect[0].fScore0.603225
+vssrTempScoreRect[0].fScore0.603225
+The viTotalPick is:0
 RNet test 2!
-rectTempBoundingBox:[51 x 52 from (42, 60)]
-RectifyRectangle[51 x 52 from (42, 60)]
-rectTempBoundingBox:[73 x 72 from (19, 46)]
-RectifyRectangle[73 x 72 from (19, 46)]
-rectTempBoundingBox:[51 x 51 from (42, 70)]
-RectifyRectangle[51 x 51 from (42, 70)]
-rectTempBoundingBox:[52 x 52 from (32, 60)]
-RectifyRectangle[52 x 52 from (32, 60)]
-rectTempBoundingBox:[52 x 52 from (135, 219)]
-RectifyRectangle[52 x 52 from (135, 219)]
-rectTempBoundingBox:[73 x 72 from (32, 46)]
-RectifyRectangle[73 x 72 from (32, 46)]
-rectTempBoundingBox:[52 x 51 from (32, 70)]
-RectifyRectangle[52 x 51 from (32, 70)]
-rectTempBoundingBox:[73 x 72 from (19, 59)]
-RectifyRectangle[73 x 72 from (19, 59)]
-rectTempBoundingBox:[51 x 52 from (126, 219)]
-RectifyRectangle[51 x 52 from (126, 219)]
-rectTempBoundingBox:[51 x 52 from (51, 60)]
-RectifyRectangle[51 x 52 from (51, 60)]
-rectTempBoundingBox:[73 x 73 from (98, 204)]
-RectifyRectangle[73 x 73 from (98, 204)]
-rectTempBoundingBox:[51 x 51 from (360, 107)]
-RectifyRectangle[51 x 51 from (360, 107)]
-rectTempBoundingBox:[72 x 73 from (112, 204)]
-RectifyRectangle[72 x 73 from (112, 204)]
-rectTempBoundingBox:[73 x 72 from (6, 46)]
-RectifyRectangle[73 x 72 from (6, 46)]
-rectTempBoundingBox:[25 x 26 from (148, 223)]
-RectifyRectangle[25 x 26 from (148, 223)]
-rectTempBoundingBox:[72 x 73 from (125, 204)]
-RectifyRectangle[72 x 73 from (125, 204)]
-rectTempBoundingBox:[73 x 72 from (32, 59)]
-RectifyRectangle[73 x 72 from (32, 59)]
-rectTempBoundingBox:[52 x 52 from (4, 60)]
-RectifyRectangle[52 x 52 from (4, 60)]
-rectTempBoundingBox:[18 x 19 from (181, 241)]
-RectifyRectangle[18 x 19 from (181, 241)]
-rectTempBoundingBox:[36 x 37 from (116, 228)]
-RectifyRectangle[36 x 37 from (116, 228)]
-rectTempBoundingBox:[73 x 73 from (349, 98)]
-RectifyRectangle[73 x 73 from (349, 98)]
-rectTempBoundingBox:[36 x 37 from (43, 69)]
-RectifyRectangle[36 x 37 from (43, 69)]
-rectTempBoundingBox:[36 x 36 from (368, 116)]
-RectifyRectangle[36 x 36 from (368, 116)]
-rectTempBoundingBox:[73 x 73 from (349, 85)]
-RectifyRectangle[73 x 73 from (349, 85)]
-rectTempBoundingBox:[18 x 19 from (158, 224)]
-RectifyRectangle[18 x 19 from (158, 224)]
-rectTempBoundingBox:[52 x 51 from (135, 210)]
-RectifyRectangle[52 x 51 from (135, 210)]
-rectTempBoundingBox:[72 x 73 from (336, 98)]
-RectifyRectangle[72 x 73 from (336, 98)]
-rectTempBoundingBox:[52 x 52 from (116, 219)]
-RectifyRectangle[52 x 52 from (116, 219)]
-rectTempBoundingBox:[72 x 72 from (112, 191)]
-RectifyRectangle[72 x 72 from (112, 191)]
-rectTempBoundingBox:[18 x 19 from (185, 241)]
-RectifyRectangle[18 x 19 from (185, 241)]
-rectTempBoundingBox:[50 x 52 from (-4, 60)]
-RectifyRectangle[50 x 52 from (-4, 60)]
-rectTempBoundingBox:[73 x 72 from (6, 59)]
-RectifyRectangle[73 x 72 from (6, 59)]
-rectTempBoundingBox:[36 x 36 from (43, 76)]
-RectifyRectangle[36 x 36 from (43, 76)]
-rectTempBoundingBox:[37 x 36 from (69, 76)]
-RectifyRectangle[37 x 36 from (69, 76)]
-rectTempBoundingBox:[26 x 26 from (152, 246)]
-RectifyRectangle[26 x 26 from (152, 246)]
+rectTempBoundingBox:[52 x 51 from (88, 14)]
+RectifyRectangle[52 x 51 from (88, 14)]
+rectTempBoundingBox:[103 x 102 from (269, 65)]
+RectifyRectangle[103 x 102 from (269, 65)]
+rectTempBoundingBox:[26 x 26 from (326, 110)]
+RectifyRectangle[26 x 26 from (326, 110)]
+rectTempBoundingBox:[73 x 73 from (283, 98)]
+RectifyRectangle[73 x 73 from (283, 98)]
+rectTempBoundingBox:[52 x 52 from (144, 275)]
+RectifyRectangle[52 x 52 from (144, 275)]
+rectTempBoundingBox:[37 x 36 from (142, 275)]
+RectifyRectangle[37 x 36 from (142, 275)]
+rectTempBoundingBox:[72 x 72 from (270, 59)]
+RectifyRectangle[72 x 72 from (270, 59)]
+rectTempBoundingBox:[52 x 51 from (303, 107)]
+RectifyRectangle[52 x 51 from (303, 107)]
+rectTempBoundingBox:[51 x 51 from (285, 79)]
+RectifyRectangle[51 x 51 from (285, 79)]
+rectTempBoundingBox:[73 x 73 from (283, 72)]
+RectifyRectangle[73 x 73 from (283, 72)]
+rectTempBoundingBox:[18 x 19 from (165, 311)]
+RectifyRectangle[18 x 19 from (165, 311)]
+rectTempBoundingBox:[36 x 36 from (288, 116)]
+RectifyRectangle[36 x 36 from (288, 116)]
 rectTempBoundingBox:[26 x 26 from (105, 72)]
 RectifyRectangle[26 x 26 from (105, 72)]
-rectTempBoundingBox:[52 x 51 from (350, 98)]
-RectifyRectangle[52 x 51 from (350, 98)]
-rectTempBoundingBox:[25 x 26 from (181, 232)]
-RectifyRectangle[25 x 26 from (181, 232)]
-rectTempBoundingBox:[36 x 37 from (129, 228)]
-RectifyRectangle[36 x 37 from (129, 228)]
-rectTempBoundingBox:[19 x 18 from (151, 248)]
-RectifyRectangle[19 x 18 from (151, 248)]
-rectTempBoundingBox:[36 x 36 from (361, 116)]
-RectifyRectangle[36 x 36 from (361, 116)]
-rectTempBoundingBox:[37 x 36 from (142, 235)]
-RectifyRectangle[37 x 36 from (142, 235)]
-rectTempBoundingBox:[51 x 51 from (126, 229)]
-RectifyRectangle[51 x 51 from (126, 229)]
-rectTempBoundingBox:[18 x 19 from (198, 241)]
-RectifyRectangle[18 x 19 from (198, 241)]
-rectTempBoundingBox:[26 x 26 from (105, 77)]
-RectifyRectangle[26 x 26 from (105, 77)]
-rectTempBoundingBox:[36 x 37 from (43, 62)]
-RectifyRectangle[36 x 37 from (43, 62)]
-rectTempBoundingBox:[25 x 26 from (101, 185)]
-RectifyRectangle[25 x 26 from (101, 185)]
-rectTempBoundingBox:[102 x 102 from (-9, 46)]
-RectifyRectangle[102 x 102 from (-9, 46)]
-rectTempBoundingBox:[52 x 51 from (135, 229)]
-RectifyRectangle[52 x 51 from (135, 229)]
-rectTempBoundingBox:[51 x 52 from (23, 60)]
-RectifyRectangle[51 x 52 from (23, 60)]
-rectTempBoundingBox:[37 x 36 from (142, 222)]
-RectifyRectangle[37 x 36 from (142, 222)]
-rectTempBoundingBox:[18 x 18 from (98, 81)]
-RectifyRectangle[18 x 18 from (98, 81)]
-rectTempBoundingBox:[72 x 73 from (336, 85)]
-RectifyRectangle[72 x 73 from (336, 85)]
-rectTempBoundingBox:[36 x 37 from (109, 228)]
-RectifyRectangle[36 x 37 from (109, 228)]
-rectTempBoundingBox:[102 x 102 from (9, 46)]
-RectifyRectangle[102 x 102 from (9, 46)]
-rectTempBoundingBox:[18 x 18 from (108, 191)]
-RectifyRectangle[18 x 18 from (108, 191)]
-rectTempBoundingBox:[72 x 72 from (336, 112)]
-RectifyRectangle[72 x 72 from (336, 112)]
-rectTempBoundingBox:[52 x 51 from (350, 107)]
-RectifyRectangle[52 x 51 from (350, 107)]
-rectTempBoundingBox:[72 x 72 from (125, 191)]
-RectifyRectangle[72 x 72 from (125, 191)]
-rectTempBoundingBox:[52 x 51 from (4, 70)]
-RectifyRectangle[52 x 51 from (4, 70)]
-rectTempBoundingBox:[26 x 25 from (133, 242)]
-RectifyRectangle[26 x 25 from (133, 242)]
-rectTempBoundingBox:[102 x 103 from (9, 27)]
-RectifyRectangle[102 x 103 from (9, 27)]
-rectTempBoundingBox:[19 x 18 from (54, 185)]
-RectifyRectangle[19 x 18 from (54, 185)]
-rectTempBoundingBox:[18 x 19 from (181, 244)]
-RectifyRectangle[18 x 19 from (181, 244)]
-rectTempBoundingBox:[37 x 36 from (142, 242)]
-RectifyRectangle[37 x 36 from (142, 242)]
-rectTempBoundingBox:[37 x 37 from (208, 188)]
-RectifyRectangle[37 x 37 from (208, 188)]
-rectTempBoundingBox:[52 x 51 from (116, 229)]
-RectifyRectangle[52 x 51 from (116, 229)]
-rectTempBoundingBox:[19 x 18 from (114, 81)]
-RectifyRectangle[19 x 18 from (114, 81)]
-rectTempBoundingBox:[18 x 19 from (155, 224)]
-RectifyRectangle[18 x 19 from (155, 224)]
-rectTempBoundingBox:[37 x 36 from (9, 76)]
-RectifyRectangle[37 x 36 from (9, 76)]
-rectTempBoundingBox:[19 x 19 from (151, 244)]
-RectifyRectangle[19 x 19 from (151, 244)]
-rectTempBoundingBox:[72 x 73 from (178, 151)]
-RectifyRectangle[72 x 73 from (178, 151)]
-rectTempBoundingBox:[73 x 73 from (19, 32)]
-RectifyRectangle[73 x 73 from (19, 32)]
-rectTempBoundingBox:[25 x 26 from (369, 124)]
-RectifyRectangle[25 x 26 from (369, 124)]
-rectTempBoundingBox:[51 x 51 from (126, 210)]
-RectifyRectangle[51 x 51 from (126, 210)]
-rectTempBoundingBox:[51 x 51 from (360, 98)]
-RectifyRectangle[51 x 51 from (360, 98)]
-rectTempBoundingBox:[19 x 18 from (111, 191)]
-RectifyRectangle[19 x 18 from (111, 191)]
-rectTempBoundingBox:[26 x 26 from (401, 115)]
-RectifyRectangle[26 x 26 from (401, 115)]
-rectTempBoundingBox:[37 x 36 from (62, 76)]
-RectifyRectangle[37 x 36 from (62, 76)]
-rectTempBoundingBox:[19 x 18 from (111, 188)]
-RectifyRectangle[19 x 18 from (111, 188)]
-rectTempBoundingBox:[25 x 26 from (101, 190)]
-RectifyRectangle[25 x 26 from (101, 190)]
-rectTempBoundingBox:[52 x 51 from (32, 51)]
-RectifyRectangle[52 x 51 from (32, 51)]
-rectTempBoundingBox:[102 x 103 from (-9, 27)]
-RectifyRectangle[102 x 103 from (-9, 27)]
-rectTempBoundingBox:[19 x 19 from (21, 204)]
-RectifyRectangle[19 x 19 from (21, 204)]
-rectTempBoundingBox:[26 x 26 from (133, 237)]
-RectifyRectangle[26 x 26 from (133, 237)]
-rectTempBoundingBox:[36 x 36 from (368, 109)]
-RectifyRectangle[36 x 36 from (368, 109)]
-rectTempBoundingBox:[145 x 144 from (91, 65)]
-RectifyRectangle[145 x 144 from (91, 65)]
-rectTempBoundingBox:[18 x 18 from (98, 85)]
-RectifyRectangle[18 x 18 from (98, 85)]
-rectTempBoundingBox:[19 x 18 from (114, 78)]
-RectifyRectangle[19 x 18 from (114, 78)]
-rectTempBoundingBox:[25 x 26 from (148, 246)]
-RectifyRectangle[25 x 26 from (148, 246)]
-rectTempBoundingBox:[17 x 19 from (-1, 161)]
-RectifyRectangle[17 x 19 from (-1, 161)]
-rectTempBoundingBox:[26 x 25 from (162, 228)]
-RectifyRectangle[26 x 25 from (162, 228)]
-rectTempBoundingBox:[18 x 18 from (201, 238)]
-RectifyRectangle[18 x 18 from (201, 238)]
-rectTempBoundingBox:[18 x 19 from (148, 224)]
-RectifyRectangle[18 x 19 from (148, 224)]
-rectTempBoundingBox:[18 x 18 from (108, 188)]
-RectifyRectangle[18 x 18 from (108, 188)]
-rectTempBoundingBox:[37 x 37 from (122, 228)]
-RectifyRectangle[37 x 37 from (122, 228)]
-rectTempBoundingBox:[26 x 26 from (152, 223)]
-RectifyRectangle[26 x 26 from (152, 223)]
-rectTempBoundingBox:[102 x 102 from (102, 195)]
-RectifyRectangle[102 x 102 from (102, 195)]
-rectTempBoundingBox:[37 x 36 from (135, 222)]
-RectifyRectangle[37 x 36 from (135, 222)]
-rectTempBoundingBox:[25 x 26 from (-2, 86)]
-RectifyRectangle[25 x 26 from (-2, 86)]
-rectTempBoundingBox:[18 x 18 from (198, 238)]
-RectifyRectangle[18 x 18 from (198, 238)]
-rectTempBoundingBox:[18 x 19 from (178, 241)]
-RectifyRectangle[18 x 19 from (178, 241)]
-rectTempBoundingBox:[19 x 19 from (24, 204)]
-RectifyRectangle[19 x 19 from (24, 204)]
-rectTempBoundingBox:[18 x 18 from (148, 248)]
-RectifyRectangle[18 x 18 from (148, 248)]
-rectTempBoundingBox:[19 x 19 from (141, 241)]
-RectifyRectangle[19 x 19 from (141, 241)]
-rectTempBoundingBox:[18 x 18 from (191, 238)]
-RectifyRectangle[18 x 18 from (191, 238)]
+rectTempBoundingBox:[73 x 72 from (138, 257)]
+RectifyRectangle[73 x 72 from (138, 257)]
+rectTempBoundingBox:[73 x 73 from (309, 151)]
+RectifyRectangle[73 x 73 from (309, 151)]
+rectTempBoundingBox:[73 x 73 from (72, 6)]
+RectifyRectangle[73 x 73 from (72, 6)]
+rectTempBoundingBox:[73 x 73 from (72, 32)]
+RectifyRectangle[73 x 73 from (72, 32)]
+rectTempBoundingBox:[18 x 18 from (248, 38)]
+RectifyRectangle[18 x 18 from (248, 38)]
+rectTempBoundingBox:[25 x 26 from (195, 157)]
+RectifyRectangle[25 x 26 from (195, 157)]
+rectTempBoundingBox:[52 x 51 from (294, 126)]
+RectifyRectangle[52 x 51 from (294, 126)]
+rectTempBoundingBox:[36 x 37 from (96, 62)]
+RectifyRectangle[36 x 37 from (96, 62)]
+rectTempBoundingBox:[51 x 51 from (285, 107)]
+RectifyRectangle[51 x 51 from (285, 107)]
+rectTempBoundingBox:[37 x 36 from (321, 109)]
+RectifyRectangle[37 x 36 from (321, 109)]
+rectTempBoundingBox:[26 x 26 from (157, 307)]
+RectifyRectangle[26 x 26 from (157, 307)]
+rectTempBoundingBox:[19 x 18 from (131, 48)]
+RectifyRectangle[19 x 18 from (131, 48)]
+rectTempBoundingBox:[37 x 36 from (314, 96)]
+RectifyRectangle[37 x 36 from (314, 96)]
+rectTempBoundingBox:[18 x 19 from (298, 131)]
+RectifyRectangle[18 x 19 from (298, 131)]
+rectTempBoundingBox:[18 x 19 from (335, 114)]
+RectifyRectangle[18 x 19 from (335, 114)]
+rectTempBoundingBox:[25 x 26 from (181, 279)]
+RectifyRectangle[25 x 26 from (181, 279)]
+rectTempBoundingBox:[26 x 26 from (293, 119)]
+RectifyRectangle[26 x 26 from (293, 119)]
+rectTempBoundingBox:[36 x 37 from (169, 281)]
+RectifyRectangle[36 x 37 from (169, 281)]
+rectTempBoundingBox:[18 x 18 from (95, 45)]
+RectifyRectangle[18 x 18 from (95, 45)]
+rectTempBoundingBox:[36 x 36 from (295, 76)]
+RectifyRectangle[36 x 36 from (295, 76)]
+rectTempBoundingBox:[18 x 19 from (275, 14)]
+RectifyRectangle[18 x 19 from (275, 14)]
+rectTempBoundingBox:[26 x 26 from (110, 77)]
+RectifyRectangle[26 x 26 from (110, 77)]
+rectTempBoundingBox:[36 x 36 from (308, 129)]
+RectifyRectangle[36 x 36 from (308, 129)]
+rectTempBoundingBox:[51 x 51 from (79, 70)]
+RectifyRectangle[51 x 51 from (79, 70)]
+rectTempBoundingBox:[19 x 18 from (161, 308)]
+RectifyRectangle[19 x 18 from (161, 308)]
+rectTempBoundingBox:[18 x 18 from (325, 168)]
+RectifyRectangle[18 x 18 from (325, 168)]
+rectTempBoundingBox:[26 x 26 from (293, 129)]
+RectifyRectangle[26 x 26 from (293, 129)]
+rectTempBoundingBox:[25 x 26 from (275, 157)]
+RectifyRectangle[25 x 26 from (275, 157)]
+rectTempBoundingBox:[37 x 36 from (281, 109)]
+RectifyRectangle[37 x 36 from (281, 109)]
+rectTempBoundingBox:[51 x 51 from (313, 173)]
+RectifyRectangle[51 x 51 from (313, 173)]
+rectTempBoundingBox:[18 x 19 from (191, 301)]
+RectifyRectangle[18 x 19 from (191, 301)]
+rectTempBoundingBox:[19 x 18 from (271, 11)]
+RectifyRectangle[19 x 18 from (271, 11)]
+rectTempBoundingBox:[18 x 18 from (315, 148)]
+RectifyRectangle[18 x 18 from (315, 148)]
+rectTempBoundingBox:[36 x 36 from (275, 116)]
+RectifyRectangle[36 x 36 from (275, 116)]
+rectTempBoundingBox:[102 x 102 from (65, -9)]
+RectifyRectangle[102 x 102 from (65, -9)]
+rectTempBoundingBox:[26 x 26 from (270, 25)]
+RectifyRectangle[26 x 26 from (270, 25)]
+rectTempBoundingBox:[51 x 52 from (285, 60)]
+RectifyRectangle[51 x 52 from (285, 60)]
+rectTempBoundingBox:[26 x 26 from (246, 30)]
+RectifyRectangle[26 x 26 from (246, 30)]
+rectTempBoundingBox:[36 x 37 from (235, 62)]
+RectifyRectangle[36 x 37 from (235, 62)]
+rectTempBoundingBox:[18 x 19 from (318, 114)]
+RectifyRectangle[18 x 19 from (318, 114)]
+rectTempBoundingBox:[36 x 36 from (116, 36)]
+RectifyRectangle[36 x 36 from (116, 36)]
+rectTempBoundingBox:[52 x 51 from (88, 42)]
+RectifyRectangle[52 x 51 from (88, 42)]
+rectTempBoundingBox:[26 x 26 from (251, 72)]
+RectifyRectangle[26 x 26 from (251, 72)]
+rectTempBoundingBox:[18 x 18 from (198, 158)]
+RectifyRectangle[18 x 18 from (198, 158)]
+rectTempBoundingBox:[73 x 72 from (309, 178)]
+RectifyRectangle[73 x 72 from (309, 178)]
+rectTempBoundingBox:[72 x 73 from (257, 98)]
+RectifyRectangle[72 x 73 from (257, 98)]
+rectTempBoundingBox:[18 x 19 from (135, 51)]
+RectifyRectangle[18 x 19 from (135, 51)]
+rectTempBoundingBox:[18 x 18 from (238, 108)]
+RectifyRectangle[18 x 18 from (238, 108)]
+rectTempBoundingBox:[26 x 26 from (293, 25)]
+RectifyRectangle[26 x 26 from (293, 25)]
+rectTempBoundingBox:[26 x 25 from (256, 54)]
+RectifyRectangle[26 x 25 from (256, 54)]
+rectTempBoundingBox:[36 x 37 from (255, 16)]
+RectifyRectangle[36 x 37 from (255, 16)]
+rectTempBoundingBox:[51 x 51 from (341, 154)]
+RectifyRectangle[51 x 51 from (341, 154)]
+rectTempBoundingBox:[19 x 18 from (321, 208)]
+RectifyRectangle[19 x 18 from (321, 208)]
+rectTempBoundingBox:[36 x 37 from (348, 155)]
+RectifyRectangle[36 x 37 from (348, 155)]
+rectTempBoundingBox:[18 x 18 from (265, 41)]
+RectifyRectangle[18 x 18 from (265, 41)]
+rectTempBoundingBox:[26 x 26 from (129, 44)]
+RectifyRectangle[26 x 26 from (129, 44)]
+rectTempBoundingBox:[51 x 51 from (154, 266)]
+RectifyRectangle[51 x 51 from (154, 266)]
+rectTempBoundingBox:[19 x 18 from (281, 158)]
+RectifyRectangle[19 x 18 from (281, 158)]
+rectTempBoundingBox:[51 x 52 from (79, 4)]
+RectifyRectangle[51 x 52 from (79, 4)]
+rectTempBoundingBox:[26 x 25 from (63, 54)]
+RectifyRectangle[26 x 25 from (63, 54)]
+rectTempBoundingBox:[51 x 52 from (98, 4)]
+RectifyRectangle[51 x 52 from (98, 4)]
+rectTempBoundingBox:[25 x 25 from (242, -2)]
+RectifyRectangle[25 x 25 from (242, -2)]
+rectTempBoundingBox:[26 x 26 from (265, 30)]
+RectifyRectangle[26 x 26 from (265, 30)]
+rectTempBoundingBox:[37 x 37 from (135, 268)]
+RectifyRectangle[37 x 37 from (135, 268)]
+rectTempBoundingBox:[26 x 26 from (129, 96)]
+RectifyRectangle[26 x 26 from (129, 96)]
+rectTempBoundingBox:[26 x 26 from (307, 82)]
+RectifyRectangle[26 x 26 from (307, 82)]
+rectTempBoundingBox:[19 x 18 from (161, 315)]
+RectifyRectangle[19 x 18 from (161, 315)]
+rectTempBoundingBox:[26 x 26 from (284, 152)]
+RectifyRectangle[26 x 26 from (284, 152)]
+rectTempBoundingBox:[18 x 18 from (231, 38)]
+RectifyRectangle[18 x 18 from (231, 38)]
+rectTempBoundingBox:[36 x 37 from (255, 62)]
+RectifyRectangle[36 x 37 from (255, 62)]
+rectTempBoundingBox:[18 x 18 from (275, 28)]
+RectifyRectangle[18 x 18 from (275, 28)]
+rectTempBoundingBox:[37 x 36 from (102, 169)]
+RectifyRectangle[37 x 36 from (102, 169)]
+rectTempBoundingBox:[26 x 26 from (237, 16)]
+RectifyRectangle[26 x 26 from (237, 16)]
+rectTempBoundingBox:[26 x 26 from (336, 110)]
+RectifyRectangle[26 x 26 from (336, 110)]
+rectTempBoundingBox:[36 x 36 from (89, 43)]
+RectifyRectangle[36 x 36 from (89, 43)]
+rectTempBoundingBox:[36 x 37 from (255, 155)]
+RectifyRectangle[36 x 37 from (255, 155)]
+rectTempBoundingBox:[18 x 18 from (155, 308)]
+RectifyRectangle[18 x 18 from (155, 308)]
+rectTempBoundingBox:[26 x 26 from (166, 284)]
+RectifyRectangle[26 x 26 from (166, 284)]
+rectTempBoundingBox:[26 x 26 from (303, 129)]
+RectifyRectangle[26 x 26 from (303, 129)]
+rectTempBoundingBox:[51 x 51 from (266, 107)]
+RectifyRectangle[51 x 51 from (266, 107)]
+rectTempBoundingBox:[26 x 26 from (317, 204)]
+RectifyRectangle[26 x 26 from (317, 204)]
+rectTempBoundingBox:[51 x 51 from (70, 51)]
+RectifyRectangle[51 x 51 from (70, 51)]
+rectTempBoundingBox:[36 x 36 from (162, 288)]
+RectifyRectangle[36 x 36 from (162, 288)]
+rectTempBoundingBox:[52 x 51 from (303, 79)]
+RectifyRectangle[52 x 51 from (303, 79)]
+rectTempBoundingBox:[52 x 51 from (60, 23)]
+RectifyRectangle[52 x 51 from (60, 23)]
+rectTempBoundingBox:[37 x 36 from (102, 43)]
+RectifyRectangle[37 x 36 from (102, 43)]
+rectTempBoundingBox:[26 x 26 from (284, 119)]
+RectifyRectangle[26 x 26 from (284, 119)]
+rectTempBoundingBox:[36 x 37 from (308, 142)]
+RectifyRectangle[36 x 37 from (308, 142)]
+rectTempBoundingBox:[26 x 26 from (143, 279)]
+RectifyRectangle[26 x 26 from (143, 279)]
+rectTempBoundingBox:[19 x 18 from (341, 85)]
+RectifyRectangle[19 x 18 from (341, 85)]
+rectTempBoundingBox:[51 x 52 from (79, 32)]
+RectifyRectangle[51 x 52 from (79, 32)]
+rectTempBoundingBox:[26 x 26 from (312, 143)]
+RectifyRectangle[26 x 26 from (312, 143)]
+rectTempBoundingBox:[26 x 26 from (166, 303)]
+RectifyRectangle[26 x 26 from (166, 303)]
+rectTempBoundingBox:[19 x 19 from (291, 161)]
+RectifyRectangle[19 x 19 from (291, 161)]
+rectTempBoundingBox:[36 x 37 from (295, 122)]
+RectifyRectangle[36 x 37 from (295, 122)]
+rectTempBoundingBox:[72 x 73 from (46, 6)]
+RectifyRectangle[72 x 73 from (46, 6)]
+rectTempBoundingBox:[51 x 51 from (126, 98)]
+RectifyRectangle[51 x 51 from (126, 98)]
+rectTempBoundingBox:[72 x 72 from (112, 257)]
+RectifyRectangle[72 x 72 from (112, 257)]
+rectTempBoundingBox:[26 x 26 from (312, 199)]
+RectifyRectangle[26 x 26 from (312, 199)]
+rectTempBoundingBox:[36 x 36 from (242, 56)]
+RectifyRectangle[36 x 36 from (242, 56)]
+rectTempBoundingBox:[26 x 26 from (82, 72)]
+RectifyRectangle[26 x 26 from (82, 72)]
+rectTempBoundingBox:[25 x 26 from (101, 77)]
+RectifyRectangle[25 x 26 from (101, 77)]
+rectTempBoundingBox:[37 x 37 from (102, 69)]
+RectifyRectangle[37 x 37 from (102, 69)]
 RNet test 3!
-vrectTotalBoundingBox's size is:106
-vv2fTempSize[n][51, 52]
-vrectSrcRect[n][51 x 52 from (0, 0)]
-vrectDstRect[n][51 x 52 from (42, 60)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][73, 72]
-vrectSrcRect[n][73 x 72 from (0, 0)]
-vrectDstRect[n][73 x 72 from (19, 46)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][51, 51]
-vrectSrcRect[n][51 x 51 from (0, 0)]
-vrectDstRect[n][51 x 51 from (42, 70)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][52, 52]
-vrectSrcRect[n][52 x 52 from (0, 0)]
-vrectDstRect[n][52 x 52 from (32, 60)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][52, 52]
-vrectSrcRect[n][52 x 52 from (0, 0)]
-vrectDstRect[n][52 x 52 from (135, 219)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][73, 72]
-vrectSrcRect[n][73 x 72 from (0, 0)]
-vrectDstRect[n][73 x 72 from (32, 46)]
-m_matNormalizeMat.size:[17 x 13]
+vrectTotalBoundingBox's size is:116
 vv2fTempSize[n][52, 51]
 vrectSrcRect[n][52 x 51 from (0, 0)]
-vrectDstRect[n][52 x 51 from (32, 70)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][73, 72]
-vrectSrcRect[n][73 x 72 from (0, 0)]
-vrectDstRect[n][73 x 72 from (19, 59)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][51, 52]
-vrectSrcRect[n][51 x 52 from (0, 0)]
-vrectDstRect[n][51 x 52 from (126, 219)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][51, 52]
-vrectSrcRect[n][51 x 52 from (0, 0)]
-vrectDstRect[n][51 x 52 from (51, 60)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][73, 73]
-vrectSrcRect[n][73 x 73 from (0, 0)]
-vrectDstRect[n][73 x 73 from (98, 204)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][51, 51]
-vrectSrcRect[n][51 x 51 from (0, 0)]
-vrectDstRect[n][51 x 51 from (360, 107)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][72, 73]
-vrectSrcRect[n][72 x 73 from (0, 0)]
-vrectDstRect[n][72 x 73 from (112, 204)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][73, 72]
-vrectSrcRect[n][73 x 72 from (0, 0)]
-vrectDstRect[n][73 x 72 from (6, 46)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][25, 26]
-vrectSrcRect[n][25 x 26 from (0, 0)]
-vrectDstRect[n][25 x 26 from (148, 223)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][72, 73]
-vrectSrcRect[n][72 x 73 from (0, 0)]
-vrectDstRect[n][72 x 73 from (125, 204)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][73, 72]
-vrectSrcRect[n][73 x 72 from (0, 0)]
-vrectDstRect[n][73 x 72 from (32, 59)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][52, 52]
-vrectSrcRect[n][52 x 52 from (0, 0)]
-vrectDstRect[n][52 x 52 from (4, 60)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][18, 19]
-vrectSrcRect[n][18 x 19 from (0, 0)]
-vrectDstRect[n][18 x 19 from (181, 241)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][36, 37]
-vrectSrcRect[n][36 x 37 from (0, 0)]
-vrectDstRect[n][36 x 37 from (116, 228)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][73, 73]
-vrectSrcRect[n][73 x 73 from (0, 0)]
-vrectDstRect[n][73 x 73 from (349, 98)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][36, 37]
-vrectSrcRect[n][36 x 37 from (0, 0)]
-vrectDstRect[n][36 x 37 from (43, 69)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][36, 36]
-vrectSrcRect[n][36 x 36 from (0, 0)]
-vrectDstRect[n][36 x 36 from (368, 116)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][73, 73]
-vrectSrcRect[n][73 x 73 from (0, 0)]
-vrectDstRect[n][73 x 73 from (349, 85)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][18, 19]
-vrectSrcRect[n][18 x 19 from (0, 0)]
-vrectDstRect[n][18 x 19 from (158, 224)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][52, 51]
-vrectSrcRect[n][52 x 51 from (0, 0)]
-vrectDstRect[n][52 x 51 from (135, 210)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][72, 73]
-vrectSrcRect[n][72 x 73 from (0, 0)]
-vrectDstRect[n][72 x 73 from (336, 98)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][52, 52]
-vrectSrcRect[n][52 x 52 from (0, 0)]
-vrectDstRect[n][52 x 52 from (116, 219)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][72, 72]
-vrectSrcRect[n][72 x 72 from (0, 0)]
-vrectDstRect[n][72 x 72 from (112, 191)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][18, 19]
-vrectSrcRect[n][18 x 19 from (0, 0)]
-vrectDstRect[n][18 x 19 from (185, 241)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][50, 52]
-vrectSrcRect[n][46 x 52 from (4, 0)]
-vrectDstRect[n][46 x 52 from (0, 60)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][73, 72]
-vrectSrcRect[n][73 x 72 from (0, 0)]
-vrectDstRect[n][73 x 72 from (6, 59)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][36, 36]
-vrectSrcRect[n][36 x 36 from (0, 0)]
-vrectDstRect[n][36 x 36 from (43, 76)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][37, 36]
-vrectSrcRect[n][37 x 36 from (0, 0)]
-vrectDstRect[n][37 x 36 from (69, 76)]
-m_matNormalizeMat.size:[17 x 13]
+vrectDstRect[n][52 x 51 from (88, 14)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][103, 102]
+vrectSrcRect[n][103 x 102 from (0, 0)]
+vrectDstRect[n][103 x 102 from (269, 65)]
+m_matNormalizeMat.size:[18 x 13]
 vv2fTempSize[n][26, 26]
 vrectSrcRect[n][26 x 26 from (0, 0)]
-vrectDstRect[n][26 x 26 from (152, 246)]
-m_matNormalizeMat.size:[17 x 13]
+vrectDstRect[n][26 x 26 from (326, 110)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][73, 73]
+vrectSrcRect[n][73 x 73 from (0, 0)]
+vrectDstRect[n][73 x 73 from (283, 98)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][52, 52]
+vrectSrcRect[n][52 x 52 from (0, 0)]
+vrectDstRect[n][52 x 52 from (144, 275)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][37, 36]
+vrectSrcRect[n][37 x 36 from (0, 0)]
+vrectDstRect[n][37 x 36 from (142, 275)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][72, 72]
+vrectSrcRect[n][72 x 72 from (0, 0)]
+vrectDstRect[n][72 x 72 from (270, 59)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][52, 51]
+vrectSrcRect[n][52 x 51 from (0, 0)]
+vrectDstRect[n][52 x 51 from (303, 107)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][51, 51]
+vrectSrcRect[n][51 x 51 from (0, 0)]
+vrectDstRect[n][51 x 51 from (285, 79)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][73, 73]
+vrectSrcRect[n][73 x 73 from (0, 0)]
+vrectDstRect[n][73 x 73 from (283, 72)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][18, 19]
+vrectSrcRect[n][18 x 19 from (0, 0)]
+vrectDstRect[n][18 x 19 from (165, 311)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][36, 36]
+vrectSrcRect[n][36 x 36 from (0, 0)]
+vrectDstRect[n][36 x 36 from (288, 116)]
+m_matNormalizeMat.size:[18 x 13]
 vv2fTempSize[n][26, 26]
 vrectSrcRect[n][26 x 26 from (0, 0)]
 vrectDstRect[n][26 x 26 from (105, 72)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][52, 51]
-vrectSrcRect[n][52 x 51 from (0, 0)]
-vrectDstRect[n][52 x 51 from (350, 98)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][25, 26]
-vrectSrcRect[n][25 x 26 from (0, 0)]
-vrectDstRect[n][25 x 26 from (181, 232)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][36, 37]
-vrectSrcRect[n][36 x 37 from (0, 0)]
-vrectDstRect[n][36 x 37 from (129, 228)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][19, 18]
-vrectSrcRect[n][19 x 18 from (0, 0)]
-vrectDstRect[n][19 x 18 from (151, 248)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][36, 36]
-vrectSrcRect[n][36 x 36 from (0, 0)]
-vrectDstRect[n][36 x 36 from (361, 116)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][37, 36]
-vrectSrcRect[n][37 x 36 from (0, 0)]
-vrectDstRect[n][37 x 36 from (142, 235)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][51, 51]
-vrectSrcRect[n][51 x 51 from (0, 0)]
-vrectDstRect[n][51 x 51 from (126, 229)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][18, 19]
-vrectSrcRect[n][18 x 19 from (0, 0)]
-vrectDstRect[n][18 x 19 from (198, 241)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][26, 26]
-vrectSrcRect[n][26 x 26 from (0, 0)]
-vrectDstRect[n][26 x 26 from (105, 77)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][36, 37]
-vrectSrcRect[n][36 x 37 from (0, 0)]
-vrectDstRect[n][36 x 37 from (43, 62)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][25, 26]
-vrectSrcRect[n][25 x 26 from (0, 0)]
-vrectDstRect[n][25 x 26 from (101, 185)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][102, 102]
-vrectSrcRect[n][93 x 102 from (9, 0)]
-vrectDstRect[n][93 x 102 from (0, 46)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][52, 51]
-vrectSrcRect[n][52 x 51 from (0, 0)]
-vrectDstRect[n][52 x 51 from (135, 229)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][51, 52]
-vrectSrcRect[n][51 x 52 from (0, 0)]
-vrectDstRect[n][51 x 52 from (23, 60)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][37, 36]
-vrectSrcRect[n][37 x 36 from (0, 0)]
-vrectDstRect[n][37 x 36 from (142, 222)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][18, 18]
-vrectSrcRect[n][18 x 18 from (0, 0)]
-vrectDstRect[n][18 x 18 from (98, 81)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][72, 73]
-vrectSrcRect[n][72 x 73 from (0, 0)]
-vrectDstRect[n][72 x 73 from (336, 85)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][36, 37]
-vrectSrcRect[n][36 x 37 from (0, 0)]
-vrectDstRect[n][36 x 37 from (109, 228)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][102, 102]
-vrectSrcRect[n][102 x 102 from (0, 0)]
-vrectDstRect[n][102 x 102 from (9, 46)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][18, 18]
-vrectSrcRect[n][18 x 18 from (0, 0)]
-vrectDstRect[n][18 x 18 from (108, 191)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][72, 72]
-vrectSrcRect[n][72 x 72 from (0, 0)]
-vrectDstRect[n][72 x 72 from (336, 112)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][52, 51]
-vrectSrcRect[n][52 x 51 from (0, 0)]
-vrectDstRect[n][52 x 51 from (350, 107)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][72, 72]
-vrectSrcRect[n][72 x 72 from (0, 0)]
-vrectDstRect[n][72 x 72 from (125, 191)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][52, 51]
-vrectSrcRect[n][52 x 51 from (0, 0)]
-vrectDstRect[n][52 x 51 from (4, 70)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][26, 25]
-vrectSrcRect[n][26 x 25 from (0, 0)]
-vrectDstRect[n][26 x 25 from (133, 242)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][102, 103]
-vrectSrcRect[n][102 x 103 from (0, 0)]
-vrectDstRect[n][102 x 103 from (9, 27)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][19, 18]
-vrectSrcRect[n][19 x 18 from (0, 0)]
-vrectDstRect[n][19 x 18 from (54, 185)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][18, 19]
-vrectSrcRect[n][18 x 19 from (0, 0)]
-vrectDstRect[n][18 x 19 from (181, 244)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][37, 36]
-vrectSrcRect[n][37 x 36 from (0, 0)]
-vrectDstRect[n][37 x 36 from (142, 242)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][37, 37]
-vrectSrcRect[n][37 x 37 from (0, 0)]
-vrectDstRect[n][37 x 37 from (208, 188)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][52, 51]
-vrectSrcRect[n][52 x 51 from (0, 0)]
-vrectDstRect[n][52 x 51 from (116, 229)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][19, 18]
-vrectSrcRect[n][19 x 18 from (0, 0)]
-vrectDstRect[n][19 x 18 from (114, 81)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][18, 19]
-vrectSrcRect[n][18 x 19 from (0, 0)]
-vrectDstRect[n][18 x 19 from (155, 224)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][37, 36]
-vrectSrcRect[n][37 x 36 from (0, 0)]
-vrectDstRect[n][37 x 36 from (9, 76)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][19, 19]
-vrectSrcRect[n][19 x 19 from (0, 0)]
-vrectDstRect[n][19 x 19 from (151, 244)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][72, 73]
-vrectSrcRect[n][72 x 73 from (0, 0)]
-vrectDstRect[n][72 x 73 from (178, 151)]
-m_matNormalizeMat.size:[17 x 13]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][73, 72]
+vrectSrcRect[n][73 x 72 from (0, 0)]
+vrectDstRect[n][73 x 72 from (138, 257)]
+m_matNormalizeMat.size:[18 x 13]
 vv2fTempSize[n][73, 73]
 vrectSrcRect[n][73 x 73 from (0, 0)]
-vrectDstRect[n][73 x 73 from (19, 32)]
-m_matNormalizeMat.size:[17 x 13]
+vrectDstRect[n][73 x 73 from (309, 151)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][73, 73]
+vrectSrcRect[n][73 x 73 from (0, 0)]
+vrectDstRect[n][73 x 73 from (72, 6)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][73, 73]
+vrectSrcRect[n][73 x 73 from (0, 0)]
+vrectDstRect[n][73 x 73 from (72, 32)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][18, 18]
+vrectSrcRect[n][18 x 18 from (0, 0)]
+vrectDstRect[n][18 x 18 from (248, 38)]
+m_matNormalizeMat.size:[18 x 13]
 vv2fTempSize[n][25, 26]
 vrectSrcRect[n][25 x 26 from (0, 0)]
-vrectDstRect[n][25 x 26 from (369, 124)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][51, 51]
-vrectSrcRect[n][51 x 51 from (0, 0)]
-vrectDstRect[n][51 x 51 from (126, 210)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][51, 51]
-vrectSrcRect[n][51 x 51 from (0, 0)]
-vrectDstRect[n][51 x 51 from (360, 98)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][19, 18]
-vrectSrcRect[n][19 x 18 from (0, 0)]
-vrectDstRect[n][19 x 18 from (111, 191)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][26, 26]
-vrectSrcRect[n][26 x 26 from (0, 0)]
-vrectDstRect[n][26 x 26 from (401, 115)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][37, 36]
-vrectSrcRect[n][37 x 36 from (0, 0)]
-vrectDstRect[n][37 x 36 from (62, 76)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][19, 18]
-vrectSrcRect[n][19 x 18 from (0, 0)]
-vrectDstRect[n][19 x 18 from (111, 188)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][25, 26]
-vrectSrcRect[n][25 x 26 from (0, 0)]
-vrectDstRect[n][25 x 26 from (101, 190)]
-m_matNormalizeMat.size:[17 x 13]
+vrectDstRect[n][25 x 26 from (195, 157)]
+m_matNormalizeMat.size:[18 x 13]
 vv2fTempSize[n][52, 51]
 vrectSrcRect[n][52 x 51 from (0, 0)]
-vrectDstRect[n][52 x 51 from (32, 51)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][102, 103]
-vrectSrcRect[n][93 x 103 from (9, 0)]
-vrectDstRect[n][93 x 103 from (0, 27)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][19, 19]
-vrectSrcRect[n][19 x 19 from (0, 0)]
-vrectDstRect[n][19 x 19 from (21, 204)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][26, 26]
-vrectSrcRect[n][26 x 26 from (0, 0)]
-vrectDstRect[n][26 x 26 from (133, 237)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][36, 36]
-vrectSrcRect[n][36 x 36 from (0, 0)]
-vrectDstRect[n][36 x 36 from (368, 109)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][145, 144]
-vrectSrcRect[n][145 x 144 from (0, 0)]
-vrectDstRect[n][145 x 144 from (91, 65)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][18, 18]
-vrectSrcRect[n][18 x 18 from (0, 0)]
-vrectDstRect[n][18 x 18 from (98, 85)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][19, 18]
-vrectSrcRect[n][19 x 18 from (0, 0)]
-vrectDstRect[n][19 x 18 from (114, 78)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][25, 26]
-vrectSrcRect[n][25 x 26 from (0, 0)]
-vrectDstRect[n][25 x 26 from (148, 246)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][17, 19]
-vrectSrcRect[n][16 x 19 from (1, 0)]
-vrectDstRect[n][16 x 19 from (0, 161)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][26, 25]
-vrectSrcRect[n][26 x 25 from (0, 0)]
-vrectDstRect[n][26 x 25 from (162, 228)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][18, 18]
-vrectSrcRect[n][18 x 18 from (0, 0)]
-vrectDstRect[n][18 x 18 from (201, 238)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][18, 19]
-vrectSrcRect[n][18 x 19 from (0, 0)]
-vrectDstRect[n][18 x 19 from (148, 224)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][18, 18]
-vrectSrcRect[n][18 x 18 from (0, 0)]
-vrectDstRect[n][18 x 18 from (108, 188)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][37, 37]
-vrectSrcRect[n][37 x 37 from (0, 0)]
-vrectDstRect[n][37 x 37 from (122, 228)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][26, 26]
-vrectSrcRect[n][26 x 26 from (0, 0)]
-vrectDstRect[n][26 x 26 from (152, 223)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][102, 102]
-vrectSrcRect[n][102 x 102 from (0, 0)]
-vrectDstRect[n][102 x 102 from (102, 195)]
-m_matNormalizeMat.size:[17 x 13]
+vrectDstRect[n][52 x 51 from (294, 126)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][36, 37]
+vrectSrcRect[n][36 x 37 from (0, 0)]
+vrectDstRect[n][36 x 37 from (96, 62)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][51, 51]
+vrectSrcRect[n][51 x 51 from (0, 0)]
+vrectDstRect[n][51 x 51 from (285, 107)]
+m_matNormalizeMat.size:[18 x 13]
 vv2fTempSize[n][37, 36]
 vrectSrcRect[n][37 x 36 from (0, 0)]
-vrectDstRect[n][37 x 36 from (135, 222)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][25, 26]
-vrectSrcRect[n][23 x 26 from (2, 0)]
-vrectDstRect[n][23 x 26 from (0, 86)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][18, 18]
-vrectSrcRect[n][18 x 18 from (0, 0)]
-vrectDstRect[n][18 x 18 from (198, 238)]
-m_matNormalizeMat.size:[17 x 13]
+vrectDstRect[n][37 x 36 from (321, 109)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][26, 26]
+vrectSrcRect[n][26 x 26 from (0, 0)]
+vrectDstRect[n][26 x 26 from (157, 307)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][19, 18]
+vrectSrcRect[n][19 x 18 from (0, 0)]
+vrectDstRect[n][19 x 18 from (131, 48)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][37, 36]
+vrectSrcRect[n][37 x 36 from (0, 0)]
+vrectDstRect[n][37 x 36 from (314, 96)]
+m_matNormalizeMat.size:[18 x 13]
 vv2fTempSize[n][18, 19]
 vrectSrcRect[n][18 x 19 from (0, 0)]
-vrectDstRect[n][18 x 19 from (178, 241)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][19, 19]
-vrectSrcRect[n][19 x 19 from (0, 0)]
-vrectDstRect[n][19 x 19 from (24, 204)]
-m_matNormalizeMat.size:[17 x 13]
+vrectDstRect[n][18 x 19 from (298, 131)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][18, 19]
+vrectSrcRect[n][18 x 19 from (0, 0)]
+vrectDstRect[n][18 x 19 from (335, 114)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][25, 26]
+vrectSrcRect[n][25 x 26 from (0, 0)]
+vrectDstRect[n][25 x 26 from (181, 279)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][26, 26]
+vrectSrcRect[n][26 x 26 from (0, 0)]
+vrectDstRect[n][26 x 26 from (293, 119)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][36, 37]
+vrectSrcRect[n][36 x 37 from (0, 0)]
+vrectDstRect[n][36 x 37 from (169, 281)]
+m_matNormalizeMat.size:[18 x 13]
 vv2fTempSize[n][18, 18]
 vrectSrcRect[n][18 x 18 from (0, 0)]
-vrectDstRect[n][18 x 18 from (148, 248)]
-m_matNormalizeMat.size:[17 x 13]
-vv2fTempSize[n][19, 19]
-vrectSrcRect[n][19 x 19 from (0, 0)]
-vrectDstRect[n][19 x 19 from (141, 241)]
-m_matNormalizeMat.size:[17 x 13]
+vrectDstRect[n][18 x 18 from (95, 45)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][36, 36]
+vrectSrcRect[n][36 x 36 from (0, 0)]
+vrectDstRect[n][36 x 36 from (295, 76)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][18, 19]
+vrectSrcRect[n][18 x 19 from (0, 0)]
+vrectDstRect[n][18 x 19 from (275, 14)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][26, 26]
+vrectSrcRect[n][26 x 26 from (0, 0)]
+vrectDstRect[n][26 x 26 from (110, 77)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][36, 36]
+vrectSrcRect[n][36 x 36 from (0, 0)]
+vrectDstRect[n][36 x 36 from (308, 129)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][51, 51]
+vrectSrcRect[n][51 x 51 from (0, 0)]
+vrectDstRect[n][51 x 51 from (79, 70)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][19, 18]
+vrectSrcRect[n][19 x 18 from (0, 0)]
+vrectDstRect[n][19 x 18 from (161, 308)]
+m_matNormalizeMat.size:[18 x 13]
 vv2fTempSize[n][18, 18]
 vrectSrcRect[n][18 x 18 from (0, 0)]
-vrectDstRect[n][18 x 18 from (191, 238)]
-m_matNormalizeMat.size:[17 x 13]
+vrectDstRect[n][18 x 18 from (325, 168)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][26, 26]
+vrectSrcRect[n][26 x 26 from (0, 0)]
+vrectDstRect[n][26 x 26 from (293, 129)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][25, 26]
+vrectSrcRect[n][25 x 26 from (0, 0)]
+vrectDstRect[n][25 x 26 from (275, 157)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][37, 36]
+vrectSrcRect[n][37 x 36 from (0, 0)]
+vrectDstRect[n][37 x 36 from (281, 109)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][51, 51]
+vrectSrcRect[n][51 x 51 from (0, 0)]
+vrectDstRect[n][51 x 51 from (313, 173)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][18, 19]
+vrectSrcRect[n][18 x 19 from (0, 0)]
+vrectDstRect[n][18 x 19 from (191, 301)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][19, 18]
+vrectSrcRect[n][19 x 18 from (0, 0)]
+vrectDstRect[n][19 x 18 from (271, 11)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][18, 18]
+vrectSrcRect[n][18 x 18 from (0, 0)]
+vrectDstRect[n][18 x 18 from (315, 148)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][36, 36]
+vrectSrcRect[n][36 x 36 from (0, 0)]
+vrectDstRect[n][36 x 36 from (275, 116)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][102, 102]
+vrectSrcRect[n][102 x 93 from (0, 9)]
+vrectDstRect[n][102 x 93 from (65, 0)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][26, 26]
+vrectSrcRect[n][26 x 26 from (0, 0)]
+vrectDstRect[n][26 x 26 from (270, 25)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][51, 52]
+vrectSrcRect[n][51 x 52 from (0, 0)]
+vrectDstRect[n][51 x 52 from (285, 60)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][26, 26]
+vrectSrcRect[n][26 x 26 from (0, 0)]
+vrectDstRect[n][26 x 26 from (246, 30)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][36, 37]
+vrectSrcRect[n][36 x 37 from (0, 0)]
+vrectDstRect[n][36 x 37 from (235, 62)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][18, 19]
+vrectSrcRect[n][18 x 19 from (0, 0)]
+vrectDstRect[n][18 x 19 from (318, 114)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][36, 36]
+vrectSrcRect[n][36 x 36 from (0, 0)]
+vrectDstRect[n][36 x 36 from (116, 36)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][52, 51]
+vrectSrcRect[n][52 x 51 from (0, 0)]
+vrectDstRect[n][52 x 51 from (88, 42)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][26, 26]
+vrectSrcRect[n][26 x 26 from (0, 0)]
+vrectDstRect[n][26 x 26 from (251, 72)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][18, 18]
+vrectSrcRect[n][18 x 18 from (0, 0)]
+vrectDstRect[n][18 x 18 from (198, 158)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][73, 72]
+vrectSrcRect[n][73 x 72 from (0, 0)]
+vrectDstRect[n][73 x 72 from (309, 178)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][72, 73]
+vrectSrcRect[n][72 x 73 from (0, 0)]
+vrectDstRect[n][72 x 73 from (257, 98)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][18, 19]
+vrectSrcRect[n][18 x 19 from (0, 0)]
+vrectDstRect[n][18 x 19 from (135, 51)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][18, 18]
+vrectSrcRect[n][18 x 18 from (0, 0)]
+vrectDstRect[n][18 x 18 from (238, 108)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][26, 26]
+vrectSrcRect[n][26 x 26 from (0, 0)]
+vrectDstRect[n][26 x 26 from (293, 25)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][26, 25]
+vrectSrcRect[n][26 x 25 from (0, 0)]
+vrectDstRect[n][26 x 25 from (256, 54)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][36, 37]
+vrectSrcRect[n][36 x 37 from (0, 0)]
+vrectDstRect[n][36 x 37 from (255, 16)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][51, 51]
+vrectSrcRect[n][51 x 51 from (0, 0)]
+vrectDstRect[n][51 x 51 from (341, 154)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][19, 18]
+vrectSrcRect[n][19 x 18 from (0, 0)]
+vrectDstRect[n][19 x 18 from (321, 208)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][36, 37]
+vrectSrcRect[n][36 x 37 from (0, 0)]
+vrectDstRect[n][36 x 37 from (348, 155)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][18, 18]
+vrectSrcRect[n][18 x 18 from (0, 0)]
+vrectDstRect[n][18 x 18 from (265, 41)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][26, 26]
+vrectSrcRect[n][26 x 26 from (0, 0)]
+vrectDstRect[n][26 x 26 from (129, 44)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][51, 51]
+vrectSrcRect[n][51 x 51 from (0, 0)]
+vrectDstRect[n][51 x 51 from (154, 266)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][19, 18]
+vrectSrcRect[n][19 x 18 from (0, 0)]
+vrectDstRect[n][19 x 18 from (281, 158)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][51, 52]
+vrectSrcRect[n][51 x 52 from (0, 0)]
+vrectDstRect[n][51 x 52 from (79, 4)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][26, 25]
+vrectSrcRect[n][26 x 25 from (0, 0)]
+vrectDstRect[n][26 x 25 from (63, 54)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][51, 52]
+vrectSrcRect[n][51 x 52 from (0, 0)]
+vrectDstRect[n][51 x 52 from (98, 4)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][25, 25]
+vrectSrcRect[n][25 x 23 from (0, 2)]
+vrectDstRect[n][25 x 23 from (242, 0)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][26, 26]
+vrectSrcRect[n][26 x 26 from (0, 0)]
+vrectDstRect[n][26 x 26 from (265, 30)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][37, 37]
+vrectSrcRect[n][37 x 37 from (0, 0)]
+vrectDstRect[n][37 x 37 from (135, 268)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][26, 26]
+vrectSrcRect[n][26 x 26 from (0, 0)]
+vrectDstRect[n][26 x 26 from (129, 96)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][26, 26]
+vrectSrcRect[n][26 x 26 from (0, 0)]
+vrectDstRect[n][26 x 26 from (307, 82)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][19, 18]
+vrectSrcRect[n][19 x 18 from (0, 0)]
+vrectDstRect[n][19 x 18 from (161, 315)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][26, 26]
+vrectSrcRect[n][26 x 26 from (0, 0)]
+vrectDstRect[n][26 x 26 from (284, 152)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][18, 18]
+vrectSrcRect[n][18 x 18 from (0, 0)]
+vrectDstRect[n][18 x 18 from (231, 38)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][36, 37]
+vrectSrcRect[n][36 x 37 from (0, 0)]
+vrectDstRect[n][36 x 37 from (255, 62)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][18, 18]
+vrectSrcRect[n][18 x 18 from (0, 0)]
+vrectDstRect[n][18 x 18 from (275, 28)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][37, 36]
+vrectSrcRect[n][37 x 36 from (0, 0)]
+vrectDstRect[n][37 x 36 from (102, 169)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][26, 26]
+vrectSrcRect[n][26 x 26 from (0, 0)]
+vrectDstRect[n][26 x 26 from (237, 16)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][26, 26]
+vrectSrcRect[n][26 x 26 from (0, 0)]
+vrectDstRect[n][26 x 26 from (336, 110)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][36, 36]
+vrectSrcRect[n][36 x 36 from (0, 0)]
+vrectDstRect[n][36 x 36 from (89, 43)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][36, 37]
+vrectSrcRect[n][36 x 37 from (0, 0)]
+vrectDstRect[n][36 x 37 from (255, 155)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][18, 18]
+vrectSrcRect[n][18 x 18 from (0, 0)]
+vrectDstRect[n][18 x 18 from (155, 308)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][26, 26]
+vrectSrcRect[n][26 x 26 from (0, 0)]
+vrectDstRect[n][26 x 26 from (166, 284)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][26, 26]
+vrectSrcRect[n][26 x 26 from (0, 0)]
+vrectDstRect[n][26 x 26 from (303, 129)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][51, 51]
+vrectSrcRect[n][51 x 51 from (0, 0)]
+vrectDstRect[n][51 x 51 from (266, 107)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][26, 26]
+vrectSrcRect[n][26 x 26 from (0, 0)]
+vrectDstRect[n][26 x 26 from (317, 204)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][51, 51]
+vrectSrcRect[n][51 x 51 from (0, 0)]
+vrectDstRect[n][51 x 51 from (70, 51)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][36, 36]
+vrectSrcRect[n][36 x 36 from (0, 0)]
+vrectDstRect[n][36 x 36 from (162, 288)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][52, 51]
+vrectSrcRect[n][52 x 51 from (0, 0)]
+vrectDstRect[n][52 x 51 from (303, 79)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][52, 51]
+vrectSrcRect[n][52 x 51 from (0, 0)]
+vrectDstRect[n][52 x 51 from (60, 23)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][37, 36]
+vrectSrcRect[n][37 x 36 from (0, 0)]
+vrectDstRect[n][37 x 36 from (102, 43)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][26, 26]
+vrectSrcRect[n][26 x 26 from (0, 0)]
+vrectDstRect[n][26 x 26 from (284, 119)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][36, 37]
+vrectSrcRect[n][36 x 37 from (0, 0)]
+vrectDstRect[n][36 x 37 from (308, 142)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][26, 26]
+vrectSrcRect[n][26 x 26 from (0, 0)]
+vrectDstRect[n][26 x 26 from (143, 279)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][19, 18]
+vrectSrcRect[n][19 x 18 from (0, 0)]
+vrectDstRect[n][19 x 18 from (341, 85)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][51, 52]
+vrectSrcRect[n][51 x 52 from (0, 0)]
+vrectDstRect[n][51 x 52 from (79, 32)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][26, 26]
+vrectSrcRect[n][26 x 26 from (0, 0)]
+vrectDstRect[n][26 x 26 from (312, 143)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][26, 26]
+vrectSrcRect[n][26 x 26 from (0, 0)]
+vrectDstRect[n][26 x 26 from (166, 303)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][19, 19]
+vrectSrcRect[n][19 x 19 from (0, 0)]
+vrectDstRect[n][19 x 19 from (291, 161)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][36, 37]
+vrectSrcRect[n][36 x 37 from (0, 0)]
+vrectDstRect[n][36 x 37 from (295, 122)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][72, 73]
+vrectSrcRect[n][72 x 73 from (0, 0)]
+vrectDstRect[n][72 x 73 from (46, 6)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][51, 51]
+vrectSrcRect[n][51 x 51 from (0, 0)]
+vrectDstRect[n][51 x 51 from (126, 98)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][72, 72]
+vrectSrcRect[n][72 x 72 from (0, 0)]
+vrectDstRect[n][72 x 72 from (112, 257)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][26, 26]
+vrectSrcRect[n][26 x 26 from (0, 0)]
+vrectDstRect[n][26 x 26 from (312, 199)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][36, 36]
+vrectSrcRect[n][36 x 36 from (0, 0)]
+vrectDstRect[n][36 x 36 from (242, 56)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][26, 26]
+vrectSrcRect[n][26 x 26 from (0, 0)]
+vrectDstRect[n][26 x 26 from (82, 72)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][25, 26]
+vrectSrcRect[n][25 x 26 from (0, 0)]
+vrectDstRect[n][25 x 26 from (101, 77)]
+m_matNormalizeMat.size:[18 x 13]
+vv2fTempSize[n][37, 37]
+vrectSrcRect[n][37 x 37 from (0, 0)]
+vrectDstRect[n][37 x 37 from (102, 69)]
+m_matNormalizeMat.size:[18 x 13]
 RNet is predicting!
-vmatNormalizeTempMat's size is:106
+vmatNormalizeTempMat's size is:116
 NetPredict's size is:[24 x 24]
 nChannelNum's size is:3
-blfRProb1OutputLayer's num is:106
-blfRConv5_2OutputLayer's num is:106
-106
+nNum116
+nChannel3
+nWidth24
+nHeight24
+blfRProb1OutputLayer's num is:116
+blfRConv5_2OutputLayer's num is:116
+116
 2
 1
 1
-106
+116
 4
 1
 1
 RNet test1!
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
-pfProbBegin:0.994665
-pfProbBegin:0.00533496
+pfProbBegin:0.967889
+pfProbBegin:0.0321112
+pfProbBegin:0.177858
+pfProbBegin:0.822142
+pfProbBegin:0.995593
+pfProbBegin:0.00440714
+pfProbBegin:0.681326
+pfProbBegin:0.318674
+pfProbBegin:0.644217
+pfProbBegin:0.355783
+pfProbBegin:0.988366
+pfProbBegin:0.0116336
+pfProbBegin:0.700753
+pfProbBegin:0.299247
+pfProbBegin:0.892247
+pfProbBegin:0.107753
+pfProbBegin:0.926568
+pfProbBegin:0.0734324
+pfProbBegin:0.116927
+pfProbBegin:0.883073
+pfProbBegin:0.885559
+pfProbBegin:0.114441
+pfProbBegin:0.986812
+pfProbBegin:0.0131883
+pfProbBegin:0.968799
+pfProbBegin:0.0312006
+pfProbBegin:0.387922
+pfProbBegin:0.612078
+pfProbBegin:0.975867
+pfProbBegin:0.0241327
+pfProbBegin:0.762536
+pfProbBegin:0.237465
+pfProbBegin:0.960264
+pfProbBegin:0.0397363
+pfProbBegin:0.983925
+pfProbBegin:0.0160749
+pfProbBegin:0.993806
+pfProbBegin:0.00619413
+pfProbBegin:0.946857
+pfProbBegin:0.0531431
+pfProbBegin:0.999154
+pfProbBegin:0.00084643
+pfProbBegin:0.972407
+pfProbBegin:0.0275925
+pfProbBegin:0.953978
+pfProbBegin:0.046022
+pfProbBegin:0.865431
+pfProbBegin:0.134569
+pfProbBegin:0.99808
+pfProbBegin:0.00192045
+pfProbBegin:0.987779
+pfProbBegin:0.0122206
+pfProbBegin:0.982656
+pfProbBegin:0.0173444
+pfProbBegin:0.99698
+pfProbBegin:0.00302042
+pfProbBegin:0.985502
+pfProbBegin:0.0144979
+pfProbBegin:0.997036
+pfProbBegin:0.00296448
+pfProbBegin:0.976153
+pfProbBegin:0.0238471
+pfProbBegin:0.992975
+pfProbBegin:0.00702489
+pfProbBegin:0.918349
+pfProbBegin:0.0816513
+pfProbBegin:0.96584
+pfProbBegin:0.0341602
+pfProbBegin:0.744932
+pfProbBegin:0.255068
+pfProbBegin:0.87848
+pfProbBegin:0.12152
+pfProbBegin:0.976387
+pfProbBegin:0.0236126
+pfProbBegin:0.98014
+pfProbBegin:0.0198597
+pfProbBegin:0.984605
+pfProbBegin:0.015395
+pfProbBegin:0.930205
+pfProbBegin:0.0697951
+pfProbBegin:0.987659
+pfProbBegin:0.0123415
+pfProbBegin:0.99445
+pfProbBegin:0.00554994
+pfProbBegin:0.997644
+pfProbBegin:0.00235647
+pfProbBegin:0.963796
+pfProbBegin:0.0362038
+pfProbBegin:0.866239
+pfProbBegin:0.133761
+pfProbBegin:0.961205
+pfProbBegin:0.0387955
+pfProbBegin:0.966821
+pfProbBegin:0.033179
+pfProbBegin:0.7024
+pfProbBegin:0.2976
+pfProbBegin:0.994527
+pfProbBegin:0.00547338
+pfProbBegin:0.994936
+pfProbBegin:0.00506385
+pfProbBegin:0.875257
+pfProbBegin:0.124743
+pfProbBegin:0.983101
+pfProbBegin:0.0168992
+pfProbBegin:0.931675
+pfProbBegin:0.0683249
+pfProbBegin:0.91882
+pfProbBegin:0.0811801
+pfProbBegin:0.988708
+pfProbBegin:0.0112921
+pfProbBegin:0.985621
+pfProbBegin:0.014379
+pfProbBegin:0.987795
+pfProbBegin:0.0122045
+pfProbBegin:0.969207
+pfProbBegin:0.0307931
+pfProbBegin:0.985532
+pfProbBegin:0.0144679
+pfProbBegin:0.996399
+pfProbBegin:0.00360102
+pfProbBegin:0.958335
+pfProbBegin:0.0416655
+pfProbBegin:0.805143
+pfProbBegin:0.194857
+pfProbBegin:0.995943
+pfProbBegin:0.00405716
+pfProbBegin:0.983699
+pfProbBegin:0.0163014
+pfProbBegin:0.705958
+pfProbBegin:0.294042
+pfProbBegin:0.981142
+pfProbBegin:0.0188584
+pfProbBegin:0.957252
+pfProbBegin:0.0427482
+pfProbBegin:0.894716
+pfProbBegin:0.105284
+pfProbBegin:0.980885
+pfProbBegin:0.019115
+pfProbBegin:0.516918
+pfProbBegin:0.483081
+pfProbBegin:0.987764
+pfProbBegin:0.0122358
+pfProbBegin:0.97905
+pfProbBegin:0.0209502
+pfProbBegin:0.958548
+pfProbBegin:0.0414517
+pfProbBegin:0.839738
+pfProbBegin:0.160262
+pfProbBegin:0.999243
+pfProbBegin:0.000757438
+pfProbBegin:0.984384
+pfProbBegin:0.0156156
+pfProbBegin:0.985122
+pfProbBegin:0.014878
+pfProbBegin:0.987636
+pfProbBegin:0.0123644
+pfProbBegin:0.980912
+pfProbBegin:0.019088
+pfProbBegin:0.869176
+pfProbBegin:0.130824
+pfProbBegin:0.953307
+pfProbBegin:0.0466929
+pfProbBegin:0.97251
+pfProbBegin:0.0274902
+pfProbBegin:0.852128
+pfProbBegin:0.147872
+pfProbBegin:0.983228
+pfProbBegin:0.0167716
+pfProbBegin:0.998818
+pfProbBegin:0.00118169
+pfProbBegin:0.969049
+pfProbBegin:0.030951
+pfProbBegin:0.992678
+pfProbBegin:0.00732247
+pfProbBegin:0.858035
+pfProbBegin:0.141965
+pfProbBegin:0.993148
+pfProbBegin:0.00685179
+pfProbBegin:0.983487
+pfProbBegin:0.0165125
+pfProbBegin:0.985644
+pfProbBegin:0.0143562
+pfProbBegin:0.989685
+pfProbBegin:0.0103154
+pfProbBegin:0.962695
+pfProbBegin:0.0373053
+pfProbBegin:0.878726
+pfProbBegin:0.121274
+pfProbBegin:0.984498
+pfProbBegin:0.0155022
+pfProbBegin:0.943999
+pfProbBegin:0.0560014
+pfProbBegin:0.914309
+pfProbBegin:0.0856915
+pfProbBegin:0.998287
+pfProbBegin:0.00171273
+pfProbBegin:0.942712
+pfProbBegin:0.0572882
+pfProbBegin:0.992555
+pfProbBegin:0.00744529
+pfProbBegin:0.84398
+pfProbBegin:0.15602
+pfProbBegin:0.9931
+pfProbBegin:0.00689983
+pfProbBegin:0.990895
+pfProbBegin:0.0091046
+pfProbBegin:0.988399
+pfProbBegin:0.0116007
+pfProbBegin:0.98326
+pfProbBegin:0.0167402
+pfProbBegin:0.907411
+pfProbBegin:0.0925885
+pfProbBegin:0.972008
+pfProbBegin:0.0279916
+pfProbBegin:0.97571
+pfProbBegin:0.0242898
+pfProbBegin:0.996193
+pfProbBegin:0.0038073
+pfProbBegin:0.740756
+pfProbBegin:0.259244
+pfProbBegin:0.991938
+pfProbBegin:0.00806162
+pfProbBegin:0.819885
+pfProbBegin:0.180115
+pfProbBegin:0.934113
+pfProbBegin:0.065887
+pfProbBegin:0.995069
+pfProbBegin:0.00493117
+pfProbBegin:0.972331
+pfProbBegin:0.0276691
+pfProbBegin:0.255316
+pfProbBegin:0.744684
 RNet test2!
 RNet test3!
 vvmatProbMat[r]'s size is:2
@@ -2740,117 +2189,185 @@ vvmatProbMat[r]'s size is:2
 vvmatProbMat[r]'s size is:2
 vvmatProbMat[r]'s size is:2
 vvmatProbMat[r]'s size is:2
+vvmatProbMat[r]'s size is:2
+vvmatProbMat[r]'s size is:2
+vvmatProbMat[r]'s size is:2
+vvmatProbMat[r]'s size is:2
+vvmatProbMat[r]'s size is:2
+vvmatProbMat[r]'s size is:2
+vvmatProbMat[r]'s size is:2
+vvmatProbMat[r]'s size is:2
+vvmatProbMat[r]'s size is:2
+vvmatProbMat[r]'s size is:2
 RNet test4!
 RNet test5!
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-0.00533496
-vfScores's size is:0
-vv4fConv's size is:0
-vrectBoundingBox's size is:0
+0.0321112
+0.822142
+0.00440714
+0.318674
+0.355783
+0.0116336
+0.299247
+0.107753
+0.0734324
+0.883073
+0.114441
+0.0131883
+0.0312006
+0.612078
+0.0241327
+0.237465
+0.0397363
+0.0160749
+0.00619413
+0.0531431
+0.00084643
+0.0275925
+0.046022
+0.134569
+0.00192045
+0.0122206
+0.0173444
+0.00302042
+0.0144979
+0.00296448
+0.0238471
+0.00702489
+0.0816513
+0.0341602
+0.255068
+0.12152
+0.0236126
+0.0198597
+0.015395
+0.0697951
+0.0123415
+0.00554994
+0.00235647
+0.0362038
+0.133761
+0.0387955
+0.033179
+0.2976
+0.00547338
+0.00506385
+0.124743
+0.0168992
+0.0683249
+0.0811801
+0.0112921
+0.014379
+0.0122045
+0.0307931
+0.0144679
+0.00360102
+0.0416655
+0.194857
+0.00405716
+0.0163014
+0.294042
+0.0188584
+0.0427482
+0.105284
+0.019115
+0.483081
+0.0122358
+0.0209502
+0.0414517
+0.160262
+0.000757438
+0.0156156
+0.014878
+0.0123644
+0.019088
+0.130824
+0.0466929
+0.0274902
+0.147872
+0.0167716
+0.00118169
+0.030951
+0.00732247
+0.141965
+0.00685179
+0.0165125
+0.0143562
+0.0103154
+0.0373053
+0.121274
+0.0155022
+0.0560014
+0.0856915
+0.00171273
+0.0572882
+0.00744529
+0.15602
+0.00689983
+0.0091046
+0.0116007
+0.0167402
+0.0925885
+0.0279916
+0.0242898
+0.0038073
+0.259244
+0.00806162
+0.180115
+0.065887
+0.00493117
+0.0276691
+0.744684
+vfScores's size is:3
+vv4fConv's size is:3
+vrectBoundingBox's size is:3
+Nms 1!
+vssrTempScoreRect[0].fScore0.822142
+vssrTempScoreRect[0].fScore0.744684
+vssrTempScoreRect[0].fScore0.744684
+RNet vrectTotalBoundingBox's size is:3
+vrectTotalBoundingBox3
+vfScore3
+vv4fTotalConv5_23
+rectTempRBoundingBox[73 x 73 from (283, 72)]
+[0.144658, -0.0325418, 0.0829161, 0.131562]
+RectifyRectangle[85 x 85 from (275, 72)]
+rectTempRBoundingBox[103 x 102 from (269, 65)]
+[0.202356, 0.158965, -0.0827332, 0.00598143]
+RectifyRectangle[86 x 86 from (263, 65)]
+rectTempRBoundingBox[37 x 37 from (102, 69)]
+[0.0464424, -0.221414, 0.0155996, 0.140231]
+RectifyRectangle[51 x 51 from (94, 69)]
+vrectRSrcRect[n][85 x 85 from (0, 0)]
+vrectRDstRect[n][85 x 85 from (275, 72)]
+vrectRSrcRect[n][86 x 86 from (0, 0)]
+vrectRDstRect[n][86 x 86 from (263, 65)]
+vrectRSrcRect[n][51 x 51 from (0, 0)]
+vrectRDstRect[n][51 x 51 from (94, 69)]
+ONet is predicting!
+NetPredict's size is:[48 x 48]
+nChannelNum's size is:3
+nNum3
+nChannel3
+nWidth48
+nHeight48
+GenerateBoundingBox 1
+3
+2
+1
+1
+3
+4
+1
+1
+3
+10
+1
+1
+GenerateBoundingBox 2
+GenerateBoundingBox 3
+vrectTotalBoundingBox0
+vfOScore0
+vv4fTotalOConv6_20
 The FaceBoundingBox's is:0
 The FacePoints' size is:0
 The output BoundingBox's size is:0

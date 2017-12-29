@@ -7,7 +7,7 @@ int main(int argc, char **argv) {
     vector<float> vfThreshold(3);
     vfThreshold[0] = 0.6;
     vfThreshold[1] = 0.7;
-    vfThreshold[1] = 0.7;
+    vfThreshold[2] = 0.7;
     
     string strPNetModelPath = ".//model//det1.prototxt";
     string strRNetModelPath = ".//model//det2.prototxt";
